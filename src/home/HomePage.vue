@@ -2,9 +2,9 @@
   <div style="height:100%; min-width: 1200px">
     <s-header></s-header>
     <div id="home-content">
-      <component v-bind:is="currentView"></component>
-      <s-button @click="changeView">切换1</s-button>
-      <s-button @click="changeView1">切换2</s-button>
+      <component v-bind:is="currentView">
+      </component>
+      <s-button @click="changeView">切换</s-button>
     </div>
     <footer>
       <p class="footer-text">版权所有&copy;2018 www.suninfo.com 上海上讯信息技术股份有限公司</p>
@@ -20,9 +20,6 @@
   };
   var POSTS = {
     template: '<p>Hello World!</p>'
-  };
-  var Archive = {
-    template: '<p>Archive</p>'
   };
   export default {
     name: 'HomePage',
@@ -43,9 +40,6 @@
       },
       changeView() {
           this.currentView = POSTS;
-      },
-      changeView1() {
-          this.currentView = Archive;
       }
     }
   }
