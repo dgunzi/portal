@@ -1,0 +1,57 @@
+#home-content
+  height calc(100% - 35px)
+  background #030D1A url(img/homePage/all-bg.png) no-repeat
+  background-size cover
+  display flex
+  justify-content center
+  align-items center
+  .main-content
+    width 1230px
+    min-height 300px
+    display flex
+    justify-content space-between
+    margin-top -10%
+    .item-content
+      width 270px
+      height 200px
+      background url(img/homePage/normal-card-bg.png) no-repeat
+      background-size cover
+      display flex
+      justify-content center
+      align-items center
+      transition all .5s
+      margin-top 1.2%
+      .detail-content
+        width 200px
+        height 120px
+        display flex
+        flex-direction column
+        justify-content flex-start
+        align-items center
+        .icon-text
+          font-size 50px
+          color #31a3d3
+          margin-bottom 20px
+        .name-text
+          font-size 16px
+          color #d3d9e1
+          font-weight bold
+          margin-bottom 10px
+        .msg-text
+          font-size 12px
+          color #778da0
+    .item-content:hover
+      background url(img/homePage/hover-card-bg.png) no-repeat
+      background-size cover
+      .detail-content
+        cursor pointer
+        .icon-text
+          color #00f1fb
+          text-shadow 0 0 20px #31ADDD
+        .name-text
+          color #ffffff
+        .msg-text
+          color #97a8b7
+  .footer-text
+    font-size 12px
+    color #313b47

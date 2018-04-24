@@ -1,0 +1,407 @@
+/*一级页面大体布局相关定义*/
+
+baseColor = #000000
+mainBgColor = #f5f5f5
+lightWordColor = #8a9299
+darkWordColor = #3d454c
+redWordColor = #B92329
+mainColor = #ffffff
+bgColor = #1675cb
+nav-height = 45px
+color = #5582A5
+color-hover = #01B6FF
+color-active = #0083bb
+table-bg = #091627
+table-bg1 = #0C1427
+copyright-color = #bac9db
+//nav-bg = #dcdee0
+nav-bg = #d7d9db
+main-content-updown = linear-gradient(to right, rgba(22, 137, 239, 0) 8%, rgb(22, 137, 239), rgba(22, 137, 239, 0) 92%)
+
+/*通用样式*/
+body, html
+  width 100%
+  height 100%
+
+body
+  display flex
+  min-height 100vh
+  flex-direction column
+
+a
+  color #3d454c
+
+.clr
+  clear both
+
+#app
+  background-color: mainBgColor;
+  min-width 1200px
+  font-family "Microsoft YaHei", "Helvetica Neue", "Helvetica Arial", "sans-serif"
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  display flex
+  min-height 100vh
+  flex-direction column
+  & .index-body
+    display flex
+    flex 1
+    & main
+      width 100%
+      overflow hidden
+
+/*字体颜色*/
+.lightword
+  color lightWordColor
+
+.darkword
+  margin-left 10px
+  color darkWordColor
+
+.redword
+  color redWordColor
+
+/*内容*/
+.content
+  width calc(100% - 10px)
+  min-height 610px
+  margin 10px auto 0 auto
+  font-size 12px
+  .card-title
+    .iconfont
+      position relative !important
+      top 2px !important
+      color bgColor
+  .card-enter
+    color bgColor
+    float right
+    margin-left 20px
+    cursor pointer
+    a
+      color darkWordColor
+      &hover
+        color baseColor
+    &hover
+      color baseColor
+      cursor pointer
+/*主区上下条*/
+.main-card-content
+  position relative
+  &:before,&:after
+    position absolute
+    width 100%
+    height 5px
+    background main-content-updown
+    display inline-block
+    left 0
+    content ''
+  &:before
+    top 0
+  &:after
+    bottom 0
+/*模块标题*/
+#index-body
+  padding 0 10px
+  .s-card-header
+    padding-left 0 !important
+    .child-title
+      color color-active
+
+/*一级页面自定义表格*/
+.top-list
+  padding 2px 0
+  text-align center
+  font-size 12px
+  color #3C454C
+  table thead
+    background-color #F2F3F5
+  table thead tr
+    height 30px
+    line-height 30px
+  table tbody
+    box-sizing border-box
+    border-top none
+  table tbody tr
+    box-sizing border-box
+    height 33px
+    line-height 33px
+    border-bottom 1px solid #F0EFF4
+  table thead tr th
+    width 72px
+
+.tableList .item ul li
+  border-bottom 1px solid #F0EFF4
+
+.tableList .item ul li div
+  display inline-block
+  height 28px
+  line-height 28px
+
+.s-card
+  .s-card-body
+    padding 0
+
+/*滚动条*/
+.sysScrollHeight
+  height calc(100vh - 100px)
+/*头部*/
+#headBar
+  .header-bg
+    height 35px
+    font-size 14px
+    background-color #0b80e6
+    box-shadow 0 1px 3px rgba(128,158,177,0.78)
+    color mainColor
+    & .s-col
+      height 35px
+      line-height 35px
+
+    & .left-info
+      display flex
+      & .logo-icon
+        background url('img/logo.png') no-repeat center
+        width 100%
+        height 100%
+        cursor pointer
+    & .right-info
+      display flex
+      justify-content flex-end
+      margin-right 8px
+      & i
+        font-size 20px
+        color mainColor
+        cursor pointer
+      & .search-btn
+        iactive
+          color mainBgColor
+      & .search-btn
+        ihover
+          cursor pointer
+          color lightWordColor
+          text-shadow 0 0 10px color-hover
+      & .head-handler-btns
+        display flex
+        & span
+          width 40px
+          height 35px
+          text-align center
+          & a iactive
+            color mainBgColor
+          & a ihover
+            cursor pointer
+            color lightWordColor
+            text-shadow 0 0 10px color-hover
+      & .user-info
+        cursor pointer
+        font-size 12px
+        color mainColor
+      & .user-infohover
+        color lightWordColor
+      & .user-infoafter
+        display inline-block
+        width 10px
+        height 10px
+        content ""
+        margin-bottom 1px
+        border-right 1px solid color-hover
+  .scrollheight
+    max-height 500px
+/*主题切换*/
+.s-popover
+  min-width 50px
+  & .selectBlock
+    width 50px
+    height 20px
+    color #fff
+    text-align center
+    line-height 20px
+    cursor pointer
+  & .top
+    margin-top 2px
+/*底部*/
+.s-footer
+  position absolute
+  left 0
+  bottom 0
+  width 100%
+  min-width: 1200px
+  text-align center
+  height 65px
+  a
+    text-decoration none
+    outline none
+    i.s-tooltip
+      outline none
+  .s-footer-wrapper
+    display flex
+    justify-content space-between
+  .s-footer-breadcrumb, .s-footer-time
+    display flex
+    align-items center
+    font-size 14px
+    color #8fa2b2
+    width 300px
+    height nav-height
+  .s-footer-time
+    margin-right 30px
+    & > div
+      width 100%
+      text-align right
+  .s-footer-breadcrumb
+    margin-left 30px
+    .s-footer-breadcrumb-des
+      padding-right 3px
+  .s-footer-nav
+    position relative
+    box-sizing border-box
+    width 800px
+    height nav-height
+    //background-image: linear-gradient(to top, #f7f7f7, #fcfcfc);
+    border-radius 22px
+    background-size 50% 100%
+    //box-shadow: 0 3px 6px rgba(0, 0, 0, .1), 0 12px 27px #fff inset;
+    /*box-shadow 0 3px 6px rgba(0, 0, 0, .1)*/
+    background nav-bg
+    border: 1px solid nav-bg;
+    & > ul
+      display flex
+      justify-content space-around
+      box-sizing border-box
+      width 100%
+      height nav-height
+      padding 0 nav-height - 21px
+      & > li
+        list-style none
+        width nav-height + 13px
+        line-height nav-height
+        & > a
+          & > i
+            color #616e80
+            font-size 32px
+            transition all 0.1s ease-out
+        &:hover
+          background-color: #168df5
+        &:hover a i
+          height 48px
+          font-size 36px
+          color #fff
+      .active
+        width 100%
+        height 100%
+        display inline-block
+        background-color: #168df5
+        & i
+          height 48px
+          font-size 40px
+          color #fff
+
+.copyright
+  width 100%
+  height 20px
+  line-height 20px
+  font-size 12px
+  color copyright-color
+  background mainBgColor
+
+/*一级页面按钮*/
+.accountBtns
+  width: 100%
+  & li
+    float left
+    width calc(50% - 5px);
+    height 25px
+    line-height 25px
+    color #fff
+    border 1px solid #89a2d9
+    background #89a2d9
+    border-radius 2px
+    font-size 14px
+    margin-bottom 6px
+    overflow hidden
+    cursor pointer
+    //background-image linear-gradient(to top, #f7f7f7, #fcfcfc)
+    //box-shadow 0 12px 27px #fff inset
+    & i
+      margin-left 5px
+      margin-right 1px
+      font-size 16px
+      color #fff
+      position relative
+      top 1px
+    & span
+      vertical-align top
+  & li:nth-of-type(even)
+    margin-left 6px
+  & li:hover
+    color: #ffffff;
+    background: #5c7fcf;
+    box-shadow:none;
+    border-color: #5c7fcf;
+    & i
+      color #fff
+
+/*火狐兼容性*/
+@-moz-document url-prefix() {
+. s-footer-nav ul li {
+line-height 45 px
+}
+}
+// 副内容区透明度(深色版不需要边框颜色改变)
+.contentOpacity
+  border-color #d9e7f3
+  opacity 0.7
+  transition opacity 0.5s
+  &:hover
+    border-color #a1d8f9;
+    opacity 1
+    transition opacity 0.5s
+    .s-card-header
+      color #525c66
+//账号管理-孤立账号
+.accountManageScrollheight
+  height calc(100vh - 360px)
+.accountStatistics
+  .s-carousel
+    overflow hidden
+  .is-active
+    border none
+    box-shadow none
+  .account-item
+    height 40px
+    margin 40px 0 0
+    .account-item-icon
+      padding 0 12px
+    .account-item-name
+      color darkWordColor
+      font-size 14px
+      width 80px
+      white-space nowrap
+      text-overflow ellipsis
+      overflow hidden
+    .account-item-content
+      color lightWordColor
+  .isolatedAccount
+    position relative
+    & i
+      font-size 34px
+      color original_color
+  .s-col:before
+    content ''
+    position absolute
+    height 40px
+    right -2px
+/*border-left 1px solid gray_l3_black*/
+.accountList
+  .item
+    & ul
+      & li
+        & div
+          height 28px !important
+          line-height 28px !important
+
+.autoWrap
+  word-break: break-all
+.rednotnull
+  color: #f51131;
+  margin-right: 4px;
+

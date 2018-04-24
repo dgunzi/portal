@@ -1,0 +1,57 @@
+#home-content
+  height calc(100% - 35px)
+  background-color #f2f2f2
+  display flex
+  justify-content center
+  align-items center
+  .main-content
+    width 1230px
+    min-height 300px
+    display flex
+    justify-content space-between
+    margin-top -5%
+    .item-content
+      width 240px
+      height 180px
+      border-radius 4px
+      border 1px solid gary_l1_black
+      display flex
+      justify-content center
+      align-items center
+      transition all .3s
+      margin-top 1.2%
+      margin-right 40px
+      margin-bottom 40px
+      .detail-content
+        width 200px
+        height 120px
+        display flex
+        flex-direction column
+        justify-content flex-start
+        align-items center
+        .icon-text
+          font-size 50px
+          color #1689ef
+          margin-bottom 20px
+        .name-text
+          font-size 16px
+          color #3d454c
+          font-weight bold
+          margin-bottom 10px
+        .msg-text
+          font-size 12px
+          color #667480
+    .item-content:hover
+      border-color #1689ef
+      background #f5f5f5
+      .detail-content
+        cursor pointer
+        .icon-text
+          color #1689ef
+        .name-text
+          color title_1
+        .msg-text
+          color gray_l1_text
+  .footer-text
+    font-size 12px
+    color #313b47
