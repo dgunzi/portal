@@ -48,16 +48,4 @@ let router = new Router({
   linkActiveClass: 'active'
 })
 
-router.beforeEach((to, from, next) => {
-  if (window.resizeHandler) {
-    window.removeEventListener('resize', window.resizeHandler)
-    window.resizeHandler = undefined
-  }
-  if (typeof window.mxEvent !== 'undefined') {
-    window.mxEvent.removeAllListeners(window)
-    window.mxEvent.removeAllListeners(document)
-  }
-  next()
-})
-
 export default router
