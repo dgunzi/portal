@@ -6,7 +6,7 @@ const _portlets = {
     type: 'layout',
     size: [12, 12],
     height: '485',
-    content: ['l_3', 'info']
+    content: ['l_3', 'line1']
   },
   {
     type: 'layout',
@@ -18,9 +18,9 @@ const _portlets = {
     id: 'l_3',
     size: [12, 12],
     height: '485',
-    content: ['test', 'test']
+    content: ['table1', 'chart1']
   }],
-  'components': ['info', 'hello', 'test']
+  'components': ['info', 'hello', 'test', 'chart1', 'line1', 'table1']
 };
 
 export default {
