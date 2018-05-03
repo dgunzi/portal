@@ -14,10 +14,7 @@ Vue.use(Sunflower)
 Vue.use(Router)
 
 router.beforeEach(function (to, from, next) {
-  // 创建面包屑
-  store.commit('getBread', to.fullPath)
   //  判断是否有token和uuid
-  if (localStorage.getItem('uuid')) {
     // 从storge中获取基本信息
     store.commit('SET_TOKEN')
     if ((to.path === '/login' || to.path === '/') && store.getters.index) {
@@ -53,11 +50,6 @@ router.beforeEach(function (to, from, next) {
         })
       }
     }
-  } else if (to.path === '/login') {
-    next()
-  } else {
-    next('/login')
-  }
 })
 
 router.afterEach((to, from, next) => {

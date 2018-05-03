@@ -14,7 +14,7 @@ export const asyncRouter = [
   {
     path: '/',
     beforeEnter (to, from, next) {
-      next('/login')
+      next('/Portal')
     }
   },
   {

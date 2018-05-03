@@ -7,6 +7,7 @@ import $axios from '@/plugins/ajax'
 import {asyncRouter, constRouter} from '@/router'
 import userinfo from './userinfo'
 import menus from './menus'
+import portlets from './portlets'
 
 Vue.use(Vuex)
 /* eslint-disable no-unused-vars */
@@ -359,6 +360,7 @@ let store = new Vuex.Store({
     }
   },
   modules: {
+    portlets
   }
 })
 
