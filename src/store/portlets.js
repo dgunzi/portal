@@ -29,8 +29,28 @@ const mutations = {
     state.portlets = portlets
   },
   changeOnePortlet (state, {row, index, content}) {
-    state.portlets.layout[row].content = [content, '', ''];
-    // state.portlets.components.push(content);
+    let tempContent = Array.from(state.portlets.layout[row].content);
+    tempContent[index] = content;
+    state.portlets.layout[row].content = tempContent;
+  },
+  changeChildPortlet (state, {id, index, content}) {
+    let tempLayout = null;
+    for (let i = 0, length = state.portlets.clayout.length; i < length; i++) {
+      console.log(state.portlets.clayout[i].id);
+      console.log(id);
+      if (state.portlets.clayout[i].id === id) {
+        tempLayout = state.portlets.clayout[i];
+        break;
+      }
+    }
+    if (tempLayout !== null) {
+      let tempContent = Array.from(tempLayout.content);
+      tempContent[index] = content;
+      tempLayout.content = tempContent;
+    }
+  },
+  removeLayout(state, {row}) {
+    state.portlets.layout.splice(row, 1);
   },
   addLayout (state, layout) {
     state.portlets.layout.push(layout);
