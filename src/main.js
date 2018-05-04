@@ -8,10 +8,12 @@ import router from './router'
 import store from './store'
 import './styles/chalk-theme/index.styl'
 import './styles/dark-theme/index.styl'
+import Portal from './home/portlets'
 
 Vue.config.productionTip = false
 Vue.use(Sunflower)
 Vue.use(Router)
+Vue.use(Portal)
 
 router.beforeEach(function (to, from, next) {
   //  判断是否有token和uuid

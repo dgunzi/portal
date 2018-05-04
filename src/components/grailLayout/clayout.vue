@@ -10,9 +10,6 @@
   </s-row>
 </template>
 <script type="text/babel">
-  const EMPTY = {
-    template: '<div></div>'
-  };
   export default {
     data () {
       return {
@@ -27,21 +24,13 @@
       height: String
     },
     components: {
-      EMPTY
     },
     created () {
       for (let i = 0, length = this.content.length; i < length; i++) {
-          this.$set(this.portalComponents, i, 'EMPTY')
+          this.$set(this.portalComponents, i, this.content[i])
       }
     },
     methods: {
-      changeComponents() {
-        for (let i = 0, length = this.content.length; i < length; i++) {
-          if (this.content[i].indexOf('l_') !== 0) {
-            this.$set(this.portalComponents, i, this.content[i])
-          }
-        }
-      }
     }
   }
 </script>

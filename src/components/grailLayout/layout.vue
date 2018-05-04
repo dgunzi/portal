@@ -3,23 +3,21 @@
  */
 <template>
   <s-row :style="{height: height + 'px'}">
-    <s-col v-for="(item,index) in size" :key="index" :span="item" @>
-      <template v-if="content[index].indexOf('l_') === 0">
+    <s-col v-for="(item,index) in size" :key="index" :span="item">
+      <template v-if="content[index] !== '' && content[index].indexOf('l_') === 0">
         <c-layout :size="clayout[index].size" :content="clayout[index].content" :height="clayout[index].height" :ref="content[index]">
         </c-layout>
       </template>
-      <template v-else>
+      <template v-else-if="content[index] !== ''">
         <component v-bind:is="portalComponents[index]"></component>
       </template>
+      <template v-else>空白</template>
     </s-col>
   </s-row>
 </template>
 <script type="text/babel">
   import cLayout from './clayout'
   import { mapGetters } from 'vuex'
-    const EMPTY = {
-      template: '<div></div>'
-    };
     export default {
         data () {
           return {
@@ -35,13 +33,12 @@
           height: String
         },
         components: {
-          cLayout,
-          EMPTY
+          cLayout
         },
         created () {
             for (let i = 0, length = this.content.length; i < length; i++) {
               if (this.content[i].indexOf('l_') !== 0) {
-                this.$set(this.portalComponents, i, 'EMPTY')
+                this.$set(this.portalComponents, i, this.content[i])
               } else {
                 this.$set(this.clayout, i, this.getAllClayout(this.content[i]));
               }
@@ -51,15 +48,6 @@
           clayouts: 'allCLayout'
         }),
         methods: {
-            changeComponents() {
-              for (let i = 0, length = this.content.length; i < length; i++) {
-                if (this.content[i].indexOf('l_') !== 0) {
-                  this.$set(this.portalComponents, i, this.content[i])
-                } else {
-                  this.$refs[this.content[i]][0].changeComponents();
-                }
-              }
-            },
             getAllClayout(idStr) {
               return this.clayouts.find(layout => layout.id === idStr)
             }

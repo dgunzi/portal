@@ -28,6 +28,13 @@ const mutations = {
   setPortlets (state, portlets) {
     state.portlets = portlets
   },
+  changeOnePortlet (state, {row, index, content}) {
+    state.portlets.layout[row].content = [content, '', ''];
+    // state.portlets.components.push(content);
+  },
+  addLayout (state, layout) {
+    state.portlets.layout.push(layout);
+  },
   getClayout(state, { id }) {
     return state.portlets.clayout.find(layout => layout.id === id)
   }
