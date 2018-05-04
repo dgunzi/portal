@@ -1,4 +1,5 @@
 import portal from '../api/portal'
+import {has, isArray, isString, isObject, merge} from 'lodash'
 
 const state = {
   portlets: {}
@@ -8,7 +9,20 @@ const state = {
 const getters = {
   allLayout: state => state.portlets.layout,
   allCLayout: state => state.portlets.clayout,
-  allComponents: state => state.portlets.components
+  allComponents: state => state.portlets.component,
+  getClayoutByLayout: (state) => (index) => {
+    let content = state.portlets.layout[index].content;
+    let clayoutAry = [];
+    let getClayout = (idStr) => {
+      state.portlets.clayout.find(layout => layout.id === idStr)
+    }
+    for (let i = 0, length = content.length; i < length; i++) {
+      if (content[i].indexOf('l_') === 0) {
+        clayoutAry[i] = getClayout(content[i]);
+      }
+    }
+    return clayoutAry;
+  }
 }
 
 // actions
@@ -29,15 +43,31 @@ const mutations = {
     state.portlets = portlets
   },
   changeOnePortlet (state, {row, index, content}) {
-    let tempContent = Array.from(state.portlets.layout[row].content);
-    tempContent[index] = content;
-    state.portlets.layout[row].content = tempContent;
+    if (isObject(content) && has(content, 'id') && has(content, 'size') && isArray(content.size)) {
+      console.log(content.size.length);
+      merge(content, {
+        content: new Array(content.size.length).fill('')
+      })
+      console.log(content);
+      let tempContent = Array.from(state.portlets.layout[row].content);
+      tempContent[index] = content.id;
+      state.portlets.layout[row].content = tempContent;
+      let clayout = Array.from(state.portlets.clayout);
+      clayout.push(content);
+      state.portlets.clayout = clayout;
+    } else {
+      if (isString(content)) {
+        let tempContent = Array.from(state.portlets.layout[row].content);
+        tempContent[index] = content;
+        state.portlets.layout[row].content = tempContent;
+      } else {
+        throw new Error('content arguments is wrong, please check it!');
+      }
+    }
   },
   changeChildPortlet (state, {id, index, content}) {
     let tempLayout = null;
     for (let i = 0, length = state.portlets.clayout.length; i < length; i++) {
-      console.log(state.portlets.clayout[i].id);
-      console.log(id);
       if (state.portlets.clayout[i].id === id) {
         tempLayout = state.portlets.clayout[i];
         break;

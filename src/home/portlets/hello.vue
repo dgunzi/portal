@@ -9,6 +9,7 @@
     <s-button @click="changeOneComponents">修改内容</s-button>
     <s-button @click="deleteAction">删除新加列</s-button>
     <s-button @click="changeChildComponments">修改子布局内容</s-button>
+    <s-button @click="addChildLayout">添加子布局</s-button>
   </div>
 </template>
 <script type="text/babel">
@@ -34,10 +35,18 @@
             this.$store.commit('changeOnePortlet', {row: 2, index: 2, content: 'test'})
           },
           deleteAction() {
-            this.$store.commit('removeLayout', {row: 2})
+            this.$store.commit('removeLayout', {row: 1})
           },
           changeChildComponments() {
             this.$store.commit('changeChildPortlet', {id: 'l_3', index: 1, content: 'test'})
+          },
+          addChildLayout() {
+            let child = {
+              id: 'l_8',
+              size: [10, 14],
+              height: '485'
+            };
+            this.$store.commit('changeOnePortlet', {row: 1, index: 2, content: child})
           }
         },
         mounted() {

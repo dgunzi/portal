@@ -41,9 +41,11 @@
               }
             }
         },
-        computed: mapGetters({
-          clayouts: 'allCLayout'
-        }),
+        computed: {
+            ...mapGetters({
+              clayouts: 'allCLayout'
+            })
+        },
         methods: {
             getAllClayout(idStr) {
               return this.clayouts.find(layout => layout.id === idStr)
