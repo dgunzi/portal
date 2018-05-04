@@ -5,7 +5,10 @@
 <template>
   <s-row :style="{height: height + 'px'}">
     <s-col v-for="(item,index) in size" :key="index" :span="item">
-        <component v-bind:is="portalComponents[index]" :ref="portalComponents[index]"></component>
+        <template v-if="content[index] !== ''">
+          <component v-bind:is="content[index]"></component>
+        </template>
+        <template v-else>空白</template>
     </s-col>
   </s-row>
 </template>
@@ -13,7 +16,6 @@
   export default {
     data () {
       return {
-        portalComponents: []
       }
     },
     name: 'layout',
@@ -26,9 +28,6 @@
     components: {
     },
     created () {
-      for (let i = 0, length = this.content.length; i < length; i++) {
-          this.$set(this.portalComponents, i, this.content[i])
-      }
     },
     methods: {
     }

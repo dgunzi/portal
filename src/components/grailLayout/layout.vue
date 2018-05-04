@@ -9,7 +9,7 @@
         </c-layout>
       </template>
       <template v-else-if="content[index] !== ''">
-        <component v-bind:is="portalComponents[index]"></component>
+        <component v-bind:is="content[index]"></component>
       </template>
       <template v-else>空白</template>
     </s-col>
@@ -21,7 +21,6 @@
     export default {
         data () {
           return {
-            portalComponents: [],
             clayout: []
           }
         },
@@ -37,9 +36,7 @@
         },
         created () {
             for (let i = 0, length = this.content.length; i < length; i++) {
-              if (this.content[i].indexOf('l_') !== 0) {
-                this.$set(this.portalComponents, i, this.content[i])
-              } else {
+              if (this.content[i].indexOf('l_') === 0) {
                 this.$set(this.clayout, i, this.getAllClayout(this.content[i]));
               }
             }
