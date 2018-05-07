@@ -35,10 +35,10 @@
             this.$store.commit('changeOnePortlet', {row: 2, index: 2, content: 'test'})
           },
           deleteAction() {
-            this.$store.commit('removeLayout', {row: 1})
+            this.$store.commit('removeLayout', {row: 2})
           },
           changeChildComponments() {
-            this.$store.commit('changeChildPortlet', {id: 'l_3', index: 1, content: 'test'})
+            this.$store.commit('changeChildPortlet', {row: 0, index: 0, cIndex: 1, content: 'test'})
           },
           addChildLayout() {
             let child = {

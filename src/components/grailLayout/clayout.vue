@@ -25,10 +25,6 @@
       size: Array,
       height: String
     },
-    components: {
-    },
-    created () {
-    },
     methods: {
     }
   }

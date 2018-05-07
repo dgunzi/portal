@@ -8,21 +8,7 @@ const state = {
 // getters
 const getters = {
   allLayout: state => state.portlets.layout,
-  allCLayout: state => state.portlets.clayout,
-  allComponents: state => state.portlets.component,
-  getClayoutByLayout: (state) => (index) => {
-    let content = state.portlets.layout[index].content;
-    let clayoutAry = [];
-    let getClayout = (idStr) => {
-      state.portlets.clayout.find(layout => layout.id === idStr)
-    }
-    for (let i = 0, length = content.length; i < length; i++) {
-      if (content[i].indexOf('l_') === 0) {
-        clayoutAry[i] = getClayout(content[i]);
-      }
-    }
-    return clayoutAry;
-  }
+  allComponents: state => state.portlets.component
 }
 
 // actions
@@ -43,18 +29,13 @@ const mutations = {
     state.portlets = portlets
   },
   changeOnePortlet (state, {row, index, content}) {
-    if (isObject(content) && has(content, 'id') && has(content, 'size') && isArray(content.size)) {
-      console.log(content.size.length);
+    if (isObject(content) && has(content, 'size') && isArray(content.size)) {
       merge(content, {
         content: new Array(content.size.length).fill('')
       })
-      console.log(content);
       let tempContent = Array.from(state.portlets.layout[row].content);
-      tempContent[index] = content.id;
+      tempContent[index] = content;
       state.portlets.layout[row].content = tempContent;
-      let clayout = Array.from(state.portlets.clayout);
-      clayout.push(content);
-      state.portlets.clayout = clayout;
     } else {
       if (isString(content)) {
         let tempContent = Array.from(state.portlets.layout[row].content);
@@ -65,19 +46,11 @@ const mutations = {
       }
     }
   },
-  changeChildPortlet (state, {id, index, content}) {
-    let tempLayout = null;
-    for (let i = 0, length = state.portlets.clayout.length; i < length; i++) {
-      if (state.portlets.clayout[i].id === id) {
-        tempLayout = state.portlets.clayout[i];
-        break;
-      }
-    }
-    if (tempLayout !== null) {
-      let tempContent = Array.from(tempLayout.content);
-      tempContent[index] = content;
-      tempLayout.content = tempContent;
-    }
+  changeChildPortlet (state, {row, index, cIndex, content}) {
+    let clayout = state.portlets.layout[row].content[index];
+    let tempContent = Array.from(clayout.content);
+    tempContent[cIndex] = content;
+    clayout.content = tempContent;
   },
   removeLayout(state, {row}) {
     state.portlets.layout.splice(row, 1);

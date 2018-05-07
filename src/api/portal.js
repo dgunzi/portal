@@ -5,18 +5,17 @@ const _portlets = {
   'layout': [{
     size: [12, 12],
     height: '485',
-    content: ['l_3', 'line1']
+    content: [{
+        id: 'l_3',
+        size: [12, 12],
+        height: '485',
+        content: ['table1', 'chart1']
+    }, 'line1']
   },
   {
     size: [8, 8, 8],
     height: '400',
     content: ['test', 'hello', 'test']
-  }],
-  'clayout': [{
-    id: 'l_3',
-    size: [12, 12],
-    height: '485',
-    content: ['table1', 'chart1']
   }],
   'components': ['test', 'hello', 'test', 'chart1', 'line1', 'table1']
 };
