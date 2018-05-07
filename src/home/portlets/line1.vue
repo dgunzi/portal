@@ -1,15 +1,15 @@
 <template>
-  <s-chart :chart="chart1"></s-chart>
+  <s-chart :chart="chart2"></s-chart>
 </template>
 <script>
   export default {
     data() {
       return {
-        chart1: {
-          name: 'chart1',
+        chart2: {
+          name: 'chart2',
           type: 'lineChart',
           width: '100%',
-          height: '300px',
+          height: '485px',
           itemName: '开放数量',
           data: [
             {name: '1:00', value: 1},

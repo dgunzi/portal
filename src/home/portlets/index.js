@@ -9,6 +9,7 @@ const install = function(Vue, opts = {}) {
   Vue.component('table1', () => import('./table1'))
   Vue.component('info', () => import('./info'))
   Vue.component('test', () => import('./test'))
+
 }
 
 export default {

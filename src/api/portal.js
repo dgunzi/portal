@@ -16,8 +16,7 @@ const _portlets = {
     size: [8, 8, 8],
     height: '400',
     content: ['test', 'hello', 'test']
-  }],
-  'components': ['test', 'hello', 'test', 'chart1', 'line1', 'table1']
+  }]
 };
 
 export default {
