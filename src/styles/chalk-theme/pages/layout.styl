@@ -16,7 +16,9 @@ table-bg1 = #0C1427
 copyright-color = #bac9db
 //nav-bg = #dcdee0
 nav-bg = #d7d9db
-main-content-updown = linear-gradient(to right, rgba(22, 137, 239, 0) 8%, rgb(22, 137, 239), rgba(22, 137, 239, 0) 92%)
+main-content-updown = linear-gradient(to right, rgba(185, 220, 251, 0) 8%, rgb(185, 220, 251), rgba(185, 220, 251, 0) 92%)
+tableHeaderBg = #edf0f5
+tableHeaderTitle = #667480
 
 /*通用样式*/
 body, html
@@ -143,7 +145,7 @@ a
 
 /*滚动条*/
 .sysScrollHeight
-  height calc(100vh - 80px)
+  height calc(100vh - 100px)
 /*头部*/
 #headBar
   .header-bg
@@ -159,8 +161,8 @@ a
     & .left-info
       display flex
       & .logo-icon
-        background url('img/logo.png') no-repeat center
-        width 100%
+        background url('../../../static/images/logo/logo.svg') no-repeat 20px center
+        width 390px
         height 100%
         cursor pointer
     & .right-info
@@ -261,7 +263,7 @@ a
     background-size 50% 100%
     //box-shadow: 0 3px 6px rgba(0, 0, 0, .1), 0 12px 27px #fff inset;
     /*box-shadow 0 3px 6px rgba(0, 0, 0, .1)*/
-    background nav-bg
+    background #FFF
     border: 1px solid nav-bg;
     & > ul
       display flex

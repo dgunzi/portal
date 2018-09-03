@@ -10,7 +10,6 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   display: block
 }
 audio,
-canvas,
 progress,
 video {
   display: inline-block

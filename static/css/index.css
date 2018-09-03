@@ -146,7 +146,6 @@
 
 /*--------变更单详情打印样式--------*/
 #modifyTaskPrint .printTitle {
-  color: #1675cb;
   font-size: 15px;
   font-weight: bold;
   margin-bottom: 10px

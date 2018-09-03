@@ -1,6 +1,6 @@
 .s-alert {
   border: 1px solid;
-  border-radius: 4px;
+  border-radius: 2px;
   text-align: left;
   position: relative;
 }
@@ -10,19 +10,19 @@
 .s-alert-content {
   color: #fff;
   font-size: 14px;
-  padding: 10px 35px;
+  padding: 5px 0 5px 35px;
   position: relative;
 }
 .s-alert-closebtn {
   position: absolute;
   right: 10px;
-  top: 14px;
+  top: 7px;
   cursor: pointer;
 }
 .s-alert .is-customed {
   font-style: normal;
   font-size: 12px;
-  top: 12px;
+  top: 7px;
 }
 .s-alert .is-big {
   font-size: 28px;
@@ -38,7 +38,7 @@
   width: 24px;
   height: 24px;
   left: 8px;
-  top: 8px;
+  top: 6px;
   display: block;
   position: absolute;
 }
@@ -6098,9 +6098,193 @@
 .s-tree-index-col .cell span[class*='icon-right'] + .data-wrapper {
   color: #ffffff;
 }
+.s-transfer {
+  font-size: 14px;
+}
+.s-transfer-buttons {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 30px;
+}
+.s-transfer-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 0;
+}
+.s-transfer-panel-item + .s-transfer-panel-item {
+  margin-left: 0;
+}
+.s-transfer-button [class*=s-icon-] + span {
+  margin-left: 0;
+}
+.s-transfer-button.is-with-texts {
+  border-radius: 4px;
+}
+.s-transfer-button:first-child {
+  margin-bottom: 10px;
+}
+.s-transfer-button:nth-child(2) {
+  margin: 0;
+}
+.s-transfer-button i,
+.s-transfer-button span {
+  font-size: 14px;
+}
+.s-transfer-panel {
+  border: 1px solid #344458;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #041729;
+  display: inline-block;
+  vertical-align: middle;
+  width: 200px;
+  max-height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+.s-transfer-panel-body {
+  height: 246px;
+}
+.s-transfer-panel-body.is-with-footer {
+  padding-bottom: 40px;
+}
+.s-transfer-panel-list {
+  margin: 0;
+  padding: 6px 0;
+  list-style: none;
+  height: 246px;
+  overflow: auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.s-transfer-panel-list.is-filterable {
+  height: 194px;
+  padding-top: 0;
+}
+.s-transfer-panel-item {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 15px;
+  display: block;
+}
+.s-transfer-panel-item:hover {
+  color: #b3e7ff;
+}
+.s-transfer-panel-item.s-checkbox .s-checkbox-label {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 24px;
+  line-height: 34px;
+}
+.s-transfer-panel-item .s-checkbox-input {
+  position: absolute;
+  top: 8px;
+}
+.s-transfer-panel-item.is-disabled .s-checkbox-input.is-disabled + .s-checkbox-label span {
+  color: #565b5d;
+}
+.s-transfer-panel-filter {
+  text-align: center;
+  margin: 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: auto;
+}
+.s-transfer-panel-filter .s-input-inner {
+  height: 32px;
+  width: 100%;
+  font-size: 12px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding-right: 10px;
+  padding-left: 30px;
+}
+.s-transfer-panel-filter .s-input-icon {
+  margin-left: 5px;
+}
+.s-transfer-panel-filter .s-icon-circle-close {
+  cursor: pointer;
+}
+.s-transfer-panel .s-transfer-panel-header {
+  height: 40px;
+  line-height: 40px;
+  background: #041729;
+  margin: 0;
+  padding-left: 15px;
+  border-bottom: 1px solid #344458;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #bad6f0;
+}
+.s-container,
+.s-header {
+  -webkit-box-sizing: border-box;
+}
+.s-transfer-panel .s-transfer-panel-header .s-checkbox {
+  display: block;
+  line-height: 40px;
+}
+.s-transfer-panel .s-transfer-panel-header .s-checkbox .s-checkbox-label {
+  font-size: 14px;
+  color: #bad6f0;
+  font-weight: bold;
+}
+.s-transfer-panel .s-transfer-panel-header .s-checkbox .s-checkbox-label span {
+  position: absolute;
+  right: 15px;
+  color: #6f787d;
+  font-size: 14px;
+  font-weight: 400;
+}
+.s-transfer-panel .s-transfer-panel-footer {
+  height: 40px;
+  background: #041729;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #344458;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.s-transfer-panel .s-transfer-panel-footer::after {
+  display: inline-block;
+  content: "";
+  height: 100%;
+  vertical-align: middle;
+}
+.s-transfer-panel .s-transfer-panel-empty {
+  margin: 0;
+  height: 30px;
+  line-height: 30px;
+  padding: 6px 15px 0;
+  color: #6f787d;
+  text-align: center;
+}
+.s-transfer-panel .s-checkbox-label {
+  padding-left: 8px;
+}
+.s-transfer-panel .s-checkbox-inner {
+  border-radius: 3px;
+}
+.s-transfer-panel .s-checkbox-inner::after {
+  height: 10px;
+  left: 5px;
+}
 .s-tree {
   cursor: default;
-  background-color: #041729;
 }
 .s-tree-empty-block {
   position: relative;
@@ -6197,9 +6381,28 @@
   margin-right: 4px;
   color: #6da0cb;
 }
+.s-tree-drop-indicator {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #6da0cb;
+}
+.s-tree-node.is-drop-inner > .s-tree-node-content .s-tree-node-label {
+  background-color: #6da0cb;
+  color: #041729;
+}
+.s-tree.is-dragging .s-tree-node-content {
+  cursor: move;
+}
+.s-tree.is-dragging .s-tree-node-content * {
+  pointer-events: none;
+}
+.s-tree.is-dragging.is-drop-not-allow .s-tree-node-content {
+  cursor: not-allowed;
+}
 .s-dropdown {
-  width: 100%;
-  display: inline;
+  display: inline-block;
 }
 .s-dropdown .s-select-dropdown {
   overflow: visible;
@@ -6980,9 +7183,15 @@
 .s-tabs-border-card .s-tabs-header .s-tabs-item:not(.is-active):hover {
   color: #b3e7ff;
 }
-.s-tabs-bottom:not(.s-tabs-border-card):not(.s-tabs-card) .s-tabs-item:nth-child(2),
-.s-tabs-top:not(.s-tabs-border-card):not(.s-tabs-card) .s-tabs-item:nth-child(2) {
+.s-tabs-bottom .s-tabs-item:nth-child(2),
+.s-tabs-top .s-tabs-item:nth-child(2) {
   padding-left: 0;
+}
+.s-tabs-bottom.s-tabs-border-card .s-tabs-item:nth-child(2),
+.s-tabs-top.s-tabs-border-card .s-tabs-item:nth-child(2),
+.s-tabs-bottom.s-tabs-card .s-tabs-item:nth-child(2),
+.s-tabs-top.s-tabs-card .s-tabs-item:nth-child(2) {
+  padding-left: 15px;
 }
 .s-tabs-bottom .s-tabs-header {
   border-bottom: 1px solid #092f51;
@@ -8931,6 +9140,17 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 10px 15px;
   font-size: 13px;
   line-height: 1.769230769230769;
+}
+.s-grid {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.s-grid-row {
+  flex-direction: row;
+}
+.s-grid-column {
+  flex-direction: column;
 }
 /*
  * 深色皮肤

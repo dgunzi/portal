@@ -7,7 +7,7 @@ import PortalRouter from './PortalRouter'
 Vue.use(Router)
 
 // 平台首页
-let HomePage = () => import('@/home/HomePage')
+let HomePage = () => import('@/home/3dRoom')
 
 // 懒加载路由
 export const asyncRouter = [

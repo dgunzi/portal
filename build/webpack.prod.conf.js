@@ -13,6 +13,15 @@ const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 
 const env = require('../config/prod.env')
 
+function delCssModule () {
+  let delCssModule = []
+  const arr = ['dark','chalk','tea','fanta']
+  for (let i=0;i<arr.length;i++) {
+    delCssModule.push('/static/css/sicap-'+arr[i]+'.css')
+  }
+  return delCssModule
+}
+
 const webpackConfig = merge(baseWebpackConfig, {
   module: {
     rules: utils.styleLoaders({
@@ -20,6 +29,9 @@ const webpackConfig = merge(baseWebpackConfig, {
       extract: true,
       usePostCSS: true
     })
+  },
+  externals: {
+    three: 'THREE'
   },
   devtool: config.build.productionSourceMap ? config.build.devtool : false,
   output: {
@@ -73,7 +85,7 @@ const webpackConfig = merge(baseWebpackConfig, {
       chunksSortMode: 'dependency'
     }),
     new cssPlugin({
-      paths: ['/static/css/sicap-dark.css','/static/css/sicap-chalk.css']
+      paths: delCssModule()
     }),
     // keep module.id stable when vender modules does not change
     new webpack.HashedModuleIdsPlugin(),

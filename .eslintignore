@@ -1,3 +1,4 @@
 build/*.js
 config/*.js
 common/*.js
+src/oasis3d/*.js
