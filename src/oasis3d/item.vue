@@ -117,15 +117,17 @@
 
     methods: {
       addToScene: function (index, event) {
-        var item = this.items[index];
-        var metadata = {
-          itemName: item.name,
-          resizable: true,
-          modelUrl: item.model,
-          itemType: item.type,
-          ctype: item.ctype
-        };
-        window.oasis3d.model.scene.addItem(item.type, item.model, metadata);
+        if (!window.oasis3d_loading) {
+          var item = this.items[index];
+          var metadata = {
+            itemName: item.name,
+            resizable: true,
+            modelUrl: item.model,
+            itemType: item.type,
+            ctype: item.ctype
+          };
+          window.oasis3d.model.scene.addItem(item.type, item.model, metadata);
+        }
       }
     }
   }

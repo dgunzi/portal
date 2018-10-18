@@ -1,0 +1,876 @@
+// 未使用组件？
+// 1. FreSetDialog
+// 2. MonitorDialog\InfoDetail.vue
+
+@import "./inputTree.styl"
+// AssetsMonitor_List\components\BaseData.vue
+
+  .baseData
+    .title
+      height: 36px;
+      line-height: 36px;
+      color: title_3
+      font-weight: 700;
+      display: inline-block;
+      i
+        margin-right: 5px
+    .grid-content
+      white-space nowrap
+      overflow hidden
+      text-overflow ellipsis
+
+// AssetsMonitor_List\ItemInfo.vue 资产监控列表-ip信息
+
+.monitorDetail
+  position relative
+  font-size 12px
+  padding 15px
+  .s-row
+    margin-bottom 0
+  .back
+    position absolute
+    top: 15px
+    right 15px
+    z-index 1
+  .summary
+    margin-bottom 10px
+    .left-summary
+      border-right: 1px solid border_color
+    .s-box-item
+      justify-content flex-start
+      overflow hidden
+      box-sizing content-box
+      .s-box-item-content-wrapper
+        width: calc(100% - 40px)
+      .s-box-item-title
+        white-space normal
+  .noScan
+    min-height 460px
+    position relative
+    .noScanContent
+      position absolute
+      left 50%
+      top 50%
+      transform translate(-50%, -50%)
+      text-align center
+      .noScanTip
+        font-size 12px
+        margin-top: 10px
+  .s-tabs-tabpane > .s-row
+    margin-bottom 10px
+  .graphArea
+    margin-bottom 10px
+    .card-title
+      font-size 14px
+      color title_3
+    .diskChart
+      padding-top 30px
+      .chartSwitch > li > div
+        margin: 0 auto
+      .otherChartInfo
+        padding-left 30px
+        margin: 0 auto
+        width: 160px
+        box-sizing content-box
+  .chartName
+    cursor pointer
+    color: #20a8f7;
+    &:hover
+      text-decoration underline
+  .chartStatus
+    display inline-block
+    width: 8px
+    height 8px
+    border-radius 100%
+    margin-right 5px
+  .normal
+    background green_color
+  .wrong
+    background red_color
+  .font-normal
+    color: green_color
+  .font-wrong
+    color: red_color
+  .cpuName
+    text-align center
+    margin-top -30px
+  .memoryName
+    margin-bottom 0
+    margin-left: 50px
+    text-align center
+  .listArea
+    background block_bg
+    padding 10px
+  .compAppRow
+    border: 1px solid border-color
+    padding 10px
+  .dbBox
+    min-height: 148px;
+    border-right: 1px dashed border-color
+    text-align center
+    .s-row
+      line-height 25px
+    .dbImg
+      margin-top 15px
+  .dbTable
+    padding: 0 8px
+  .stateImg
+    vertical-align middle
+  .ip
+    color: link_text
+    cursor default
+    &:hover
+      text-decoration underline
+  .iner
+    text-align center
+    color darkWordColor
+    font-size: 20px
+    margin-top: 80px
+  .dynamicColSet
+    position relative
+    z-index: 1
+
+// AssetsMonitor_List\MonitorDialog\FreSetDialog.vue
+
+.freSet-dialog
+  #assetAddDialog
+    margin: 0 auto;
+  .inputDialog
+    width: 50%
+    margin-right: 10px
+  .edittext
+    margin: 10px 0
+  .rateform
+    margin-top: 10px
+  .tableTep
+    margin-bottom: 20px
+  .freitem
+    margin-left: 50px
+  .prompt-info
+    color title_3
+    line-height 24px
+    text-indent 12px
+    margin-bottom 10px
+    background-color rgba(gray_l2_black,0.2)
+    border-radius 2px
+    & i
+      position relative
+      top 1px
+      right 2px
+
+// AssetsMonitor_List\MonitorDialog\InfoDetail.vue
+
+#infoDetail
+  position: relative
+  .back
+    position absolute
+    top: 0px
+    right 0px
+    z-index 1
+  .inputTree
+    width: 200px
+  .right
+    float right
+  .searchFormChunk
+    padding: 10px 15px
+    border: solid 3px border_color
+    border-radius: 5px
+    background: block_bg
+    margin-bottom 8px
+    .s-form-item
+      margin-bottom 0
+    .timeLink
+      position relative
+      left: 5px
+  .chartBox
+    margin-top 10px
+    .title
+      margin-bottom 0px
+    .trendBox
+      padding-top 10px
+    .trendTitle
+      font-size 14px
+      font-weight: 600
+      color: title_1
+      margin-left: 21px
+      margin-top: 10px
+    .trendChart
+      margin-top: -20px
+  .title
+    height 20px
+    line-height 20px
+    color: title_3
+    font-weight: 700
+    display inline-block
+    margin-bottom 5px
+    font-size 16px
+    i
+      margin-right: 5px
+  .noData
+    text-align center
+    color #5e7382
+    font-size: 16px
+    height: 80px
+    line-height 80px
+
+// AssetsMonitor_List\MonitorDialog\ManageDialog.vue 资产监控列表-资产信息-IP信息-资产信息（下拉）监控项管理
+
+#monitorManageDialog
+  .left-float
+    float: left
+  .manageDialogScrollbar
+    padding-right 17px
+    max-height 500px
+  .searchChunk
+    margin-bottom 5px
+    .s-input
+      width auto
+      margin: 0 5px
+    .s-button
+      vertical-align baseline
+  .s-table-expanded-cell
+    padding: 0
+  .expandInfo
+    height: 32px
+    line-height 32px
+    border-bottom 1px solid border_color
+    &:hover
+      box-shadow inset 0px 0px 15px 2px blue_color
+    .s-col
+      &:nth-child(1)
+        padding-left 8px
+      &:nth-child(3)
+        text-align center
+  .s-radio-group
+    vertical-align middle
+  .s-table-enable-row-hover tbody tr.s-table-row:hover
+    box-shadow inset 0px 0px 15px 2px blue_color
+  .s-table-enable-row-hover tbody tr:hover
+    box-shadow none
+  .monitorName
+    overflow hidden
+    text-overflow ellipsis
+    white-space nowrap
+// AssetsMonitor_List\MonitorDialog\NewScanDialog.vue 资产监控列表-新扫描
+#monitorNewScanDialog
+  .title
+    font-weight 700
+    height 36px
+    line-height 36px
+    color: title_3
+    font-size 16px
+    margin-bottom 5px
+  .s-radio-group
+    vertical-align middle
+  .s-form-item
+    margin-bottom 15px
+  .delete
+    height: 30px
+    padding: 10px 0
+    border-top: 1px solid border_color
+  .s-form-item.is-error .s-select .s-input-inner
+    border: 1px solid border_color
+  .compContainer
+    .s-input
+      width: 60%
+    .inputTree
+      width: 60%
+      .s-input
+        width: 100%
+    .autoRecognize
+      vertical-align baseline
+
+// AssetsMonitor_List\MonitorDialog\ScanDialog.vue 资产监控列表-资产信息-IP信息-资产信息（下拉）扫描并监视
+
+#scanDialog
+  .scanDialogScrollbar
+    padding 10px
+    max-height 500px
+    height 500px
+  .scanState, .scanContent
+    padding-left 30px
+  .scanState
+    font-size 0
+    line-height: 50px
+    height: 50px
+    display: block
+    padding-left: 20px
+    margin-bottom: 20px
+    img
+      width: 48px
+      height 48px
+      vertical-align top
+      margin-right 12px
+    span
+      font-size 16px
+      font-weight: 600
+      color: title_3
+  .scanContent
+    padding-left 80px
+    line-height 20px
+
+// AssetsMonitor_List\MonitorDialog\SoftInfoDialog.vue 资产监控列表-资产信息-软件-编辑
+
+.softInfoDialog
+  .title
+    text-align: left;
+    line-height: 36px;
+    font-weight: 800;
+    margin-bottom 22px
+    display block
+    .s-button-icon-only
+      border-radius: 50%
+      padding: 5px
+      margin-left: 8px
+      margin-right: 8px
+      i
+        font-size: 14px
+
+// AssetsMonitor_List\MonitorDialog\ThresholdChangeDialog.vue 资产监控列表-IP信息-修改规则
+
+.changeThresholdDialog
+  .changeThresholdScrollbar
+    max-height: 400px
+    padding-right 17px
+    .topHandleRow
+      margin-bottom 10px
+    .checkRow
+      height: 36px
+      line-height 36px
+      font-weight bold
+      color title_3
+
+// AssetsMonitor_List\MonitorDialog\ThresholdAddDialog.vue 资产监控列表-IP信息-修改规则-(调用此方法的按钮已被注释掉)
+
+.thresholdAddDialog
+  .thresholdAddScrollbar
+    max-height: 600px
+    padding-right 17px
+    .topHandleRow
+      margin-bottom 10px
+    .checkRow
+      height: 36px
+      line-height 36px
+      font-weight bold
+      color title_3
+    .noData
+      text-align center
+      color darkWordColor
+      font-size: 20px
+      height: 80px
+      line-height 80px
+
+// AssetsMonitor_List\MonitorDialog\TreatyTestDialog.vue 协议测试工具
+
+#treatyTestDialog
+  .treatyTestDialogScrollbar
+    padding-right 17px
+    max-height 300px
+  .title
+    text-align: left;
+    line-height: 36px;
+    font-weight: 800;
+    background: rgba(gray_l2_black,0.2)
+    border-radius: 3px;
+    margin-bottom 22px
+    .s-button-icon-only
+      border-radius: 50%
+      padding: 5px
+      margin-left: 8px
+      margin-right: 8px
+      i
+        font-size: 14px
+    .tip
+      float: right
+      margin-right 3px
+      font-size 12px
+  .state
+    font-weight 600
+
+// AssetsMonitor_List\MonitorItem\SwitchItem.vue 资产监控 >资产监控列表 >IP信息
+
+#switchChartContainer
+  .cpu-card
+    .s-card-body
+      height: calc(100% - 40px)
+      .cpuChart
+        position absolute
+        top: 50%
+        left: 50%
+        transform translate(-50%, -50%)
+      .cpuName
+        position absolute
+        bottom 5px
+        width: 100%
+        text-align center
+  .powerContainer
+    padding 15px
+    .powerRow
+      border 1px solid border_color
+      border-bottom: none
+      &:last-child
+        border-bottom 1px solid border_color
+      .left-icon
+        height 50px
+        line-height 50px
+        text-align center
+        i
+          font-size 36px
+          font-weight 700
+      .right-text
+        border-left: 1px solid border_color
+        padding-left 8px
+        .s-row
+          height 25px
+          line-height 25px
+  .fan-card
+    position relative
+  .fanState
+    position absolute
+    top: 70px
+    right: 70px
+    li
+      float: left
+      margin-right: 8px
+      span
+        width: 30px;
+        height: 12px;
+        display: inline-block;
+        margin-right: 2px;
+      .fanNormal
+        background-color: #22AC38
+      .fanAbnormal
+        background-color: #D87A80
+      .fanUnknow
+        background-color: #999999
+  .fanBox
+    height 260px
+    .fanPic
+      position absolute
+      left: 50%
+      top: 50%
+      transform translate(-50%, -50%)
+      text-align center
+      img
+        width 100px
+        height 100px
+    .fanName
+      position absolute
+      bottom 25px
+      width: 100%
+      text-align center
+// AssetsMonitor_MIB\AddMibList.vue  MIB管理-添加
+
+.mibList-add
+  .scrollMaxH
+    max-height 600px
+    padding-right 15px
+  .customType
+    .s-input-small
+      .s-input-inner
+        height 36px
+  .autoCheck
+    padding-top 3px
+    padding-left 10px
+  .title
+    color title_3
+    margin-bottom 15px
+    i
+      vertical-align middle
+    span
+      font-weight 600
+      margin-left 3px
+
+// AssetsMonitor_MIB\TemplateCheck.vue MIB管理-添加-模板检测
+
+.checkResult
+  min-height 50px
+  border-top 1px solid border_color
+  padding 15px
+
+
+// AssetsMonitor_TopN\MonitorTopN.vue 资产监控 >资产监控排行TOP5
+
+.monitorTopN
+  padding 15px
+  .filterForm
+    .s-form-item-content
+      & > s-select, & > .s-input
+        width: 175px
+    .right
+      float: right
+  .score
+    cursor pointer
+    color: link_text
+    &:hover
+      text-decoration underline
+
+// AssetsMonitor_TopN\ScoreDetailDialog.vue 资产监控 >资产监控排行TOP5 > 查看结果详情
+
+.scoreDetailDialog
+  .scoreDetailScrollbar
+    padding-right 17px
+    max-height 500px
+  .title
+    font-weight 700
+    height 36px
+    line-height 36px
+    color: title_3
+    font-size 16px
+  .noScoreResult
+    text-align center
+    .result
+      display inline-block
+      height: 36px
+      line-height 36px
+      color: red_color
+      font-weight 600
+      font-size 16px
+
+// AssetsMonitor_tvwall\Index.vue
+
+  .tvwall-index {
+    margin: 20px 20px 0 20px;
+  }
+  .tvwall-index .setting .s-form-item-content {
+    margin-right: 120px;
+    position: relative;
+    width: 160px;
+  }
+  .tvwall-index .setting .s-form-item-unit {
+    position: absolute;
+    right: -60px;
+    top: 0;
+    width: 100px;
+    text-align: right;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 1;
+    padding: 11px 12px 11px 10px;
+  }
+  .tvwall-index .setting .s-form-item-content .s-button {
+    position: absolute;
+    right: -150px;
+    top: 3px;
+  }
+
+// AssetsMonitor_tvwall\ViewPage.vue
+
+  .tvwall-page {
+    background: url(../../assets/images/tvwall/bg.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .tvwall-page .top {
+    height: 55px;
+    background: rgba(1, 145, 255, 0.12);
+    text-align: left;
+  }
+  .tvwall-page .top img {
+    margin-top: 13px;
+    width: 430px;
+    height: 32px;
+    margin-left: 30px;
+  }
+  .tvwall-page .s-row {
+    margin-bottom: 0;
+  }
+  .tvwall-page .s-row .s-col {
+    height: 100%;
+  }
+  .tvwall-card {
+    margin: 3px;
+    height: calc(100% - 7px);
+  }
+  .tvwall-card-header {
+    background: rgba(1, 145, 255, 0.12) url(../../assets/images/tvwall/__hr.png) left bottom repeat-x;
+    padding: 0 15px;
+    color: white;
+    font-size: 18px;
+    line-height: 35px;
+    border-radius: 4px 4px 0 0;
+  }
+  .tvwall-card-header .iconfont {
+    float: right;
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  .tvwall-card-body {
+    height: calc(100% - 36px);
+  }
+  .tvwall-card-body.empty-portlet {
+    position: relative;
+    background-color: rgba(0, 145, 255, 0.12);
+  }
+  .tvwall-card-body .add-portlet-btn {
+    position: absolute;
+    top: 50%;
+    margin-top: -71px;
+    left: 50%;
+    margin-left: -71px;
+    height: 142px;
+    width: 142px;
+    cursor: pointer;
+    background: url(../../assets/images/tvwall/addPortletBtnBg.png) no-repeat;
+  }
+  .tvwall-page .s-dialog-footer {
+    padding-top: 0;
+  }
+
+// AssetAllInfo.vue
+.assetAllInfo
+  & > .s-row > .s-col
+    padding-top 10px
+  .summaryContainer
+    .s-row .s-col
+      padding-top 35px
+    .dashContainer
+      position relative
+      margin-top 15px
+      text-align center
+      p.score
+        position absolute
+        top: 30%
+        width: 100%
+        font-size 20px
+        color #1675cb
+        span
+          font-weight 600
+          font-size 40px
+        &:hover
+          text-decoration none
+      .dashState
+        padding 0 5px
+        border-radius 3px
+      .normal
+        background green_color
+        color #fff
+      .wrong
+        background red_color
+        color #fff
+    .summaryInfo
+      margin-top 10px
+      border-top: 1px solid original_l2_black
+      padding-top 15px
+      .box-item
+        display flex
+        .s-box-item-content-wrapper
+          margin-left 5px
+          overflow hidden
+        .s-box-item-title
+          white-space nowrap
+          overflow hidden
+          text-overflow ellipsis
+        .clickable
+          color blue_l2_white
+          cursor pointer
+          &:hover
+            text-decoration underline
+        .eventSplit
+          color gray_l1_text
+  .monitorInfo
+    .monitorInfoCol
+      background: #e6e9ec
+      height: 36px
+      line-height: 36px
+      padding: 0 8px
+    .font-normal
+      color green_color
+    .font-wrong
+      color red_color
+    .font-warning
+      color yellow_color
+    .chartContainer
+      margin-top 20px
+      .s-col
+        text-align center
+      .otherChartInfo
+        margin-top 15px
+        padding-left: 30px
+        text-align left
+  .infoName
+    color gray_l1_text
+  .securePolling
+    position relative
+    margin-top 15px
+    .ballContainer
+      box-sizing border-box
+      border-style dashed
+      border-color gray_l1_text
+      border-width: 0
+      border-bottom-width 2px
+      position relative
+    .progress
+      border-color green_color
+      border-style solid
+    .ballContainer0
+      border-left-width 2px
+    .ballContainer5
+      margin-right 5px
+      border-top-width 2px
+      border-right-width 2px
+    .ballContainer10
+      width calc(10% - 5px) !important
+    .ball
+      width: 32px
+      height: 32px
+      position: absolute
+      bottom: 0
+      z-index 1
+      margin-bottom: -16px
+      border-radius: 100%
+    .left-float .ball
+      right 0
+      margin-right: -16px
+    .right-float
+      margin-top -2px
+      .ball
+        left 0
+        margin-left: -16px
+    .right-ball, .wrong-ball
+      &:after
+        position absolute
+        content: ''
+        display block
+        width 2px
+        height: 10px
+        top: -4px
+        left: 50%
+        margin-left -1px
+    .right-ball
+      background: url('../../../static/images/itResource/recover-evt.png') no-repeat 0 -128px
+      &:after
+        background green_color
+    .wrong-ball
+      width: 40px
+      border-radius 0
+      &:before
+        position absolute
+        content: '违规'
+        display inline-block
+        background red_color
+        margin-top: 16px
+        transform: translateY(-50%)
+        padding 1px 5px
+      &:after
+        background red_color
+    .normal-ball
+      &:before, &:after
+        position absolute
+        z-index 1
+        top: 16px
+        left: 50%
+        content: ''
+        transform: translate(-50%, -50%)
+        border-radius 100%
+      &:before
+        width: 20px
+        height: 20px
+        background #acbed0
+      &:after
+        width: 16px
+        height: 16px
+        background block_bg
+    .ball-info
+      display inline-block
+      width: 80px
+      transform translateY(-100%)
+      margin-left: -16px
+      margin-top -8px
+      color: gray_l1_text
+    .ballSummary
+      height: 44px
+      position relative
+      &:after
+        content: ''
+        position absolute
+        width: 2px
+        height: 100%
+        display: block
+        background border_color
+      .ball
+        top: 6px
+        left: -15px
+      .ball-detail
+        width 80%
+        box-sizing border-box
+        position absolute
+        height: 100%
+        line-height: 44px
+        padding-left 25px
+        padding-right 50px
+        background linear-gradient(to right, #e6e9ec, #f2f2f2)
+        border-style solid
+        border-left none
+        border-right: none
+        border-image: linear-gradient(to right, #acbed0, #f2f2f2) 20/2px
+  .recentEvent
+    position relative
+    margin-top 15px
+    .eventItem
+      padding-bottom: 10px
+      position relative
+      &:after
+        content: ''
+        width: 2px
+        height 61px
+        position absolute
+        left 15px
+        top: 15px
+        background gray_l3_black
+      &:last-child:after
+        height 0
+      .eventInfo
+        width calc(100% - 36px)
+        display inline-block
+        p:first-child
+          line-height: 32px
+          color gray_l1_text
+        p:last-child
+          white-space nowrap
+          overflow hidden
+          text-overflow ellipsis
+  .state
+    display inline-block
+    padding 8px
+    vertical-align top
+    position relative
+    z-index 1
+    &.normal
+      background url('../../../static/images/incident/zhengchang.png') no-repeat center center
+    &.warning
+      background url('../../../static/images/incident/jinggao.png') no-repeat center center
+    &.wrong
+      background url('../../../static/images/incident/yanzhong.png') no-repeat center center
+  .opeRecord
+    margin-top 15px
+    .protocol
+      padding 2px 5px
+      background border_color
+      border-radius 3px
+    .recordItem
+      background normalcy_text_2
+      height: 60px
+      text-align: center
+      line-height: 60px
+      .s-col:first-child
+        padding 10px 0 10px 8px
+        line-height 20px
+        text-align left
+  .logInfo
+    margin-top 15px
+
+.assetsMonitorSort
+  margin-top 10px
+  .s-card
+    padding 0 !important
+  .cardHeaderLine
+    padding 0 10px
+    .iconfont
+      color bgColor
+      font-size 20px
+      font-weight normal
+  .cardBody
+    padding 0 10px

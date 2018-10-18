@@ -1,0 +1,278 @@
+#login-page .dialogScrollHeight {
+  height: 85px;
+}
+
+#login-page input {
+  border: none;
+}
+
+#login-page .s-input, #login-page .s-select {
+  width: 80%;
+}
+
+#login-page .s-select .s-input {
+  width: 100%;
+}
+
+#login-div {
+  height: 42px;
+  line-height: 42px;
+  color: #fff;
+}
+//登录>公告内容区
+#login-page .notice_con
+  .notice_con_inner
+    height: 80px
+  & p
+    -ms-word-wrap: break-word
+    word-wrap: break-word
+#login-page .s-form-item-error {
+  top: 45px
+}
+
+#login-page {
+  background: #030a13 url(img/login/all_bg.png) no-repeat;
+  background-size: cover;
+  height: 100vh
+}
+
+#login-page .login_wrapper {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 9%
+}
+
+#login-page .left_con {
+  float: left;
+  width: 440px;
+  padding-left: 30px;
+}
+
+/*LOGO*/
+#login-page .left_con div.logo {
+  width: 386px;
+  height: 80px;
+  margin-top: 28px;
+  background: url(../../../static/images/logo/dark/logo.png) no-repeat;
+}
+
+/*公告*/
+#login-page .notice_con {
+  width: 424px;
+  height: 206px;
+  margin-top: 40px;
+  background: url(img/login/notice_bg.png) no-repeat;
+}
+
+#login-page .notice_con .s-carousel-item.is-active {
+  border: none;
+  box-shadow: none;
+}
+
+#login-page .notice_con h4 {
+  padding-top: 18px;
+  text-align: center;
+  color: #35b0e3;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 46px;
+}
+
+#login-page .notice_con p {
+  width: 86%;
+  margin: 0 auto; /*height: 85px;*/
+  color: #f9f9f9;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+#login-page .notice_con .page {
+  width: 86%;
+  margin: 15px auto 0;
+}
+
+#login-page .notice_con .page span {
+  display: block;
+  float: left;
+  font-size: 12px;
+  line-height: 24px;
+  color: #515c65;
+}
+
+#login-page .notice_con .page .page_turn {
+  float: right;
+  width: auto;
+}
+
+#login-page .notice_con .page .page_turn a {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  background-color: rgba(22, 117, 203, .5);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 2px;
+  border: 1px solid #195482;
+}
+
+#login-page .notice_con .page .page_turn a:hover {
+  transition: all .2s;
+  background-color: rgba(22, 117, 203, 1);
+  border-radius: 2px;
+  border: 1px solid #1c6dad;
+}
+
+#login-page .page_left {
+  background-image: url(img/login/page_left.png);
+}
+
+#login-page .page_right {
+  background-image: url(img/login/page_right.png);
+}
+
+/*登录信息*/
+#login-page .right_con {
+  width: 384px;
+  height: 370px;
+  margin-left: 520px;
+  padding-top: 75px;
+  padding-left: 58px;
+  background: url(img/login/input_bg.png) center 10px no-repeat;
+}
+
+#login-page .right_con .wel_word {
+  padding-bottom: 5px;
+  font-size: 20px;
+  color: #fff;
+  line-height: 28px;
+}
+
+/*登录框*/
+#login-page .inp_group {
+  width: 320px;
+  height: 42px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  background-color: rgba(41, 59, 74, .3);
+  border-radius: 2px;
+  border: 1px solid rgba(41, 59, 74, .3);
+}
+
+#login-page .inp_group:hover, .inp_group:focus {
+  background-color: rgba(32, 152, 208, .2);
+  border: 1px solid rgba(32, 152, 208, .6);
+  transition: all .15s ease-in-out;
+}
+
+#login-page .inp_group label {
+  display: block;
+  width: 52px;
+  height: 42px;
+  float: left;
+}
+
+#login-page .inp_group input, .inp_group select {
+  width: 250px;
+  height: 42px;
+  font-size: 14px;
+  line-height: 42px;
+  background: none;
+}
+
+#login-page .inp_group select {
+  background: url(img/login/select_arrow.png) right center no-repeat;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+#login-page .username label {
+  background: url(img/login/username_icon.png) 20px center no-repeat;
+}
+
+#login-page .password label {
+  background: url(img/login/password_icon.png) 20px center no-repeat;
+}
+
+#login-page .method label {
+  background: url(img/login/method_icon.png) 20px center no-repeat;
+}
+
+#login-page .login_btn {
+  width: 320px;
+  height: 42px;
+  font-size: 14px
+}
+
+/*记住密码*/
+#login-page .remember {
+  height: 40px;
+  margin-top: 10px;
+}
+
+#login-page .remember input {
+  background: none;
+  opacity: 0;
+}
+
+#login-page .remember label {
+  color: #8c98a2;
+  line-height: 30px;
+  position: relative;
+  padding-left: 12px;
+  cursor: pointer;
+}
+
+#login-page .remember label:before {
+  content: "";
+  position: absolute;
+  z-index: 99;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 1px;
+  background-color: rgba(22, 117, 203, 0);
+  border-radius: 2px;
+  border: 1px solid #293b4a;
+}
+
+#login-page .remember label:after {
+  content: "";
+  position: absolute;
+  z-index: 999;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 1px;
+  background-image: url(img/login/opt.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(22, 117, 203, .7);
+  border-radius: 2px;
+  border: 1px solid #1c6dad;
+}
+
+/*错误提示*/
+#login-page .error {
+  color: #fc2b2b;
+  line-height: 30px;
+  margin-top: 5px;
+}
+
+/******版权信息******/
+#login-page footer {
+  position: fixed;
+  width: 100%;
+  height: auto !important;
+  bottom: 0px;
+  padding-bottom 15px;
+}
+
+#login-page footer p {
+  font-size: 12px;
+  color: #333D46;
+  line-height: 18px;
+  text-align: center;
+}

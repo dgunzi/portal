@@ -1,0 +1,347 @@
+#login-page .dialogScrollHeight {
+  height: 180px;
+  margin-top 24px;
+}
+
+#login-page input {
+  border: none;
+}
+
+#login-page .s-input, #login-page .s-select {
+  width: 80%;
+}
+
+#login-page .s-select .s-input {
+  width: 100%;
+}
+
+#login-div {
+  height: 42px;
+  line-height: 42px;
+  color: #8a9299;
+}
+
+#login-page .s-form-item-error {
+  top: 45px
+}
+
+/******公共******/
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clr {
+  clear: both;
+}
+
+input::-webkit-input-placeholder {
+  color: #515c65;
+}
+
+input:-moz-placeholder {
+  color: #515c65;
+}
+
+input::-moz-placeholder {
+  color: #515c65;
+}
+
+input:-ms-input-placeholder {
+  color: #515c65;
+}
+
+/******主内容******/
+#login-page {
+  background: #030a13 url(img/login/new_all_bg.png) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.login_wrapper {
+  width: 960px;
+  margin: 0 auto 20px auto;
+  margin-top: 8.6%;
+  background: url(../../../static/images/logo/chalk/light_login_wrapper_bg.png) top center no-repeat;
+}
+
+.left_con {
+  float: left;
+  width: 480px;
+  height: 558px;
+  margin-top: 75px;
+  text-align: center;
+  /*padding-left: 30px;*/
+  background: url(img/login/light_left_con.png) left top no-repeat;
+
+}
+
+/*LOGO*/
+.left_con img.logo {
+  display: block;
+  width: 386px;
+  margin-top: 45px;
+}
+
+/*公告*/
+.notice_con {
+  width: 272px;
+  height: 266px;
+  margin-top: 69px;
+  margin-left: 151px;
+  position: relative;
+}
+
+.notice_con .s-carousel-item.is-active {
+  border: none;
+  box-shadow: none;
+}
+
+.notice_con h4 {
+  padding-top: 34px;
+  text-align: center;
+  color: #0998f1;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.notice_con p {
+  text-align: left;
+  width: 98%;
+  /*margin: 0 auto; !*height: 85px;*!*/
+  color: #667480;
+  font-size: 14px;
+  line-height: 22px;
+  word-wrap:break-word;
+}
+
+.notice_con .page {
+  width: 100%;
+  position: absolute;
+  bottom: -50px;
+  z-index: 10;
+}
+
+.notice_con .page span {
+  display: block;
+  float: left;
+  font-size: 14px;
+  line-height: 24px;
+  color: #a1aab2;
+}
+
+.notice_con .page .page_turn {
+  float: right;
+  width: auto;
+}
+
+.notice_con .page .page_turn a {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+  border: 1px solid #0998f1;
+}
+
+.notice_con .page .page_turn a:hover {
+  transition: all .2s;
+  background-color: #0998f1;
+  border-radius: 2px;
+  border: 1px solid #0998f1;
+}
+
+.notice_con .page .page_turn a.page_left:hover {
+  background-image: url(img/login/light_page_left_hover.png);
+}
+
+.notice_con .page .page_turn a.page_right:hover {
+  background-image: url(img/login/light_page_right_hover.png);
+}
+
+.page_left {
+  background-image: url(img/login/light_page_left.png);
+}
+
+.page_right {
+  background-image: url(img/login/light_page_right.png);
+}
+
+/*登录信息*/
+.right_con {
+  float: right;
+  width: 480px;
+  height: 558px;
+  /*margin-left: 480px;*/
+  margin-top: 75px;
+  background: url(img/login/ligth_right_con.png) left top no-repeat;
+  padding-top: 78px;
+}
+
+.right_con .wel_word {
+  padding-bottom: 5px;
+  font-size: 20px;
+  color: #fff;
+  line-height: 28px;
+}
+
+.light-login-form {
+  padding-left: 57px;
+}
+
+/*登录框*/
+.inp_group {
+  width: 272px;
+  height: 42px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  /*background-color: rgba(41, 59, 74, .3);*/
+  /*border-radius: 2px;*/
+  border-bottom: 1px solid rgba(41, 59, 74, .3);
+}
+
+.inp_group:hover, .inp_group:focus {
+  background-color: #FFF;
+  border-bottom: 1px solid #0998f1;
+  transition: all .15s ease-in-out;
+}
+
+.inp_group label {
+  display: block;
+  width: 52px;
+  height: 42px;
+  float: left;
+}
+
+.inp_group input, .inp_group select {
+  /*width: 250px;*/
+  height: 42px;
+  font-size: 14px;
+  line-height: 42px;
+  background: none;
+}
+
+.inp_group select {
+  background: url(img/login/select_arrow.png) right center no-repeat;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.username label {
+  background: url(img/login/light_username_icon.png) 15px center no-repeat;
+}
+
+.password label {
+  background: url(img/login/light_password_icon.png) 15px center no-repeat;
+}
+
+.method label {
+  background: url(img/login/light_method_icon.png) 15px center no-repeat;
+}
+
+.inp_group.username:hover label, .inp_group.username:focus label {
+  background: url(img/login/light_username_icon_hover.png) 15px center no-repeat;
+}
+
+.inp_group.password:hover label, .inp_group.password:focus label {
+  background: url(img/login/light_password_hover_icon.png) 15px center no-repeat;
+}
+
+.inp_group.method:hover label, .inp_group.method:focus label {
+  background: url(img/login/light_method_hover_icon.png) 15px center no-repeat;
+}
+
+/*记住密码*/
+.remember {
+  height: 40px;
+  margin-top: 10px;
+}
+
+.remember input {
+  background: none;
+  opacity: 0;
+}
+
+.remember label {
+  color: #8c98a2;
+  line-height: 30px;
+  position: relative;
+  padding-left: 12px;
+  cursor: pointer;
+}
+
+.remember label:before {
+  content: "";
+  position: absolute;
+  z-index: 99;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 1px;
+  background-color: rgba(22, 117, 203, 0);
+  border-radius: 2px;
+  border: 1px solid #293b4a;
+}
+
+.remember label:after {
+  content: "";
+  position: absolute;
+  z-index: 999;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 1px;
+  background-image: url(img/login/opt.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(22, 117, 203, .7);
+  border-radius: 2px;
+  border: 1px solid #1c6dad;
+}
+
+/*错误提示*/
+.error {
+  color: #fc2b2b;
+  line-height: 30px;
+  margin-top: 5px;
+}
+
+/******版权信息******/
+#login-page footer{
+  position: absolute;
+  width: 100%;
+  height: auto !important;
+  bottom 0.1%
+}
+
+#login-page footer p {
+  font-size: 12px;
+  color: #74a6db;
+  line-height: 18px;
+  text-align: center;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+
+}
+#login-page .login_btn {
+  width: 272px;
+  height: 40px;
+  font-size: 14px;
+}
+@media only screen and (max-width: 1366px) {
+  .login_wrapper {
+    margin-top: 3%;
+  }
+}
+

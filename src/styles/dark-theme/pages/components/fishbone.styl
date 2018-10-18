@@ -1,0 +1,152 @@
+.fishbone
+  position absolute
+  z-index 100
+  .fish-head
+    border 1px solid original_l1_white
+    border-radius 50%
+    background-color original_l2_black
+    opacity 0.8
+    width 39px
+    height 39px
+    .triangle-up
+      width 0
+      height 0
+      border-left 5px solid transparent
+      border-right 5px solid transparent
+      border-bottom 5px solid blue_l2_white
+      position relative
+      top 5px
+      left 14px
+      &:hover
+        border-bottom-color main_text
+        cursor pointer
+    .triangle-down
+      width 0
+      height 0
+      border-left 5px solid transparent
+      border-right 5px solid transparent
+      border-top 5px solid blue_l2_white
+      position relative
+      top 24px
+      left 14px
+      &:hover
+        border-top-color main_text
+        cursor pointer
+    .triangle-left
+      width 0
+      height 0
+      border-top 5px solid transparent
+      border-bottom 5px solid transparent
+      border-right 5px solid blue_l2_white
+      position relative
+      top 5px
+      left 5px
+      &:hover
+        border-right-color main_text
+        cursor pointer
+    .triangle-right
+      width 0
+      height 0
+      border-top 5px solid transparent
+      border-bottom 5px solid transparent
+      border-left 5px solid blue_l2_white
+      position relative
+      top -5px
+      left 30px
+      &:hover
+        border-left-color main_text
+        cursor pointer
+  .fish-headbg
+    z-index -1
+    width 39px
+    height 39px
+    position absolute
+    top 2px
+    transform rotate(45deg)
+    .head-h-line
+      border-right 1px solid original_l1_white
+      width 20px
+      height 39px
+      position absolute
+      top -1px
+    .head-v-line
+      border-bottom 1px solid original_l1_white
+      position absolute
+      width 39px
+      height 19px
+      top -1px
+  .fish-body
+    position relative
+    left 11px
+    top 8px
+    width 17px
+    height 107px
+    .fish-zoom-add
+      width 15px
+      height 15px
+      background-color original_l3_black
+      border 1px solid original_l1_black
+      border-radius 2px
+      cursor pointer
+      line-height 15px
+      text-align center
+      span
+        margin-top 1px
+        display inline-block
+      i
+        color blue_l2_white
+        font-size 11px
+        line-height 13px
+        vertical-align top
+        display inline-block
+        &:hover
+          color main_text
+    .fish-zoom-minus
+      @extends .fishbone .fish-body .fish-zoom-add
+      position absolute
+      top 90px
+      span
+        margin-top 1px
+        display inline-block
+      i
+        @extends .fishbone .fish-body .fish-zoom-add i
+        &:hover
+          color main_text
+    .fish-zoom-line
+      width 5px
+      border-left 1px solid border_color
+      border-right 1px solid border_color
+      height 73px
+      background-color rgba(52,68,88,0.5)
+      position absolute
+      left 5px
+      padding-top 2px
+      padding-bottom 2px
+    .fish-zoom-cline
+      width 5px
+      border-left 1px solid original_color
+      border-right 1px solid original_color
+      background-color original_color
+      height 5px
+      position absolute
+      z-index 2
+      left 5px
+      top 81px
+      padding-top 2px
+      padding-bottom 2px
+      .f-scale-item
+        border-color hover_text
+    .fish-zoom-slider
+      width 9px
+      height 4px
+      border 1px solid normalcy_text
+      background-color normalcy_text
+      position absolute
+      z-index 3
+      left 3px
+      top 81px
+    .f-scale-item
+      height 3px
+      border-bottom 1px solid border_color
+      width 3px
+      margin-left 1px

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="防火墙_x2B_火" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 703 883.3" style="enable-background:new 0 0 703 883.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#底部_2_);}
+	.st1{fill:url(#暗角反光_2_);}
+	.st2{fill:url(#中高光_2_);}
+	.st3{fill:url(#SVGID_1_);}
+	.st4{fill:#073A76;}
+	.st5{fill:url(#SVGID_2_);}
+	.st6{fill:#FFFFFF;}
+	.st7{fill:url(#高光_2_);}
+	.st8{fill:url(#顶-body_1_);}
+	.st9{fill:url(#顶-中高光_1_);}
+	.st10{fill:url(#顶-背景_1_);}
+	.st11{fill:#043977;}
+	.st12{fill:url(#SVGID_3_);}
+	.st13{fill:url(#SVGID_4_);}
+</style>
+<g id="防火墙">
+	
+		<linearGradient id="底部_2_" gradientUnits="userSpaceOnUse" x1="20.5683" y1="691.5125" x2="586.2237" y2="691.5125" gradientTransform="matrix(1 0 0 -1 0 1183.5)">
+		<stop  offset="0" style="stop-color:#E7EFF5"/>
+		<stop  offset="8.248134e-02" style="stop-color:#C3C5D2"/>
+		<stop  offset="0.1567" style="stop-color:#C6C8D5"/>
+		<stop  offset="0.2045" style="stop-color:#CED3DD"/>
+		<stop  offset="0.2548" style="stop-color:#DDE4EC"/>
+		<stop  offset="0.2787" style="stop-color:#DFE6EE"/>
+		<stop  offset="0.4041" style="stop-color:#98A5B5"/>
+		<stop  offset="0.995" style="stop-color:#7E8EA0"/>
+	</linearGradient>
+	<path id="底部_1_" class="st0" d="M21.2,254v502.9c0,18,9.4,34.7,24.7,44l99.9,66.3c34.3,20.9,77.3,20.9,111.6,0l346.9-234.3
+		c15.3-9.4,24.7-26.1,24.7-44V101.1L21.2,254z"/>
+	
+		<linearGradient id="暗角反光_2_" gradientUnits="userSpaceOnUse" x1="20.4514" y1="691.5125" x2="616.1974" y2="691.5125" gradientTransform="matrix(1 0 0 -1 0 1183.5)">
+		<stop  offset="0" style="stop-color:#C3C6D2"/>
+		<stop  offset="0.1409" style="stop-color:#C3C6D2;stop-opacity:0"/>
+	</linearGradient>
+	<path id="暗角反光_1_" class="st1" d="M21.2,258v498.9c0,18,9.4,34.7,24.7,44l99.9,66.3c34.3,20.9,77.3,20.9,111.6,0
+		l346.9-234.3c15.3-9.4,24.7-26.1,24.7-44V101.1L21.2,258z"/>
+	
+		<linearGradient id="中高光_2_" gradientUnits="userSpaceOnUse" x1="188.125" y1="159.2069" x2="188.125" y2="524.1494" gradientTransform="matrix(1 0 0 -1 0 983.5)">
+		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
+	</linearGradient>
+	<path id="中高光_1_" class="st2" d="M141.8,298.5h68.7v584c-22.2,1.8-44.8-3.3-64.5-15.3l-4.2-2.8V298.5z M218.4,297.8v583.8
+		c5.4-0.9,10.8-2.1,16-3.8v-580H218.4z"/>
+	<g id="前面">
+		
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="22.2584" y1="235.7297" x2="199.6445" y2="322.1191" gradientTransform="matrix(1 0 0 -1 0 883.5)">
+			<stop  offset="0" style="stop-color:#3EADED"/>
+			<stop  offset="1" style="stop-color:#0B528D"/>
+		</linearGradient>
+		<path class="st3" d="M166.4,845.8c-4.3,0-8.6-1.3-12.3-3.8l-104-68c-8.3-5.5-13.2-14.8-13.2-24.7v-370c0-8.4,6.8-15.2,15.1-15.2
+			c2.4,0,4.8,0.6,7,1.8l115,58.3c8.9,4.7,14.5,13.9,14.5,23.9v375.6C188.6,836,178.7,845.8,166.4,845.8z"/>
+		<path class="st4" d="M52.1,365.6c2.1,0,4.3,0.5,6.3,1.6l115,58.4c8.4,4.4,13.7,13.1,13.7,22.6v375.5c0,12.1-10,20.6-20.7,20.6
+			c-3.9,0-7.8-1.1-11.4-3.5l-104.1-68c-7.8-5.2-12.5-14-12.5-23.4V379.4C38.4,371.4,44.9,365.6,52.1,365.6 M52.1,362.6
+			c-9.2,0-16.6,7.5-16.6,16.7v370.1c0,10.4,5.2,20.1,13.8,25.9l104.1,68.1c3.9,2.6,8.4,4,13.1,4c13.1,0,23.7-10.6,23.7-23.6V448.1
+			c0-10.6-5.9-20.3-15.3-25.3L59.8,364.5C57.4,363.3,54.8,362.6,52.1,362.6L52.1,362.6z"/>
+	</g>
+	<g id="侧面">
+		
+			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-105.5082" y1="74.7216" x2="388.9102" y2="340.0194" gradientTransform="matrix(1 0 0 -1 0 883.5)">
+			<stop  offset="0" style="stop-color:#3EADED"/>
+			<stop  offset="1" style="stop-color:#0B528D"/>
+		</linearGradient>
+		<path class="st5" d="M260,830.8c-11.2,0-20.4-9.1-20.4-20.4v-361c0-13.3,7.1-25.9,18.4-32.8l324.6-198c2.5-1.5,5.3-2.3,8.2-2.3
+			c8.7,0,15.8,7.1,15.8,15.8v342.5c0,18.1-9,35-24.1,45L271.2,827.5C267.8,829.7,264,830.8,260,830.8z"/>
+		<path class="st4" d="M590.8,217.9c7.4,0,14.3,5.9,14.3,14.3v342.5c0,17.6-8.8,34-23.4,43.8L270.4,826.2c-3.3,2.2-6.9,3.2-10.4,3.2
+			c-9.8,0-18.9-7.8-18.9-18.9v-361c0-12.9,6.7-24.8,17.7-31.5l324.6-198C585.8,218.6,588.3,217.9,590.8,217.9 M590.8,214.9
+			L590.8,214.9c-3.1,0-6.2,0.9-9,2.5l-324.6,198c-11.8,7.2-19.1,20.3-19.1,34.1v361c0,12.1,9.8,21.9,21.9,21.9
+			c4.3,0,8.4-1.3,12.1-3.7l311.3-207.8c15.5-10.3,24.7-27.6,24.7-46.3V232.1C608.1,222.6,600.3,214.9,590.8,214.9L590.8,214.9z"/>
+	</g>
+	<path id="墙线" class="st6" d="M605.1,313v-18.7l-71,42.7v-87l-16,9.8v86.9l-204,122.5v-85l-16,9.8v84.9l-57,34.3V532l175-105.2
+		v86.5l-175,109.5v18.9l57-35.7v89.8l-57,36.7v19l175-112.7V729l16-10.7v-89.8l173-111.4v-19l-71,45.7v-85.6l71-44.5v-18.9
+		L432.1,503v-86.1L605.1,313z M518.1,468.1V554l-204,131.4V596L518.1,468.1z M144.9,510.8v95.9l42.2,22.7v18.2l-100-53.9V684
+		l100,57.6v18.5l-42.2-24.3v98.4l-16-10.5v-97.2l-90.4-52.1V656l32.6,18.9v-89.7l-32.7-17.6v-18.2l90.4,48.6v-95l-90.4-43.7v-17.8
+		l32.7,15.9v-83.7l16,8.1v83.3l100,48.4v17.8L144.9,510.8z"/>
+	
+		<linearGradient id="高光_2_" gradientUnits="userSpaceOnUse" x1="64.025" y1="408.1775" x2="64.025" y2="733.4269" gradientTransform="matrix(1 0 0 -1 0 1083.5)">
+		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.5"/>
+	</linearGradient>
+	<polygon id="高光_1_" class="st7" points="82.4,708.3 45.7,708.3 45.6,332.1 82.4,354.6 	"/>
+	
+		<linearGradient id="顶-body_1_" gradientUnits="userSpaceOnUse" x1="7.125" y1="661.6125" x2="632.7974" y2="661.6125" gradientTransform="matrix(1 0 0 -1 0 883.5)">
+		<stop  offset="0" style="stop-color:#899CAA"/>
+		<stop  offset="0.1955" style="stop-color:#D4DEE7"/>
+		<stop  offset="0.4635" style="stop-color:#8F9EAF"/>
+		<stop  offset="1" style="stop-color:#57687B"/>
+	</linearGradient>
+	<path id="顶-body" class="st8" d="M651.7,125.9c0-0.1,0-0.2,0-0.3V87.7l-19.8,5c-1-0.5-2-1-3-1.5L528.2,49
+		C503.3,38.3,475,38.3,450,49L92.6,229.6l-92,29.3l0.3,34.8c-1.7,9.9,2.2,20.6,12.1,26.6l118.8,65c38.1,23.2,86,23.2,124.1,0
+		l377.6-227.2c12.1-7.3,18-19.5,18.1-31.7l0,0L651.7,125.9z"/>
+	
+		<linearGradient id="顶-中高光_1_" gradientUnits="userSpaceOnUse" x1="175.125" y1="487.2912" x2="175.125" y2="528.5159" gradientTransform="matrix(1 0 0 -1 0 883.5)">
+		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
+	</linearGradient>
+	<path id="顶-中高光" class="st9" d="M128.8,336.8l68.7,10v56c-22.7,0.7-45.6-5.1-65.7-17.3l-3-1.7V336.8z M205.4,402.3
+		c5.4-0.5,10.7-1.4,16-2.7v-53.6h-16V402.3z"/>
+	
+		<linearGradient id="顶-背景_1_" gradientUnits="userSpaceOnUse" x1="101.8802" y1="874.3393" x2="497.4442" y2="1098.1454" gradientTransform="matrix(1 0 0 -1 0 1183.5)">
+		<stop  offset="0" style="stop-color:#DFE6EE"/>
+		<stop  offset="0.5" style="stop-color:#F5F7F8"/>
+		<stop  offset="0.995" style="stop-color:#ABB6C3"/>
+	</linearGradient>
+	<path id="顶-背景_2_" class="st10" d="M633.6,118.2L255.9,345.5c-38.1,23.2-86,23.2-124.1,0L13,280.5
+		c-18.1-11-16.2-37.9,3.3-46.2L450,9.1c25-10.7,53.3-10.7,78.2,0l100.5,42.2C657,63.4,659.8,102.3,633.6,118.2z"/>
+	<g id="装饰_1_">
+		<path class="st11" d="M390.6,275.5l8.7-6v20l-8.7,6V275.5z M410.6,283.8l8.7-5.9v-20.2l-8.7,6V283.8z M430.6,272l8.7-5.9v-20.4
+			l-8.7,6V272z M450.6,260.4l8.7-5.9v-20.6l-8.7,6V260.4z M470.6,248.6l8.7-5.9v-20.8l-8.7,6V248.6z M490.6,236.9l8.7-5.9v-21
+			l-8.7,6V236.9z M510.6,225.3l8.7-5.9v-21.2l-8.7,6V225.3z M530.6,213.6l8.7-5.9v-21.4l-8.7,6V213.6z M550.6,201.8l8.7-5.9v-21.6
+			l-8.7,6V201.8z M570.6,168.4v21.7l8.7-5.9v-21.8L570.6,168.4z"/>
+	</g>
+</g>
+<g id="火">
+	<g>
+		
+			<radialGradient id="SVGID_3_" cx="400.8457" cy="496.92" r="398.1978" gradientTransform="matrix(1 0 0 -1 0 883.5)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0.1458" style="stop-color:#91D9FF"/>
+			<stop  offset="0.8886" style="stop-color:#1156A3"/>
+			<stop  offset="1" style="stop-color:#0A396F"/>
+		</radialGradient>
+		<path class="st12" d="M341,867.5l315.5-202.1c0,0,77.1-68.9,29.2-148.4c-26.5-44.3-18.6-90.2-7.9-123.1c10.8-32.8,23-63.6,23-63.6
+			s-90.9,99.7-94.1,198.5c-1.9,57.2-11.4,42.5-11.4,42.5s15.4-87.6-5.7-119.5c-17.4-26.4-29.3-49.6-48.1-67.2
+			c-11-10.2-28.7-23.6-28.7-23.6s24.5,56.8,2.7,142.9c-17.2,68.9-2.7,112-26.4,129.9c-24.4,18.4,7.1-52-33.3-94.7
+			c-18.8-20.1-59.6-5.4-59.6-5.4s40.9,50.4,33.8,97.3c-5.8,39.3-36.3,51.8-49.9,8.9c-8.4-26.6-10.5-55.9-10.5-55.9
+			S328.5,699,342.9,739.3c16,44.9-25.9,111.6-33.1,68.7c-4.4-26-4.1-46.7-4.1-46.7s-33.2,81.9-7.4,115.7
+			C308,889.8,341,867.5,341,867.5z"/>
+		
+			<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="454.6324" y1="284.7507" x2="575.7222" y2="75.3364" gradientTransform="matrix(1 0 0 -1 0 883.5)">
+			<stop  offset="0.155" style="stop-color:#F3F5F7;stop-opacity:0.8"/>
+			<stop  offset="0.5976" style="stop-color:#D5D9DF;stop-opacity:0.1"/>
+			<stop  offset="1" style="stop-color:#D4D8DE;stop-opacity:0"/>
+		</linearGradient>
+		<path class="st13" d="M372.8,841l238.7-152.7c0,0,79.8-55.1,68.4-122.8c-5.8-34.4-23.8-20.9-27.9-64.9c-2.5-26,3.5-65.8,3.5-65.8
+			s-37.2,49.3-39.8,127.6c-1.5,45.3-41.5,52.5-41.5,52.5s12.3-45.2,6.2-83.1c-5-30.8-37.5-58.9-37.5-58.9s6.9,49.4-14.1,119
+			c-18,60.1-20.7,66-33.4,74.4c-19,12.6-23.8,4.8-27.7-22.8c-4.1-29.1-21.1-60-21.1-60s-0.6,48.8-6.2,85.9
+			c-4.6,31.1-22.3,50.1-45.6,36.6c-16.9-9.9-28.5-23.1-28.5-23.1s-3.1,31.2,8.2,62.9c12.6,35.4-11.3,97.9-46.7,103.8
+			c-15.3,2.5-23.6-16.7-23.6-16.7s-1.8,32.9,18.6,35.4C335.2,869.5,372.8,841,372.8,841z"/>
+	</g>
+</g>
+</svg>

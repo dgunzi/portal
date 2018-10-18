@@ -4,13 +4,13 @@
 
 <template>
   <s-form label-width="45px" :model="attrForm">
-    <s-form-item label="长">
+    <s-form-item label="长度">
       <s-input v-model="attrForm.depth" @change="changeValue"></s-input>
     </s-form-item>
-    <s-form-item label="宽">
+    <s-form-item label="宽度">
       <s-input v-model="attrForm.width" @change="changeValue"></s-input>
     </s-form-item>
-    <s-form-item label="高">
+    <s-form-item label="高度">
       <s-input v-model="attrForm.height" @change="changeValue"></s-input>
     </s-form-item>
     <s-form-item>

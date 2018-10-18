@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="主机硬件" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 855 863" style="enable-background:new 0 0 855 863;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#底部_2_);}
+	.st1{fill:url(#暗角反光_2_);}
+	.st2{fill:url(#SVGID_1_);}
+	.st3{fill:url(#SVGID_2_);}
+	.st4{fill:url(#顶-背景_2_);}
+	.st5{fill:#043977;}
+	.st6{fill:url(#SVGID_3_);stroke:#073A76;stroke-width:3;stroke-miterlimit:10;}
+	.st7{fill:#051E33;}
+	.st8{fill:#FFFFFF;}
+	.st9{fill:url(#高光_4_);}
+	.st10{fill:url(#底部_3_);}
+	.st11{fill:url(#暗角反光_3_);}
+	.st12{fill:url(#SVGID_4_);stroke:#073A76;stroke-width:3;stroke-miterlimit:10;}
+	.st13{fill:url(#SVGID_5_);}
+	.st14{fill:url(#SVGID_6_);}
+	.st15{fill:url(#顶-背景_3_);}
+	.st16{fill:url(#高光_5_);}
+</style>
+<g id="下层">
+	
+		<linearGradient id="底部_2_" gradientUnits="userSpaceOnUse" x1="67.0567" y1="1127.1375" x2="781.5003" y2="1127.1375" gradientTransform="matrix(1 0 0 1 0 -522)">
+		<stop  offset="0" style="stop-color:#E7EFF5"/>
+		<stop  offset="0.2574" style="stop-color:#C3C5D2"/>
+		<stop  offset="0.3352" style="stop-color:#C6C8D5"/>
+		<stop  offset="0.3997" style="stop-color:#CED3DD"/>
+		<stop  offset="0.4592" style="stop-color:#DDE4EC"/>
+		<stop  offset="0.4655" style="stop-color:#DFE6EE"/>
+		<stop  offset="0.5693" style="stop-color:#98A5B5"/>
+		<stop  offset="0.995" style="stop-color:#7E8EA0"/>
+	</linearGradient>
+	<path id="底部" class="st0" d="M20.1,374.7v181.9c0,18,9.4,34.7,24.7,44l329.9,219.3c34.3,20.9,77.3,20.9,111.6,0l316.9-219.3
+		c15.3-9.4,24.7-26.1,24.7-44V378.7L20.1,374.7z"/>
+	
+		<linearGradient id="暗角反光_2_" gradientUnits="userSpaceOnUse" x1="19.0567" y1="1129.1375" x2="788.5018" y2="1129.1375" gradientTransform="matrix(1 0 0 1 0 -522)">
+		<stop  offset="0" style="stop-color:#C3C6D2"/>
+		<stop  offset="0.1409" style="stop-color:#C3C6D2;stop-opacity:0"/>
+	</linearGradient>
+	<path id="暗角反光" class="st1" d="M20.1,378.7v177.9c0,18,9.4,34.7,24.7,44l329.9,219.3c34.3,20.9,77.3,20.9,111.6,0
+		l316.9-219.3c15.3-9.4,24.7-26.1,24.7-44V378.7H20.1z"/>
+	<g id="高光">
+		
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="405.05" y1="1330.0449" x2="405.05" y2="1158.8616" gradientTransform="matrix(1 0 0 1 0 -522)">
+			<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+			<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
+		</linearGradient>
+		<path class="st2" d="M370.7,817l4.2,2.8c19.7,12,42.3,17.1,64.5,15.3v-274h-68.7V817z"/>
+		
+			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="455.3" y1="1328.8037" x2="455.3" y2="1158.0186" gradientTransform="matrix(1 0 0 1 0 -522)">
+			<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+			<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
+		</linearGradient>
+		<path class="st3" d="M447.3,834.2c5.4-0.9,10.8-2.1,16-3.8v-270h-16V834.2z"/>
+	</g>
+	
+		<linearGradient id="顶-背景_2_" gradientUnits="userSpaceOnUse" x1="182.127" y1="1051.3961" x2="608.2333" y2="810.3096" gradientTransform="matrix(1 0 0 1 0 -522)">
+		<stop  offset="0" style="stop-color:#DFE6EE"/>
+		<stop  offset="0.5" style="stop-color:#F5F7F8"/>
+		<stop  offset="0.995" style="stop-color:#ABB6C3"/>
+	</linearGradient>
+	<path id="顶-背景" class="st4" d="M811.4,413l-323,197.4c-35.6,21.7-80.4,21.7-116,0L31.3,402c-16.9-10.3-15.1-35.4,3.1-43.2
+		L393.8,205c23.4-10,49.8-10,73.1,0l340,145.5C833.3,361.8,835.9,398.1,811.4,413z"/>
+	<g id="装饰">
+		<path class="st5" d="M570,673.4l8.7-6v40l-8.7,6V673.4z M590,699.6l8.7-5.9v-40.2l-8.7,6V699.6z M610,685.9l8.7-5.9v-40.4l-8.7,6
+			V685.9z M630,672.2l8.7-5.9v-40.6l-8.7,6V672.2z M650,658.5l8.7-5.9v-40.8l-8.7,6V658.5z M670,644.8l8.7-5.9v-41l-8.7,6V644.8z
+			 M690,631.1l8.7-5.9V584l-8.7,6V631.1z M710,617.4l8.7-5.9v-41.4l-8.7,6V617.4z M730,603.6l8.7-5.9v-41.6l-8.7,6V603.6z
+			 M750,548.2v41.7l8.7-5.9v-41.8L750,548.2z"/>
+	</g>
+	<g id="面板">
+		<g>
+			
+				<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="32.9" y1="563.2848" x2="369.8" y2="563.2848" gradientTransform="matrix(1 0 0 1 0 46)">
+				<stop  offset="0" style="stop-color:#3EADED"/>
+				<stop  offset="1" style="stop-color:#0B528D"/>
+			</linearGradient>
+			<path class="st6" d="M353.3,746.9L49.4,551.6c-9.1-5.8-16.5-19-16.5-29.3v-42.1c0-10.3,7.4-14.1,16.5-8.5l303.9,186.7
+				c9.1,5.6,16.5,19.6,16.5,31.1v47.2C369.8,748.1,362.4,752.8,353.3,746.9z"/>
+			<g>
+				<g>
+					<polygon class="st7" points="131,575.9 138,580.3 138,554.4 131,550 					"/>
+					<polygon class="st7" points="149.9,587.9 157,592.3 157,566.2 149.9,561.8 					"/>
+					<polygon class="st7" points="168.9,599.8 175.9,604.3 175.9,578 168.9,573.6 					"/>
+					<polygon class="st7" points="187.8,611.8 194.8,616.2 194.8,589.8 187.8,585.4 					"/>
+					<polygon class="st7" points="206.7,623.8 213.7,628.2 213.7,601.6 206.7,597.2 					"/>
+					<polygon class="st7" points="225.6,635.8 232.6,640.2 232.6,613.4 225.6,609 					"/>
+					<polygon class="st7" points="244.5,647.7 251.5,652.2 251.5,625.2 244.5,620.8 					"/>
+					<polygon class="st7" points="263.4,659.7 270.5,664.1 270.5,637 263.4,632.6 					"/>
+					<polygon class="st7" points="282.4,671.7 289.4,676.1 289.4,648.8 282.4,644.4 					"/>
+					<polygon class="st7" points="301.3,683.7 308.3,688.1 308.3,660.6 301.3,656.2 					"/>
+					<polygon class="st7" points="320.2,668 320.2,695.6 327.2,700.1 327.2,672.4 					"/>
+				</g>
+				<path class="st8" d="M98.9,542.7c0,7.5-5.2,10.2-11.7,6.1c-6.5-4.1-11.7-13.4-11.7-20.8c0-7.4,5.2-10.2,11.7-6.1
+					C93.7,525.9,98.9,535.2,98.9,542.7z"/>
+			</g>
+		</g>
+	</g>
+	
+		<linearGradient id="高光_4_" gradientUnits="userSpaceOnUse" x1="76.1" y1="817.6294" x2="76.1" y2="665.3574" gradientTransform="matrix(1 0 0 1 0 -238)">
+		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.5"/>
+	</linearGradient>
+	<polygon id="高光_2_" class="st9" points="94.5,595.1 57.8,595.1 57.7,419 94.5,440.5 	"/>
+</g>
+<g id="上层">
+	
+		<linearGradient id="底部_3_" gradientUnits="userSpaceOnUse" x1="67.0731" y1="918.1375" x2="781.7654" y2="918.1375" gradientTransform="matrix(1 0 0 1 0 -522)">
+		<stop  offset="0" style="stop-color:#E7EFF5"/>
+		<stop  offset="0.2574" style="stop-color:#C3C5D2"/>
+		<stop  offset="0.3352" style="stop-color:#C6C8D5"/>
+		<stop  offset="0.3997" style="stop-color:#CED3DD"/>
+		<stop  offset="0.4592" style="stop-color:#DDE4EC"/>
+		<stop  offset="0.4655" style="stop-color:#DFE6EE"/>
+		<stop  offset="0.5693" style="stop-color:#98A5B5"/>
+		<stop  offset="0.995" style="stop-color:#7E8EA0"/>
+	</linearGradient>
+	<path id="底部_1_" class="st10" d="M20.1,176.7v177.9c0,18,9.4,34.7,24.7,44l329.9,201.3c34.3,20.9,77.3,20.9,111.6,0
+		l316.9-193.3c15.3-9.4,24.7-26.1,24.7-44l0.3-185.9L20.1,176.7L20.1,176.7z"/>
+	
+		<linearGradient id="暗角反光_3_" gradientUnits="userSpaceOnUse" x1="19.0563" y1="918.1875" x2="788.7693" y2="918.1875" gradientTransform="matrix(1 0 0 1 0 -522)">
+		<stop  offset="0" style="stop-color:#C3C6D2"/>
+		<stop  offset="0.1409" style="stop-color:#C3C6D2;stop-opacity:0"/>
+	</linearGradient>
+	<path id="暗角反光_1_" class="st11" d="M20.1,176.7l0.3,178.1c0,18,9.4,34.7,24.7,44L375,600c34.3,20.9,77.3,20.9,111.6,0
+		l316.9-193.3c15.3-9.4,24.7-26.1,24.7-44v-186L20.1,176.7L20.1,176.7z"/>
+	<g id="装饰_1_">
+		<path class="st5" d="M569.3,465.6l8.7-6v40l-8.7,6V465.6z M589.3,492.8l8.7-5.9v-40.2l-8.7,6V492.8z M609.3,480.1l8.7-5.9v-40.4
+			l-8.7,6V480.1z M629.3,467.4l8.7-5.9v-40.6l-8.7,6V467.4z M649.3,454.7l8.7-5.9V408l-8.7,6V454.7z M669.3,442l8.7-5.9v-41l-8.7,6
+			V442z M689.3,429.3l8.7-5.9v-41.2l-8.7,6V429.3z M709.3,416.6l8.7-5.9v-41.4l-8.7,6V416.6z M729.3,402.8l8.7-5.9v-41.6l-8.7,6
+			V402.8z M749.3,347.4v41.7l8.7-5.9v-41.8L749.3,347.4z"/>
+	</g>
+	<g id="面板_1_">
+		<g>
+			
+				<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="40.2" y1="353.7" x2="369.8" y2="353.7" gradientTransform="matrix(1 0 0 1 0 46)">
+				<stop  offset="0" style="stop-color:#3EADED"/>
+				<stop  offset="1" style="stop-color:#0B528D"/>
+			</linearGradient>
+			<path class="st12" d="M353.7,531.1L56.3,357.4c-8.9-5.2-16.1-18.8-16.1-30.4v-47.2c0-11.5,7.3-16.7,16.1-11.5L353.7,442
+				c8.9,5.2,16.1,18.8,16.1,30.4v47.2C369.8,531.1,362.5,536.3,353.7,531.1z"/>
+			<g>
+				<g>
+					<polygon class="st7" points="136.1,373.6 143,377.6 143,349.5 136.1,345.5 					"/>
+					<polygon class="st7" points="154.7,384.4 161.5,388.4 161.5,360.4 154.7,356.3 					"/>
+					<polygon class="st7" points="173.2,395.2 180,399.2 180,371.2 173.2,367.2 					"/>
+					<polygon class="st7" points="191.7,406 198.5,410 198.5,382 191.7,378 					"/>
+					<polygon class="st7" points="210.2,416.8 217.1,420.8 217.1,392.8 210.2,388.8 					"/>
+					<polygon class="st7" points="228.7,427.6 235.6,431.6 235.6,403.6 228.7,399.6 					"/>
+					<polygon class="st7" points="247.2,438.4 254.1,442.4 254.1,414.4 247.2,410.4 					"/>
+					<polygon class="st7" points="265.7,449.2 272.6,453.3 272.6,425.2 265.7,421.2 					"/>
+					<polygon class="st7" points="284.2,460.1 291.1,464.1 291.1,436 284.2,432 					"/>
+					<polygon class="st7" points="302.7,470.9 309.6,474.9 309.6,446.8 302.7,442.8 					"/>
+					<polygon class="st7" points="321.2,453.6 321.2,481.7 328.1,485.7 328.1,457.6 					"/>
+				</g>
+				<path class="st8" d="M104.7,341.2c0,8.2-5.1,11.8-11.4,8.2c-6.3-3.7-11.4-13.3-11.4-21.5s5.1-11.8,11.4-8.2
+					S104.7,333,104.7,341.2z"/>
+			</g>
+		</g>
+	</g>
+	<g id="高光_3_">
+		
+			<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="405.05" y1="1110.0313" x2="405.05" y2="938.8477" gradientTransform="matrix(1 0 0 1 0 -522)">
+			<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+			<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
+		</linearGradient>
+		<path class="st13" d="M370.7,597l4.2,2.8c19.7,12,42.3,17.1,64.5,15.3v-274h-68.7V597z"/>
+		
+			<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="455.3" y1="1108.79" x2="455.3" y2="938.0047" gradientTransform="matrix(1 0 0 1 0 -522)">
+			<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+			<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
+		</linearGradient>
+		<path class="st14" d="M447.3,614.2c5.4-0.9,10.8-2.1,16-3.8v-270h-16V614.2z"/>
+	</g>
+	
+		<linearGradient id="顶-背景_3_" gradientUnits="userSpaceOnUse" x1="178.4652" y1="842.609" x2="605.4573" y2="601.0213" gradientTransform="matrix(1 0 0 1 0 -522)">
+		<stop  offset="0" style="stop-color:#DFE6EE"/>
+		<stop  offset="0.5" style="stop-color:#F5F7F8"/>
+		<stop  offset="0.995" style="stop-color:#ABB6C3"/>
+	</linearGradient>
+	<path id="顶-背景_1_" class="st15" d="M811.4,208l-323,182.4c-35.6,21.7-80.4,21.7-116,0L31.3,200
+		c-16.9-10.3-15.1-35.4,3.1-43.2L393.8,11c23.4-10,49.8-10,73.1,0l340,134.5C833.3,156.8,835.9,193.1,811.4,208z"/>
+	
+		<linearGradient id="高光_5_" gradientUnits="userSpaceOnUse" x1="76.1" y1="615.4197" x2="76.1" y2="461.2077" gradientTransform="matrix(1 0 0 1 0 -238)">
+		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.5"/>
+	</linearGradient>
+	<polygon id="高光_1_" class="st16" points="94.5,393.1 57.8,393.1 57.7,214.7 94.5,235.3 	"/>
+</g>
+</svg>

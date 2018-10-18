@@ -1,0 +1,185 @@
+.eventCenterScrollheight
+  height calc(100vh - 166px)
+.time
+  font-size: 14px
+  font-weight: bold
+.event-check-group
+  height: 30px
+  line-height: 30px
+  text-align right
+  padding-right: calc(5% - 21px)
+  .s-checkbox-group
+    display: inline-block
+    padding-left: 18px
+    .urgency .s-checkbox-label
+      color: red_color
+    .serious .s-checkbox-label
+      color: #ec5e3d
+    .warn .s-checkbox-label
+      color: yellow_color
+    .secondary .s-checkbox-label
+      color: #eb3c7e
+    .s-checkbox
+      margin-right: 10px
+
+.alarmEventList
+  .foucs-event-col
+    height 45px
+    border-bottom 1px solid border_color
+    &:last-child
+      border-bottom none
+    .titleWord
+      & span
+        font-size 12px
+        color lightWordColor
+        line-height 18px
+      .error
+        color redWordColor !important
+    .foucs-event-icon
+      padding-right 12px
+      & i
+        font-size 26px
+        line-height 48px
+        color original_color
+        &.error
+          color redWordColor !important
+    .contentWord
+      width 100%
+      height 18px
+      line-height 18px
+      font-size 12px
+      color darkWordColor
+      white-space nowrap
+      text-overflow ellipsis
+      overflow hidden
+      cursor default
+
+
+.eventItem
+  font-size: 12px
+  margin-bottom: 0
+  .summary
+    .s-col:first-child > span
+      font-weight: 700
+      line-height: 24px
+    .feature
+      /*float: right
+      text-align: right*/
+    .title
+      display: inline-block
+      max-width: calc(100% - 50px)
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+    .status
+      position: relative
+      display: inline-block
+      padding: 5px
+      line-height: 1 !important
+      border-radius: 2px
+      &.urgency
+        background-color: red_color
+      &.serious
+        background-color: #ec5e3d
+      &.warn
+        background-color: yellow_color
+      &.secondary
+        background-color: #eb3c7e
+  .detail
+    padding-top: 8px
+  .btnCol
+    text-align center
+    transform translateY(50%)
+    .s-button
+      padding: 8px 12px
+
+  &.default
+    padding: 6px 0px
+    .summary
+      padding-left: 4px
+      color: normalcy_text
+      line-height: 21px
+      margin-bottom: 0px
+      span
+        color: title_2
+        font-size: 14px
+      .feature
+        float: right
+        text-align: right
+        position: relative
+        top: 2px
+    .detail
+      color: normalcy_text
+      font-size 0
+      border-top: 1px solid border_color
+      span
+        display block
+        float left
+        font-size: 12px
+        line-height 1
+        &:first-child
+          padding-left: 4px
+          padding-right: 4px
+        &:last-child
+          padding-left: 4px
+        &:not(:last-child)
+          border-right: 2px solid border_color
+        &:not(:last-child):not(:first-child)
+          padding-left: 4px
+          padding-right: 4px
+      .detail-hold
+        width 27%
+        overflow hidden
+        text-overflow ellipsis
+        white-space nowrap
+
+  &.full
+    width: 100%
+    .summary
+      padding-top 4px
+      span
+        font-size: 16px
+        color: title_2
+      .feature
+        height: 24px
+        padding-top: 10px
+        font-size: 0
+        border-top: 1px solid border_color
+        span
+          color: gray_l1_text
+          font-size: 12px
+          line-height: 1
+          display: inline-block
+          &:first-child
+            padding-right: 5px
+          &:last-child
+            padding-left: 5px
+          &:not(:last-child)
+            border-right: 2px solid border_color
+          &:not(:first-child):not(:last-child)
+            padding-left: 5px
+            padding-right: 5px
+
+    .detail
+      font-size: 14px
+      overflow: hidden
+      white-space: nowrap
+      text-overflow: ellipsis
+      color: gray_l1_text
+      padding-top:4px
+
+  .btns
+    background none
+    text-align right
+    .btnCol
+      display inline-block
+      margin-right 13px
+      transition all .1s
+      &.is-disabled
+        color: #565b5d;
+        border: 1px solid #34383b;
+        background: #1d1e21;
+        cursor: not-allowed;
+        opacity: 1;
+      &:hover:not(.is-disabled)
+        background-color rgba(blue_color,0.8)

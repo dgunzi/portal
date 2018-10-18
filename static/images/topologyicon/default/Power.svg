@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 834 670" style="enable-background:new 0 0 834 670;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#底部_1_);}
+	.st1{fill:url(#暗角反光_1_);}
+	.st2{fill:url(#SVGID_1_);}
+	.st3{fill:url(#SVGID_2_);}
+	.st4{fill:url(#顶-背景_1_);}
+	.st5{fill:#043977;}
+	.st6{fill:url(#面板_1_);}
+	.st7{fill:#073A76;}
+	.st8{fill:url(#高光_1_);}
+	.st9{fill:url(#SVGID_3_);}
+	.st10{fill:#6E828E;}
+	.st11{fill:#08233D;}
+	.st12{fill:none;stroke:#ABBCC9;stroke-width:9;stroke-miterlimit:10;}
+	.st13{fill:none;stroke:#9EABB7;stroke-width:12;stroke-miterlimit:10;}
+</style>
+<g>
+	
+		<linearGradient id="底部_1_" gradientUnits="userSpaceOnUse" x1="60.213" y1="1187.2134" x2="774.6565" y2="1187.2134" gradientTransform="matrix(1 0 0 1 0 -764)">
+		<stop  offset="0" style="stop-color:#E7EFF5"/>
+		<stop  offset="0.2574" style="stop-color:#C3C5D2"/>
+		<stop  offset="0.3352" style="stop-color:#C6C8D5"/>
+		<stop  offset="0.3997" style="stop-color:#CED3DD"/>
+		<stop  offset="0.4592" style="stop-color:#DDE4EC"/>
+		<stop  offset="0.4655" style="stop-color:#DFE6EE"/>
+		<stop  offset="0.5693" style="stop-color:#98A5B5"/>
+		<stop  offset="0.995" style="stop-color:#7E8EA0"/>
+	</linearGradient>
+	<path id="底部_3_" class="st0" d="M13.3,192.8v181.9c0,18,9.4,34.7,24.7,44L367.9,638c34.3,20.9,77.3,20.9,111.6,0l316.9-219.3
+		c15.3-9.4,24.7-26.1,24.7-44V196.8L13.3,192.8z"/>
+	
+		<linearGradient id="暗角反光_1_" gradientUnits="userSpaceOnUse" x1="12.213" y1="1189.2134" x2="781.658" y2="1189.2134" gradientTransform="matrix(1 0 0 1 0 -764)">
+		<stop  offset="0" style="stop-color:#C3C6D2"/>
+		<stop  offset="0.1409" style="stop-color:#C3C6D2;stop-opacity:0"/>
+	</linearGradient>
+	<path id="暗角反光_3_" class="st1" d="M13.3,196.8v177.9c0,18,9.4,34.7,24.7,44L367.9,638c34.3,20.9,77.3,20.9,111.6,0
+		l316.9-219.3c15.3-9.4,24.7-26.1,24.7-44V196.8H13.3z"/>
+	<g id="高光">
+		
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="398.231" y1="1390.0659" x2="398.231" y2="1218.8824" gradientTransform="matrix(1 0 0 1 0 -764)">
+			<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+			<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
+		</linearGradient>
+		<path class="st2" d="M363.9,635l4.2,2.8c19.7,12,42.3,17.1,64.5,15.3v-274h-68.7V635z"/>
+		
+			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="448.481" y1="1388.8247" x2="448.481" y2="1218.0394" gradientTransform="matrix(1 0 0 1 0 -764)">
+			<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+			<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
+		</linearGradient>
+		<path class="st3" d="M440.5,652.2c5.4-0.9,10.8-2.1,16-3.8v-270h-16V652.2z"/>
+	</g>
+	
+		<linearGradient id="顶-背景_1_" gradientUnits="userSpaceOnUse" x1="175.313" y1="1111.4694" x2="601.4195" y2="870.3827" gradientTransform="matrix(1 0 0 1 0 -764)">
+		<stop  offset="0" style="stop-color:#DFE6EE"/>
+		<stop  offset="0.5" style="stop-color:#F5F7F8"/>
+		<stop  offset="0.995" style="stop-color:#ABB6C3"/>
+	</linearGradient>
+	<path id="顶-背景_3_" class="st4" d="M804.6,231.1l-323,197.4c-35.6,21.7-80.4,21.7-116,0L24.5,220.1
+		c-16.9-10.3-15.1-35.4,3.1-43.2L387,23.1c23.4-10,49.8-10,73.1,0l340,145.5C826.5,179.8,829.1,216.1,804.6,231.1z"/>
+	<g id="装饰_2_">
+		<path class="st5" d="M563.2,497.5l8.7-6v40l-8.7,6V497.5z M583.2,523.7l8.7-5.9v-40.2l-8.7,6V523.7z M603.2,510l8.7-5.9v-40.4
+			l-8.7,6V510z M623.2,496.2l8.7-5.9v-40.6l-8.7,6V496.2z M643.2,482.6l8.7-5.9v-40.8l-8.7,6V482.6z M663.2,468.8l8.7-5.9v-41
+			l-8.7,6V468.8z M683.2,455.2l8.7-5.9v-41.2l-8.7,6V455.2z M703.2,441.5l8.7-5.9v-41.4l-8.7,6V441.5z M723.2,427.7l8.7-5.9v-41.6
+			l-8.7,6V427.7z M743.2,372.2v41.7l8.7-5.9v-41.8L743.2,372.2z"/>
+	</g>
+	<g id="装饰_5_">
+		<path class="st5" d="M563.2,438.4l8.7-6v40l-8.7,6V438.4z M583.2,464.6l8.7-5.9v-40.2l-8.7,6V464.6z M603.2,450.9l8.7-5.9v-40.4
+			l-8.7,6V450.9z M623.2,437.1l8.7-5.9v-40.6l-8.7,6V437.1z M643.2,423.5l8.7-5.9v-40.8l-8.7,6V423.5z M663.2,409.7l8.7-5.9v-41
+			l-8.7,6V409.7z M683.2,396.1l8.7-5.9V349l-8.7,6V396.1z M703.2,382.4l8.7-5.9v-41.4l-8.7,6V382.4z M723.2,368.6l8.7-5.9v-41.6
+			l-8.7,6V368.6z M743.2,313.1v41.7l8.7-5.9v-41.8L743.2,313.1z"/>
+	</g>
+	<g>
+		
+			<linearGradient id="面板_1_" gradientUnits="userSpaceOnUse" x1="24.8672" y1="-5464.6802" x2="369.8673" y2="-5602.6802" gradientTransform="matrix(1 0 0 -1 0 -5105.0449)">
+			<stop  offset="0" style="stop-color:#3EADED"/>
+			<stop  offset="1" style="stop-color:#0B528D"/>
+		</linearGradient>
+		<path id="面板_3_" class="st6" d="M346.7,599.7c-5.3,0-10.5-1.7-15-4.8L58,416.8c-20.2-14.1-32.3-37.5-32.3-62.7v-68.2
+			c0-14.8,11.7-26.9,26-26.9c4.7,0,9.3,1.4,13.4,3.9l279,172c18.3,11.5,29.7,32.4,29.7,54.6v82.1C373.9,589,359.8,599.7,346.7,599.7
+			z"/>
+		<path id="边_3_" class="st7" d="M51.8,260.1c4.5,0,8.9,1.3,12.9,3.8l278.9,172c8.9,5.6,16.3,13.5,21.4,22.9s7.8,20.1,7.8,30.8
+			v82.1c0,7.5-2.8,14.4-8,19.5c-4.9,4.8-11.5,7.6-18.2,7.6c-5.1,0-10.1-1.6-14.5-4.7L58.6,416c-20-13.9-31.9-37-31.9-61.9V286
+			C26.7,271.7,38,260.1,51.8,260.1L51.8,260.1 M51.8,258.1c-14.1,0-27,11.6-27,27.9v68.2c0,25.5,12.3,49.3,32.7,63.5l273.6,178.1
+			c4.9,3.4,10.3,5,15.6,5c14.6,0,28.2-12,28.2-29.1v-82.1c0-22.7-11.5-43.7-30.2-55.4l-278.9-172C61.2,259.3,56.4,258.1,51.8,258.1
+			L51.8,258.1z"/>
+	</g>
+	
+		<linearGradient id="高光_1_" gradientUnits="userSpaceOnUse" x1="69.281" y1="877.6502" x2="69.281" y2="725.3782" gradientTransform="matrix(1 0 0 1 0 -480)">
+		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.5"/>
+	</linearGradient>
+	<polygon id="高光_6_" class="st8" points="87.7,413.2 51,413.2 50.9,237.1 87.7,258.6 	"/>
+	<g>
+		
+			<radialGradient id="SVGID_3_" cx="422.781" cy="-117.2105" r="191.8135" gradientTransform="matrix(1 0 0 1.2095 0 366.5421)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0.495" style="stop-color:#0F003F"/>
+			<stop  offset="1" style="stop-color:#004C94"/>
+		</radialGradient>
+		<path class="st9" d="M422.8,375.4c-132.9,0-241-67.6-241-150.6s108.1-150.6,241-150.6s241,67.6,241,150.6S555.7,375.4,422.8,375.4
+			z"/>
+		<path class="st10" d="M422.8,77.1c32.4,0,63.9,4,93.4,11.9c28.5,7.6,54,18.4,75.9,32.2c21.7,13.7,38.7,29.5,50.5,47.1
+			c12,17.9,18.2,36.9,18.2,56.5s-6.1,38.5-18.2,56.5c-11.8,17.6-28.8,33.4-50.5,47.1c-21.9,13.8-47.4,24.6-75.9,32.2
+			c-29.6,7.9-61,11.9-93.4,11.9s-63.9-4-93.4-11.9c-28.5-7.6-54-18.4-75.9-32.2c-21.7-13.7-38.7-29.5-50.5-47.1
+			c-12-17.9-18.2-36.9-18.2-56.5c0-19.5,6.1-38.5,18.2-56.5c11.8-17.6,28.8-33.4,50.5-47.1c21.9-13.8,47.4-24.6,75.9-32.2
+			C358.9,81.1,390.4,77.1,422.8,77.1 M422.8,71.1c-134.8,0-244,68.8-244,153.6s109.2,153.6,244,153.6s244-68.8,244-153.6
+			S557.6,71.1,422.8,71.1L422.8,71.1z"/>
+	</g>
+	<path class="st11" d="M417.2,218.8c0,0,56.9-123.2,194-70.1L417.2,218.8z"/>
+	<path class="st11" d="M413,197.9c0,0,133.9-21.8,166.7,121.6L413,197.9z"/>
+	<path class="st11" d="M429.2,225.9c0,0-91.3,100.4-206.1,8.5L429.2,225.9z"/>
+	<path class="st11" d="M445.4,260.1c0,0-134.3-19.5-122.4-166.1L445.4,260.1z"/>
+	<path class="st11" d="M419.4,168.6c0,0,80.4,109.3-32.3,203.7L419.4,168.6z"/>
+	<ellipse class="st12" cx="422.8" cy="222.3" rx="190.7" ry="119.2"/>
+	<ellipse class="st12" cx="422.8" cy="222.3" rx="136.9" ry="85.5"/>
+	<ellipse class="st12" cx="422.8" cy="222.3" rx="88.2" ry="55.1"/>
+	<ellipse class="st13" cx="422.8" cy="222.3" rx="38.9" ry="24.3"/>
+	<line class="st12" x1="178.8" y1="235.7" x2="666.8" y2="200.5"/>
+	<line class="st12" x1="432.9" y1="377.1" x2="413" y2="71.2"/>
+</g>
+</svg>

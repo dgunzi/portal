@@ -4,25 +4,27 @@
 
 <template>
   <s-index id="app">
-    <div class="main_3droom_content" v-loading="loading" element-loading-text="加载中...">
+    <div class="main_3droom_content">
     <s-row>
       <s-col span="18">
         <s-button class="collapse_btn" :icon="leftPanelShow ? 'left' : 'right'" :title="leftPanelShow ?  '隐藏面板' : '显示面板'" @click="hideShowPanel"></s-button>
-        <s-dropdown v-show="currentMode == 0">
+        <s-dropdown v-show="currentMode == 0" @on-click="changeFileMenu">
           <s-button>
             文件
             <i class="iconfont icon-bottom"></i>
           </s-button>
           <s-dropdown-menu slot="list">
-            <s-dropdown-item @click="newDesign">新建</s-dropdown-item>
-            <s-dropdown-item @click="saveDesign">保存</s-dropdown-item>
-            <s-dropdown-item>载入</s-dropdown-item>
+            <s-dropdown-item name="0">新建</s-dropdown-item>
+            <s-dropdown-item name="1">保存</s-dropdown-item>
+            <s-dropdown-item name="2">载入</s-dropdown-item>
           </s-dropdown-menu>
         </s-dropdown>
         <s-button v-show="currentMode == 0 && mode === 'edit'" @click="addItem">添加物品</s-button>
         <s-button v-show="currentMode == 0" @click="changeEdgeView">墙的显示</s-button>
         <s-button v-show="currentMode == 0 && mode === 'view'" @click="alarmAction">设备告警</s-button>
         <s-button v-show="currentMode == 0" @click="spin">旋转</s-button>
+        <s-button v-show="currentMode == 0 && mode === 'view'" @click="cabinetUsage">机柜利用率</s-button>
+        <s-button v-show="currentMode == 0 && mode === 'view'" @click="cabinetSpace">空间利用率</s-button>
         <s-button :type="(mode2d == 0) ? 'default' : 'cancel'" v-show="currentMode == 1" title="普通按钮" @click="setPlannerMode(Mode.MOVE)">移动墙体</s-button>
         <s-button :type="(mode2d == 1) ? 'default' : 'cancel'" v-show="currentMode == 1" title="绘制墙体" @click="setPlannerMode(Mode.DRAW)">绘制墙体</s-button>
         <s-button :type="(mode2d == 2) ? 'default' : 'cancel'" v-show="currentMode == 1" title="删除墙体" @click="setPlannerMode(Mode.DELETE)">删除墙体</s-button>
@@ -34,6 +36,7 @@
         </s-radio-group>
       </s-col>
     </s-row>
+    <input type="file" style="display: none" id="loadFileInput" @change="loadDesign"/>
     <div class="canvas_content">
       <div id="3d-viewer" style="width: 100%;height: calc(100vh - 165px)">
       </div>

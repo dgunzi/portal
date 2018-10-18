@@ -1,0 +1,227 @@
+.s-timeline
+  list-style none
+  margin 0
+  .timeline-date
+    color: #667480
+    position: relative
+    line-height: 1.5
+  .s-timeline-item
+    padding 0 0 5px 0
+    list-style none
+    position relative
+  &.twoway
+    .s-timeline-item
+      .s-timeline-item-head
+        width 16px
+        height 16px
+        position absolute
+        left 50%
+        margin-left -8px
+        box-sizing border-box
+        &:before, &:after
+          content: ''
+          display: block
+          border-radius: 50%
+          position: absolute
+          box-sizing: border-box
+        &:before
+          border: 2px solid #22acff
+          top: 0
+          left: 0
+          width: 16px
+          height: 16px
+          //box-shadow: 0 0 5px #22acff, 0 0 5px #22acff inset
+        &:after
+          border: 2px solid transparent
+          top: 3px
+          left: 3px
+          width: 10px
+          height: 10px
+          background-color: #22acff
+      .s-timeline-item-content
+        display: inline-block
+        width: 45%
+        position absolute
+        border: 1px solid #20a7f8
+        background: #ffffff
+        border-radius: 2px
+        font-size 12px
+        box-sizing: border-box
+        padding: 6px 0 6px 10px
+        &:before, &:after
+          content: ''
+          position: absolute
+          width: 0
+          height: 0
+      &:nth-child(2n)
+        height: 16px
+        .s-timeline-item-content
+          right: 50%
+          margin-right: 21px
+          top: 8px
+          transform: translateY(-50%)
+          &:before
+            top: 50%
+            right: -8px
+            margin-top: -8px
+            border-left: 8px solid #20a7f8
+            border-bottom: 8px solid transparent
+            border-top: 8px solid transparent
+          &:after
+            top: 50%
+            right: -7px
+            margin-top: -7px
+            border-left: 7px solid #ffffff
+            border-bottom: 7px solid transparent
+            border-top: 7px solid transparent
+      &:nth-child(2n+1):not(:first-child)
+        height: 54px
+        .s-timeline-item-content
+          left: 50%
+          margin-left: 21px
+          top: 8px
+          transform: translateY(-50%)
+          &:before
+            top: 50%
+            left: -8px
+            margin-top: -8px
+            border-right: 8px solid #20a7f8
+            border-bottom: 8px solid transparent
+            border-top: 8px solid transparent
+          &:after
+            top: 50%
+            left: -7px
+            margin-top: -7px
+            border-right: 7px solid #ffffff
+            border-bottom: 7px solid transparent
+            border-top: 7px solid transparent
+      &:first-child
+        height: 30px
+        .s-timeline-item-content
+          width: calc(90% + 42px)
+          left: 50%
+          bottom: 100%
+          transform: translateX(-50%)
+          margin-bottom: 8px
+          border: 2px solid #20a7f8
+          background: #ffffff
+          &:before
+            bottom: -8px
+            left: 50%
+            margin-left: -8px
+            border-right: 8px solid transparent
+            border-left: 8px solid transparent
+            border-top: 8px solid #20a7f8
+          &:after
+            bottom: -6px
+            left: 50%
+            margin-left: -6px
+            border-right: 6px solid transparent
+            border-left: 6px solid transparent
+            border-top: 6px solid #ebf5ff
+
+      .s-timeline-item-tail
+        height 100%
+        width: 6px
+        background: #a6dcfc
+        position absolute
+        left 50%
+        margin-left -3px
+        top 5px
+      &:last-child
+        .s-timeline-item-tail
+          background linear-gradient(#a6dcfc, transparent)
+
+  &.oneway
+    .s-timeline-item
+      .s-timeline-item-head
+        width 8px
+        height 8px
+        background-color #20a7f8
+        border-radius 50%
+        border 1px solid transparent
+        position absolute
+        top: 3px
+      .s-timeline-item-content
+        font-size 12px
+        position relative
+        zoom: 1
+        overflow hidden
+        top 3px
+        padding-top: 3px
+      .s-timeline-item-tail
+        height 100%
+        width: 4px
+        background: #a6dcfc
+        position absolute
+        top 3px
+      &:last-child
+        .s-timeline-item-tail
+          background linear-gradient(#a6dcfc, transparent)
+      .s-time-indicater
+        position relative
+        float: left
+        color: #20a7f8
+        line-height: 12px
+
+  &.beauty
+    .s-timeline-item
+      .s-time-indicater
+        padding-right: 12px
+        span
+          height: 22px
+          line-height 22px
+          display inline-block
+          color: #667480
+          font-weight: 600
+          padding-left: 5px
+          padding-right: 3px
+          background #141d2a
+          border: 1px solid #184173
+          border-top-left-radius 3px
+          border-bottom-left-radius 3px
+          position: relative
+          &:before,&:after
+            content: ''
+            display block
+            width: 0
+            height: 0
+            position absolute
+          &:before
+            top: -1px
+            right: -12px
+            border-left: 12px solid #184173
+            border-bottom: 12px solid transparent
+            border-top 12px solid transparent
+          &:after
+            top: 0
+            right: -11px
+            border-left: 11px solid #141d2a
+            border-bottom: 11px solid transparent
+            border-top 11px solid transparent
+
+.s-timeline-item-head-blue
+  border-color blue_color
+  color blue_color
+
+.s-timeline-item-head-red
+  border-color red_color
+  color red_color
+
+.s-timeline-item-head-green
+  border-color green_color
+  color green_color
+
+.s-timeline-item-head-custom
+  width 40px
+  height auto
+  margin-top 6px
+  padding 3px 0
+  text-align center
+  line-height 1
+  border 0
+  border-radius 0
+  font-size 14px
+  position absolute
+  left -13px
+  transform translateY(-50%)

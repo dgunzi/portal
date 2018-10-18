@@ -1,0 +1,1041 @@
+// AssetsManage\Assets.vue
+.asset-discovery li
+  width calc(50% - 8px);
+  height 104px
+  line-height 55px
+  text-align center
+  background-color: hoverBgColor
+  /*border 1px solid #071426*/
+  float left
+  margin 4px 2px
+  &:nth-of-type(even)
+    margin-left 4px
+  .s-col:nth-of-type(2)
+    margin-left 8px
+  & i
+    color iconColor
+    font-size 28px
+  .asset-icon
+    height 28px
+    line-height 28px
+    padding-top 14px
+    color original_color
+  .asset-title
+    margin-top 4px
+    color darkWordColor
+  .asset-name
+    color lightWordColor
+    cursor default
+    height 16px
+    line-height 16px
+  .asset-title
+    height: 22px;
+    line-height: 22px;
+.asset-discovery-btn
+  padding: 2px 2px 6px 0px
+  .s-button
+    width 100%
+.recentChange
+  table
+    text-align left
+    thead tr
+      height 35px
+      line-height 35px
+      white-space nowrap
+      -ms-text-overflow  ellipsis
+      text-overflow  ellipsis
+      overflow hidden
+    tbody tr
+      height 30px
+      line-height 30px
+      white-space nowrap
+      -ms-text-overflow  ellipsis
+      text-overflow  ellipsis
+      overflow hidden
+.overdue-asset
+  .s-carousel
+    overflow hidden
+  .is-active
+    border none
+    box-shadow none
+  .item .s-col
+    text-align left
+    position relative
+    &:before
+      content ''
+      position absolute
+      height 80px
+      right 0
+      margin 34px 18px 0 0
+      border-left 1px solid borderColor
+    .asset-icon
+      margin-top 26px
+      color original_color
+    .asset-title
+      color lightWordColor
+      margin 12px 0
+      width 110px
+      overflow hidden
+      white-space nowrap
+      text-overflow ellipsis
+    .asset-content
+      color darkWordColor
+      line-height 20px
+      & span
+        color link_text
+        font-size 14px
+        font-weight bold
+    & i
+      font-size 40px
+      color iconColor
+// AssetsAll
+#topology_panel_container
+  .s-card-body
+    position relative
+    .state-table
+      position absolute
+      top 0px
+      left 0px
+      z-index 3
+.otherPart
+  .overdue-asset
+    .item .s-col
+      padding-left: 18px;
+      &:not(:last-child):before
+        content ''
+        position absolute
+        height 80px
+        right 0
+        margin 34px 0px 0 0
+        border-left 1px solid borderColor
+// AssetsMonitor.vue、AssetsMonitorOpe.vue
+.assetsMonitor
+  .noData
+    height: 80px
+    line-height 80px
+    text-align center
+    font-size 16px
+    font-weight 500
+    color: darkWordColor
+    letter-spacing: 2px
+
+.businessService
+  .s-carousel
+    overflow hidden
+  .is-active
+    border none
+    box-shadow none
+  .business-icon
+    padding 0 6px
+    & i
+      font-size 42px
+      color darkWordColor
+  .business-success
+    .business-icon
+      & i
+        color: green_color
+    .Assnormal
+      color: green_color
+  .business-warning
+    .business-icon
+      & i
+        color: yellow_color
+    .Assnormal
+      color: yellow_color
+  .business-error
+    .business-icon
+      & i
+        color red_l1_white
+    .Assnormal
+      color red_l1_white
+  .business-item
+    height 70px
+    &:hover
+      border 1px solid borderColor
+      cursor pointer
+      background-color: hoverBgColor
+    .titleWord
+      font-size 14px
+      & a
+        color lightWordColor
+        &:hover
+          color blueWordColor
+          text-decoration underline
+    .contentWord
+      color darkWordColor
+      & span
+        margin 0 6px
+        display inline-block
+
+.s-card-body
+  height: calc(100% - 38px);
+  .s-carousel-container
+    height: 100%
+  .foucs-assets
+    height: 100%
+    .s-carousel
+      overflow hidden
+    .is-active
+      border none
+      box-shadow none
+    .foucs-assets-row
+      flex-direction column
+    .foucs-assets-col
+      height 60px
+      margin 4px 0
+      padding 0 6px
+      .titleWord
+        font-size 14px
+        color lightWordColor
+        white-space nowrap
+        overflow hidden
+        .feature
+          float: left
+        .compName
+          display block
+          overflow hidden
+          white-space nowrap
+          text-overflow ellipsis
+      .contentWord
+        color darkWordColor
+    .foucs-assets
+      text-align center
+    .foucs-assets-icon
+      padding 0 6px
+      & i
+        font-size 30px
+        color darkWordColor
+
+.score-td
+  color blueWordColor
+
+.normalBg
+  .feature
+    color green_color !important
+
+.alarmBg
+  .feature
+    color yellow_color !important
+
+.crashBg
+  .feature
+    color red_color !important
+
+.top-list
+  table
+    width 100%
+    table-layout fixed
+  & thead
+    background-color gary_l1_black !important
+  & tr
+    height 28px !important
+    line-height 28px !important
+    border-bottom 1px solid border_color !important
+    & td, th
+      text-align left
+      padding-left 2px
+      color title_1 !important
+      text-overflow ellipsis
+      white-space nowrap
+      overflow hidden
+    & th
+      color gray_l2_text !important
+      font-weight normal !important
+//color: #667480 !important;
+  .score
+    cursor pointer
+    color: blue_l2_white
+    &:hover
+      text-decoration underline
+
+.topology_panel_container
+  .s-card-body
+    position relative
+    .state-table
+      position absolute
+      top 0px
+      left 0px
+      z-index 3
+
+// IpManage  首页 >资产监控 >IP管理 > IP资产池*
+#IPmanage
+.Listdata
+  margin:0 auto
+.label
+  margin:0 5px
+  color: darkWordColor
+.SearchBtn
+  margin:0 4px
+.selectIP
+  width:400px
+.scol
+  padding:10px
+  border:1px solid border_color
+  min-height:200px
+.IPinfo
+  margin: 0 10px
+.ip-use
+  color: blue_color
+.ip-unuse
+  color: green_color
+.BoxNum
+  display:inline-block
+  margin:10px
+  width:50px
+  height:50px
+  border:1px solid transparent
+  text-align: center
+  line-height: 50px
+  font-size: 16px
+  font-weight: 600
+  cursor: pointer
+  border-radius: 5px
+.greenback
+  background: green_color
+  color: title_2
+.yellowback
+  background: blue_color
+  color: title_2
+//  AssetAddDialog  首页 >资产管理 >资产管理列表> 新增*
+#assetAddDialog
+  .assetDialogScrollbar
+    padding-right 17px
+    max-height 500px
+  .title
+    color: title_3
+    height: 36px;
+    line-height: 36px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+  .s-date-editor,.s-cascader,.inputDialog
+    width: 50%
+  .s-form
+    padding-bottom 0
+    border-bottom 0
+  .s-dialog-body
+    padding-bottom 0
+  .tabTable
+    margin-top: 10px
+    .s-table-body-wrapper
+      overflow-x hidden
+    .cell
+      white-space nowrap
+      padding-left 10px
+      padding-right 10px
+      i
+        margin-right: 5px
+        &:last-child
+          margin-right 0
+  .s-cascader-label
+    z-index 1
+  .modelNumFlag
+    margin-left 30px
+    width:160px
+.left-float
+  float left
+.right-float
+  float: right
+// AssetList 首页 >资产管理 >资产管理列表 > 动态列
+.dynamicColDialog,.interfaceDyColDialog
+  & > .s-dialog
+    left: auto
+    right: 25px
+    top: 95px !important
+    transform none
+  .s-checkbox
+    padding-left 15px
+    height: 25px
+    line-height 25px
+    width: 100%
+    & + .s-checkbox
+      margin-right 0
+// AccountAddDialog  首页 >资产管理 >资产管理列表 > 添加资产账号*
+.addAccountDialog
+  .addAccountScrollbar
+    padding-right 17px
+    max-height 500px
+  .title
+    font-weight 700
+    height 36px
+    line-height 36px
+    color: title_3
+    font-size 16px
+    margin-bottom 5px
+    padding-left 5px
+// AccountChangePwd  首页 >资产管理 >资产管理列表 >资产账号 > 手动改密*
+#AccountChangePwd
+  .title
+    color title_3
+    i
+      vertical-align middle
+    span
+      font-weight 600
+      margin-left 3px
+  .footerRow
+    text-align right
+// AssetCheckDialog  首页 >资产管理 >资产管理列表 > 资产稽核*
+  .checkDialog
+    .checkLoading
+      background: rgba(title_2, 0.5)
+// AssetCheckResultDialog  首页 >资产管理 >资产管理列表 > 资产稽核(成功后)>查看稽核结果详情(稽核部成功，没看页面啥样子)
+  .checkResultDialog
+    .checkResultScrollbar
+      padding-right 17px
+      max-height 500px
+      .secondPart
+        margin-top 20px
+      .title
+        color: title_3
+        height: 36px;
+        line-height: 36px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+//  QrCordDialog   首页 >资产管理 >资产管理列表 > 二维码*
+.qrCordDialog
+  .qrCordContainer
+    padding 20px 20px 40px 20px
+  .qrCord
+    text-align center
+  .assetInfo
+    .s-row
+      line-height 40px
+      height 40px
+      .name
+        color: title_3
+        font-size 16px
+        font-weight 600
+        display inline-block
+        width: 100px
+    .s-button
+      width: 80%
+      height 40px
+      margin-top 10px
+      font-size: 16px
+      letter-spacing 5px
+      border 1px solid border-color
+//   RelatePortAddDialog  首页 >资产管理 >资产管理列表 >资产账号 > 关联端口*
+  .portAddDialog
+    .portAddScrollbar
+      padding-right 17px
+      max-height 500px
+    .title
+      font-weight 700
+      height 36px
+      line-height 36px
+      color: #5781AD
+      font-size 16px
+      margin-bottom 5px
+      padding-left 5px
+// RelatePortDialog  首页 >资产管理 >资产管理列表 >资产账号 > 关联端口弹框 > 关联端口*
+  .relatePortDialog
+    .relatePortScrollbar
+      padding-right 17px
+      max-height 500px
+    .title
+      font-weight 700
+      height 36px
+      line-height 36px
+      color: title_3
+      font-size 16px
+      margin-bottom 5px
+      padding-left 5px
+// SpeedAuthoriseDialog 首页 >资产管理 >资产管理列表>快速授权*
+  .authoriseDialog
+    .stepBar
+      text-align center
+      overflow hidden
+    .authoriseScrollbar
+      padding-right 17px
+      max-height 500px
+    .title
+      font-weight 700
+      height 36px
+      line-height 36px
+      color: title_3
+      font-size 16px
+      margin-bottom: -36px
+      margin-top: 10px
+// ServerAddDialog  首页 >资产管理 >审计管理 > 应用服务配置 > 新增（编辑）*
+.serverAddDialog
+  .serverAddScrollbar
+    padding-right 17px
+    max-height 500px
+  .baseTab
+    .s-form-item-content
+      & > .s-radio-group
+        width 100%
+        .s-radio
+          width: 30%
+        .s-radio + .s-radio
+          margin-left 0
+      .filePath
+        margin-left: 5px
+  .ipBox
+    width: 100%
+    height: 90px
+    border: 1px solid border_color
+    border-radius: 5px
+    li
+      padding-left 5px
+      float: left
+      width: 50%
+      height: 30px
+      line-height 30px
+      box-sizing border-box
+      &.checked
+        box-shadow: inset 0px 0px 15px 2px blue_l1_black
+// DbTab  首页 >资产管理 >审计管理 > 数据库配置*
+  .dbTab
+    .protocol
+      color: #fff
+      padding: 6px 15px
+      border-radius: 8px
+      border 1px solid blue_l2_black
+      background: blue_l2_black
+// InterlligentTab 首页 >资产管理 >审计管理 > 智能审计*
+  .interlligentTab
+    .s-row
+      margin-bottom 0
+    .container
+    //border: 1px solid #1E3444
+      height: 220px
+      display flex
+      flex-direction column
+      justify-content space-between
+      background block_bg
+      padding 0 20px 20px
+      .header
+        display flex
+        align-items center
+        justify-content space-between
+        height 40px
+        border-bottom 1px solid original_l2_black
+        font-size 0
+        i
+          font-size 16px
+          color link_text
+          margin-right 10px
+        .title
+          font-size 14px
+          line-height 1.7
+          color link_text
+          font-weight: bold
+      .body
+        padding-top 30px
+        flex 1
+        display flex
+        flex-direction column
+        justify-content space-between
+        font-size 14px
+        .desc
+          font-size 14px
+          line-height 1.7
+          color: gray_l1_text
+        .opera
+          color gray_l1_text
+          margin-top -10px
+          .text
+            line-height 40px
+          .s-form-item
+            margin-bottom 10px
+            margin-right 0
+          .s-input
+            width: 80px
+            vertical-align middle
+        .btn
+          text-align center
+        input[type=number]
+          -moz-appearance: textfield
+          &::-webkit-inner-spin-button, &::-webkit-outer-spin-button
+            -webkit-appearance: none
+            margin: 0
+// ServerDeploy 首页 >资产管理 >审计管理 >关联审计配置*
+.serverDeploy
+  padding 15px
+  position relative
+  .s-row
+    margin-bottom 0
+  .back
+    float: right
+    transform translateX(-100%)
+  .title
+    font-weight 700
+    height 36px
+    line-height 36px
+    color: title_3
+    font-size 16px
+    border-bottom: 1px solid border_color
+    .right
+      float: right
+      .s-button
+        vertical-align top
+        &:not(:last-child)
+          margin-right 5px
+  .s-tabs .s-tabs-content
+    padding 0 15px
+  .foot
+    margin-top: 10px
+
+  .body
+    padding 10px 0px 10px 0px
+    .deployScrollbar
+      padding 15px 17px 15px 10px
+      max-height 600px
+      background block_bg
+    .detail
+      padding 12px 8px
+      .header
+        &:after
+          body: ''
+          display block
+          overflow hidden
+          clear both
+        .name
+          font-weight 700
+          height 36px
+          line-height 36px
+          font-size 14px
+        .float-right
+          float: right;
+      .certificateServer
+        width: 120px
+        display inline-block
+        font-size 14px
+      .relateServerInfo
+        border: 1px solid border_color
+        position relative
+        padding 15px 30px
+        margin-top: 10px
+        .declare
+          position absolute
+          top: 0px
+          left: 10px
+          transform translateY(-50%)
+          font-size 14px
+          font-weight 600
+          background block_bg
+          padding 0 3px
+        .s-radio
+          width: 100%
+          margin-top 8px
+          & + .s-radio
+            margin-left 0
+  .tab2Table
+    margin-top 10px
+
+  .s-table-expanded-cell
+    .expandName
+      font-weight 600
+      height: 30px
+      line-height 30px
+    .expandInfo
+      line-height 25px
+
+  .flowFilter
+    margin-top 10px
+    padding 15px 17px 15px 10px
+    background-color block_bg
+    .s-checkbox
+      height: 36px
+      line-height 36px
+      width: 100%
+      & + .s-checkbox
+        margin-left 0
+
+// ServerTab  首页 >资产管理 >审计管理> 应用服务器配置 *
+  .serverTab
+    .protocol
+      padding: 5px 15px
+      border-radius: 8px
+      border: 1px solid border_color
+      background: block_bg
+//  DocAddDialog  首页 >资产管理 >文档管理 > 添加（编辑）*
+.docAddDialog
+  .docAddScrollbar
+    padding-right 17px
+    max-height: 500px
+  .description
+    background: rgba(blue_color, 0.2)
+    color: blue_color
+    i
+      vertical-align: middle
+      margin-right: 5px
+  .docUpload
+    margin-top 10px
+    margin-bottom 10px
+// pollingTaskAddDialog  首页 >资产管理 >资产巡检 >巡检任务添加
+.pollingTaskAddDialog
+  .taskScrollbar
+    max-height: 500px
+  .noEnd
+    margin-left 10px
+  .topRow
+    margin-bottom 10px
+  .title
+    font-weight 600
+    color: original_color
+  .opeRow
+    margin-top: 10px
+    margin-bottom 8px
+// PollingResultDetail  首页 >资产管理 >资产巡检 >巡检结果详情*
+  .pollingResultDetail
+    position relative
+    font-size 12px
+    padding 15px
+    .back
+      position absolute
+      top: 15px
+      right 15px
+      z-index 1
+    .clearfix
+      &:before, &:after
+        content: ''
+        display block
+      &:after
+        clear: both
+        overflow: hidden
+    .baseData
+      .title
+        height: 36px;
+        line-height: 36px;
+        color: title_3
+        font-weight: 700;
+        display: inline-block;
+        font-size 16px
+        i
+          margin-right: 5px
+      .grid-content
+        white-space nowrap
+        overflow hidden
+        text-overflow ellipsis
+    .card-title
+      font-size: 14px
+      color: title_3
+    .chartName
+      cursor pointer
+      text-align center
+      &:hover
+        text-decoration underline
+    .scoreDetail
+      padding-top 5px
+//  PollingResultTab 首页 >资产管理 >资产巡检 >巡检结果*
+  .pollingResult
+    .searchFormChunk
+      padding: 15px 15px 0 15px
+      border: solid 3px border_color
+      border-radius: 5px
+      background: block_bg
+      margin-bottom 8px
+      .s-form-item
+        margin-bottom 20px
+    .searchBtChunk
+      margin-bottom 8px
+    .left
+      float: left
+    .right
+      float: right
+// AssetProtocol 首页 >资产管理 >协议管理*
+  .assetProtocol
+    .topRow
+      margin-bottom -31px
+    .protocolName
+      color: link_text
+      cursor default
+      &:hover
+        text-decoration underline
+// AssetsFindAgain\Steps\Step1 再次发现*
+  .step1
+    .delete
+      height: 30px
+      padding: 10px 0
+      border-top: 1px solid border_color
+    .s-form-item.is-error .s-select .s-input-inner
+      border: 1px solid border_color
+// AssetsFindAgain\Steps\Step2*
+  #step2
+    .s-form
+      font-size 0
+    .s-form-item
+      font-size: 12px
+      width: 50%
+      margin-right: 0
+      .s-form-item-content
+        width: 200px
+      .s-input
+        width: 100%
+      .s-input-number
+        width: 100%
+        vertical-align: middle
+        background transparent
+    .seedScan
+      box-sizing: border-box
+      padding: 0px 5px
+      height: 22px
+      line-height: 22px
+      vertical-align: baseline
+
+    #step2Table
+      td,th
+        & > div
+          padding-left: 5px
+          padding-right: 5px
+
+    .scanResultContainer
+      max-height: 400px
+
+    .error p
+      color: red_color
+    .success p
+      color: normalcy_text
+    .scanResult
+      p
+        margin: 0
+        line-height 22px
+        font-size 12px
+
+  .gatewayScan
+    margin-bottom 10px
+
+  .deleteButton
+    margin-bottom 10px
+    margin-top: -12px
+
+  .otherWay
+    font-weight: 600
+//  AssetsFindAgain\Steps\Step3*
+.clearfix
+  &:before,&:after
+    content: ''
+    display block
+  &:after
+    overflow hidden
+    clear both
+
+.step3
+  .step3-progress
+    height: 60px
+    .progress-label, .progress-bar, .progress-des
+      float: left
+      font-size: 14px
+      font-weight: 700
+      height: 60px
+      line-height: 60px
+    .progress-label
+      width: 100px
+      text-align: center
+    .progress-bar
+      min-width: 300px
+    .progress-des
+      float: right
+      span
+        color: original_color
+  .step3-result
+    width: 100%
+    .s-table
+      float: left
+      width: 25%
+      .cell
+        text-align: center
+    .scanResult
+      width: 25%
+      float: left
+      box-sizing border-box
+      border: 1px solid border_color
+      &:not(:first-child)
+        border-left: none
+      /*.scanContentScroll*/
+      /*border 1px solid #0b2647*/
+      .scanContentHeight
+        height: 330px
+      .s-row
+        text-align center
+        line-height 25px
+        margin-bottom: 0
+        &.title
+          line-height 35px
+          height: 35px
+          background-color: rgba(gary_l1_black, 0.2)
+          color: title_3
+          border-bottom 1px solid border_color
+          font-weight: bold
+          font-size: 14px
+// AssetsFindAgain\Steps\Step4
+.step4
+  .step4-progress
+    height: 60px
+    .progress-label, .progress-bar, .progress-des
+      float: left
+      font-size: 14px
+      font-weight: 700
+      height: 60px
+      line-height: 60px
+    .progress-label
+      width: 100px
+      text-align: center
+    .progress-bar
+      min-width: 300px
+    .progress-des
+      float: right
+      span
+        color: original_color
+  .step4-result
+    width: 100%
+    .s-table
+      width: 100%
+
+  .scanContentScroll
+    border 1px solid border-color
+  .scanContentHeight
+    height: 400px
+    .s-row
+      padding-left: 20px
+      line-height 25px
+      margin-bottom: 0
+// AssetsFindAgain\Steps\Step5
+  .step5
+    .step5-progress
+      height: 60px
+      .progress-label, .progress-bar, .progress-des
+        float: left
+        font-size: 14px
+        font-weight: 700
+        height: 60px
+        line-height: 60px
+      .progress-label
+        width: 100px
+        text-align: center
+      .progress-bar
+        min-width: 300px
+      .progress-des
+        float: right
+        span
+          color: original_color
+    .step5-result
+      height: 400px
+      width: 100%
+      .s-table
+        width: 100%
+
+    .scanContentScroll
+      border 1px solid border-color
+    .scanContentHeight
+      height: 400px
+      .s-row
+        padding-left: 20px
+        line-height 25px
+        margin-bottom: 0
+// AssetsFindAgain\Steps\Step6
+.step6
+  .step6-item
+    height 90px
+    .item-left
+      float left
+      height 80px
+      line-height 80px
+      width 80px
+      margin 10px 10px 10px 30px
+      text-align right
+      font-size 46px
+      color original_color
+    .item-right
+      float left
+      height 40px
+      margin 30px auto 0 10px
+      .item-title, .item-content
+        display block
+        height 20px
+        line-height 20px
+        font-size 14px
+        color title_3
+      .item-content
+        color title_1
+// assetsArr   首页 >资产管理 >配置管理 > 资产附加属性
+#assetsArr
+  position relative
+  .saveBtn
+    position absolute
+    right 10px
+    top 0px
+    z-index 3
+  .assetsItemBox
+    background-color block_bg
+    height 330px
+    padding 20px 40px
+    margin-top 10px
+    position relative
+    overflow hidden
+    .s-tag
+      cursor: pointer
+    .itemIndex
+      position absolute
+      top 10px
+      left -30px
+      width 60px
+      height 60px
+      text-align right
+      padding-right 6px
+      border-radius 50%
+      background-color blue_l1_black
+      color title_2
+      .num
+        width 30px
+        height 40px
+        line-height 40px
+        font-size 20px
+        font-weight 600
+        margin-top 10px
+        text-align center
+        float right
+    .checkboxlist
+      border 1px dashed border_color
+      height 85px
+  .numItemBox
+    height 140px
+// CMDB改造:Asset_assetList/AssetDetail
+#assetDetail
+  padding 10px 15px 0
+  .assetDetailBg
+    .preAsset, .nextAsset
+      transition .3s
+      background #e0e0e0
+      color #ffffff
+      &:hover
+        background #168df5
+      &:focus
+        background #0b7adb
+  .s-form
+    padding 15px
+    margin 0 20px 0 0
+    background rgba(18,94,162,0.04)
+    .s-select, .s-date-editor
+      width 100%
+  .blockTitle
+    color #667480
+    font-size: 15px
+    font-weight: bold
+    margin 5px auto 3px
+    .iconfont
+      font-size 18px
+      position relative
+      top 2px
+      margin-right 6px
+      font-weight normal
+  .blockValue
+    color link_text
+    &:hover
+      color hover_text
+  .noDataTip
+    color gray_l3_text
+  #associationForm
+    .s-form-item-content
+      padding-right 30px
+  .calcHeight
+    max-height calc(100vh - 390px)
+
+// 资产管理>资产列表>左侧资产树选中样式
+.assetList
+  #itAssetsTree
+    .is-current
+      background #edf0f5
+      .s-tree-node-content
+        color link_text !important

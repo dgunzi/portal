@@ -1,0 +1,213 @@
+.processapproval-img
+  width 100%
+  text-align center
+  & img
+    background #fff
+    margin 30px auto
+    width 80%
+
+.processmanage-img
+  width 100%
+  text-align center
+  .work-order-wrapper
+  .s-carousel
+    overflow hidden
+  .is-active
+    border none
+    box-shadow none
+  & img
+    margin 20px auto
+    width 1250px
+
+.process-manage-kpiitem
+  margin 6px;
+  background #020c19
+  padding 10px
+
+.process-manage-kpiitem-title
+  color title_3
+
+.process-manage-kpiitem-title.fr
+  display block
+  float right
+
+// 新版
+.processEventDetail, .processModifyDetail, .processDetail
+  padding: 20px 20px 10px
+  a
+    color link_text
+    &:hover
+      color hover_text
+  .leftMenu
+    padding-bottom 50px
+    .title
+      display: inline-block;
+      width: 90%;
+      font-size: 14px
+      line-height 36px
+      text-align: left
+      color link_text
+      span
+        display inline-block
+        width: 2px
+        height: 12px
+        background original_l1_white
+        vertical-align middle
+        margin-right 5px
+  .formContainer
+    background block_bg
+    padding 0 10px
+  .detailBox
+    .title
+      font-size: 14px
+      color link_text
+      line-height: 36px
+      margin-top: 10px
+  .upload
+    display inline-block
+  .fileIcon
+    font-size 18px
+    margin-left 5px
+
+.processEventDetail, .processModifyDetail, .processDetail
+  .workInfo
+    margin-top: 10px
+    background-color block_bg
+    .title
+      border-top 1px dashed original_l1_black
+  .success-state
+    color green_color
+  .fail-state
+    color red_color
+
+/* 详情页左侧 */
+.process-detail-title
+  display: flex
+  justify-content: flex-start
+  margin-top: -10px
+  width: 175px
+  height: 70px
+  background: url('./img/processCenter/title-bg.png') center no-repeat
+  & > span
+    height: 70px
+    line-height: 70px
+    font-size: 14px
+    font-weight: 600
+    &.process-detail-text
+      flex: 1
+      padding-right: 48px
+      text-align: center
+      color: #fff
+    &.process-detail-icon
+      width: 36px
+      margin-left: 15px
+      &.event
+        background: url('./img/processCenter/event-detail-title.png') center no-repeat
+      &.modify
+        background: url('./img/processCenter/modify-detail-title.png') center no-repeat
+      &.problem
+        background: url('./img/processCenter/problem-detail-title.png') center no-repeat
+
+.processDetail, .processModifyDetail
+  box-sizing: border-box
+  margin: 0
+  padding: 20px 20px 0 0
+  .leftMenu
+    .title
+      width: 175px
+      height: 30px
+      line-height: 30px
+      font-size: 14px
+      text-align: center
+      color: gray_l2_text
+      background: url('./img/processCenter/menu-title-bg.png') center no-repeat
+    .s-button
+      width: 158px
+      height: 40px
+      border: none
+      background: url('./img/processCenter/menu-bg.png') center no-repeat
+      color: link_text
+      text-align: left
+      text-indent: 10px
+      &:hover
+        background: url('./img/processCenter/menu-bg-hover.png') center no-repeat
+        color: hover_text
+      &.is-disabled
+        background: url('./img/processCenter/menu-bg-disabled.png') center no-repeat
+        color: gray_l2_text
+
+.processModifyDetail, #taskOrderDetail, .processProblemDetail, .processEventDetail
+  .disabledIcon
+    color gary_l1_black !important
+    cursor not-allowed !important
+  .clickLink, .addWorkInfo .title
+    color link_text
+
+.name-card
+  .key
+    color #aec2d6
+
+.flowchart-float-window
+  width 100%
+  padding: 10px
+  .float-title
+    line-height 20px
+    height 20px
+    padding-top 5px
+    color #2aa8ff
+  th, td
+    text-align left
+  thead
+    tr th
+      color #e5f5fa
+      background-color #092f51
+      line-height 28px
+      text-indent 4px
+  tbody
+    tr td
+      max-width 35px
+      color #e5f5fa
+      line-height 28px
+      border-bottom 1px #1d1e21 solid
+      white-space nowrap
+      text-overflow ellipsis
+      overflow hidden
+      text-indent 4px
+
+.templateDialog
+  .s-radio-group
+    width 100%
+    cursor pointer
+    .s-table
+      .s-radio__inner
+        vertical-align middle
+      .s-radio__label
+        display none
+  .temDetailBox
+    border: 1px solid original_l1_black
+    padding 15px 5px 0
+    position relative
+    &:after
+      content: '详细信息'
+      color: title_3
+      font-weight: 600
+      font-size: 14px
+      padding: 5px 10px
+      position absolute
+      top: 0
+      left: 10px
+      transform: translateY(-50%)
+      background block_bg
+
+.s-table tbody .cell .iconfont
+  &.failed-state
+    color: red_color
+  &.success-state
+    color: green_color
+
+/* 每周工作量统计 */
+.process-week-work-account
+  a
+    color link_text
+    &:hover
+      color hover_text

@@ -1,0 +1,68 @@
+#panelTabContent
+  width calc(100% - 10px)
+  height 280px
+  margin 0px
+  display flex
+  flex-flow row
+  .leftBox
+    width 255px
+    .box-card
+      height 290px
+      padding-left 5px
+      color title_1
+  .rightBox
+    flex 1
+    .box-card
+      height 290px
+      padding-left 5px
+      color title_1
+      .item
+        margin-left 5px !important
+  .item
+    float left
+    height 95px
+    width 120px
+    margin-top 5px
+    cursor pointer
+    .icon
+      width 60px
+      height 60px
+      margin 0 auto
+      margin-top 8px
+      img
+        width 100%
+        height 100%
+    .title
+      text-align center
+  .itemSelect
+    height 93px
+    width 118px
+    border 1px solid border_color
+  #dragDivContent
+    .s-card-body
+      height calc(100% - 38px)
+    .noData
+      text-align center
+      color title_1
+      font-size 20px
+      height 80px
+      line-height 80px
+  #dragDivContentList
+    height 260px
+    overflow auto
+  #dragDivContentBatch
+    @extends #panelTabContent #dragDivContentList
+    width 100%
+    height 100%
+    cursor move
+  #dragDiv
+    border 1px dashed border_color
+    position absolute
+    .item
+      height 93px
+      width 118px
+      border 1px solid border_color
+      position absolute
+.dragElement
+  position: absolute;
+  border: 1px dashed border_color;

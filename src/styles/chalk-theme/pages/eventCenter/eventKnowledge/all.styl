@@ -1,0 +1,70 @@
+/* pages\EventKnowledge\All.vue */
+
+.knowledge-all-page
+  .s-table
+    tbody .cell .s-rate__item .iconfont
+      font-size: 18px
+      margin-right: 4px
+    .hide-icon
+      .icon-edit, .icon-delete
+        display: none
+    .icon-attended-full
+      display: none
+    .collected
+      .icon-attend
+        display: none
+      .icon-attended-full
+        display: inline
+  .special-item
+    position: relative
+    margin: 0
+    .iconfont
+      position: absolute
+      left: 0
+      top: 5px
+      font-size: 38px !important
+      height: 50px
+      line-height: 50px
+      margin-right: 0 !important
+    .iconfont.icon-knowledge-base
+      position absolute
+      left 0
+      top 24px
+      font-size 32px
+      line-height 32px
+    .s-col-24
+      padding: 10px 0 5px 30px
+      .s-row
+        position: relative
+        &:nth-child(1) .s-col-24
+          padding-right: 160px
+          white-space: nowrap
+          overflow: hidden
+          text-overflow: ellipsis
+          color: title_1
+          line-height: 20px
+    .from-name
+      width: 150px
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+      position: absolute
+      right: 0
+    > .s-col-24 .s-row:nth-child(2) .s-col-24
+      padding-right: 120px
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+      color: gray_l1_text
+      line-height: 16px
+      font-size: 12px
+    .type-name
+      position: absolute
+      right: 10px
+      width: 100px
+      text-align: center
+      background: original_color
+      font-size: 12px
+      font-weight: bold
+      color: title_2
+      border-radius: 2px

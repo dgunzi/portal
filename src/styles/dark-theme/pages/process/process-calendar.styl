@@ -1,0 +1,285 @@
+backgoundColor = #000009
+wordColor = #ffffff
+dateHeadBg = #1F3C57
+color1 = #FD4A4A
+color2 = #FBC514
+color3 = #28CF5E
+color4 = #4C96F4
+bordercolor = #000009
+dateBg = #0d2b47
+moreTitle = #0D467A
+moreBody = #020C19
+/*左侧小框*/
+.calendar-level-Wrapper
+  height: 310px;
+  margin-top: 45px;
+  padding: 0 6px;
+  background-color: dateBg
+  dl:first-child
+    margin-bottom 40px
+  dt:before
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 1px;
+    left: 0;
+    bottom: 0;
+    top: 10px;
+    background-color: #168EF6;
+    border: 1px solid;
+  dt
+    font-size 16px
+    font-weight bold
+    position relative
+    padding 5px 0 5px 10px
+  dd
+    font-size 14px
+    margin-left 20px
+    padding 5px 0
+  .block
+    width 10px
+    height 10px
+    display inline-block
+    margin-right: 4px
+  .color1
+    background-color: color1
+  .color2
+    background-color: color2
+  .color3
+    background-color: color3
+  .color4
+    background-color: color4
+/*head*/
+.full-calendar-header {
+  display: flex;
+  align-items: center;
+}
+.full-calendar-header .header-left, .full-calendar-header .header-right {
+  flex: 1;
+}
+.full-calendar-header .header-center {
+  flex: 3;
+  text-align: center;
+}
+.full-calendar-header .header-center .title {
+  margin: 0 80px;
+  font-size: 18px;
+}
+.full-calendar-header .header-center .prev-month, .full-calendar-header .header-center .next-month {
+  cursor: pointer;
+}
+/*calendar*/
+.comp-full-calendar {
+  color: wordColor;
+  padding: 10px 20px;
+  background: backgoundColor;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.comp-full-calendar ul, .comp-full-calendar p {
+  margin: 0;
+  padding: 0;
+}
+
+.full-calendar-body {
+  margin-top: 10px;
+}
+.full-calendar-body .dates .dates-bg{
+  background-color: dateBg;
+}
+.full-calendar-body .weeks {
+  display: flex;
+  border: 1px solid bordercolor;
+  border-right: none;
+}
+
+.full-calendar-body .weeks .week {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid bordercolor;
+  background-color: dateHeadBg;
+  padding: 8px 0;
+}
+
+.full-calendar-body .dates {
+  position: relative;
+}
+
+.full-calendar-body .dates .week-row {
+  border-left: 1px solid bordercolor;
+  display: flex;
+}
+
+.full-calendar-body .dates .week-row .day-cell {
+  flex: 1;
+  min-height: 112px;
+  padding: 4px;
+  border-right: 1px solid bordercolor;
+  border-bottom: 1px solid bordercolor;
+}
+
+.full-calendar-body .dates .week-row .day-cell .day-number {
+  text-align: right;
+}
+
+.full-calendar-body .dates .week-row .day-cell.not-cur-month {
+  background-color: dateBg;
+}
+.full-calendar-body .dates .week-row .today{
+  background-color: dateBg;
+}
+
+.full-calendar-body .dates .dates-events {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.full-calendar-body .dates .dates-events .events-week {
+  display: flex;
+}
+
+.full-calendar-body .dates .dates-events .events-week .events-day {
+  flex: 1;
+  min-height: 121px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.full-calendar-body .dates .dates-events .events-week .events-day .day-number {
+  padding: 6px 6px 2px 2px;
+  font-size: 16px;
+}
+
+.full-calendar-body .dates .dates-events .events-week .events-day.not-cur-month .day-number {
+  color: #97A4AF;
+}
+
+.full-calendar-body .dates .dates-events .events-week .events-day .event-box .event-item {
+  cursor: pointer;
+  font-size: 12px;
+  margin-bottom: 2px;
+  color: wordColor;
+  padding-left: 2px;
+  height: 12px;
+  line-height: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.full-calendar-body .dates .dates-events .events-week .events-day .event-box
+  .event-item
+    position: relative;
+  .greenItem
+    background-color: rgba(40,207,94,0.5);
+  .redItem
+    background-color: rgba(253,74,74,0.5);
+  .yellowItem
+    background-color: rgba(251,197,20,0.5);
+  .blueItem
+    background-color: rgba(76,150,244,0.5);
+  .event-item.is-start.blueItem:before,.event-item.is-start.redItem:before,
+  .event-item.is-start.greenItem:before,.event-item.is-start.yellowItem:before
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 8px;
+    left: 0;
+    bottom: 0;
+  .event-item.is-end.blueItem:before, .event-item.is-end.redItem:before,
+  .event-item.is-end.greenItem:before, .event-item.is-end.yellowItem:before
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 8px;
+    right: 0;
+    bottom: 0;
+  .event-item.is-start.yellowItem:before,.event-item.is-end.yellowItem:before
+    background-color: rgb(251,197,20);
+  .event-item.is-start.greenItem:before, .event-item.is-end.greenItem:before
+    background-color: rgb(40,207,94);
+  .event-item.is-start.redItem:before, .event-item.is-end.redItem:before
+    background-color: rgb(253,74,74);
+  .event-item.is-start.blueItem:before, .event-item.is-end.blueItem:before
+    background-color: rgb(76,150,244);
+.full-calendar-body .dates .dates-events .events-week .events-day .event-box .event-item.is-start {
+  margin-left: 1px;
+  padding-left: 9px;
+}
+.full-calendar-body .dates .dates-events .events-week .events-day .event-box .event-item.is-end{
+  margin-right: 1px;
+  padding-right: 9px;
+}
+.full-calendar-body .dates .dates-events .events-week .events-day .event-box .event-item.is-opacity {
+  opacity: 0;
+}
+
+.full-calendar-body .dates .dates-events .events-week .events-day .event-box .more-link {
+  cursor: pointer;
+  text-align: center;
+  font-size: 12px;
+  color: #97A4AF;
+}
+
+.full-calendar-body .dates .more-events {
+  position: absolute;
+  width: 220px;
+  z-index: 2;
+}
+
+.full-calendar-body .dates .more-events .more-header {
+  background-color: moreTitle;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.full-calendar-body .dates .more-events .more-header .title {
+  flex: 1;
+}
+
+.full-calendar-body .dates .more-events .more-header .close {
+  margin-right: 2px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.full-calendar-body .dates .more-events .more-body .body-list {
+  padding: 5px;
+  background-color: moreBody;
+  min-height: 140px
+}
+.full-calendar-body .dates .more-events .more-body .body-list
+  .greenItem
+    background-color: color3
+  .redItem
+    background-color: color1
+  .yellowItem
+    background-color: color2
+  .blueItem
+    background-color: color4
+.full-calendar-body .dates .more-events .more-body .body-list .body-item {
+  cursor: pointer;
+  font-size: 12px;
+  margin-bottom: 2px;
+  color: wordColor;
+  padding: 0 0 0 4px;
+  height: 18px;
+  line-height: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.full-calendar-body .dates .more-events .more-body .body-list .body-item:hover {
+  opacity 0.7
+}
+.full-calendar-dialog-title{
+  font-weight: bold;
+  color: color4;
+  font-size: 16px;
+  padding-bottom: 4px;
+}

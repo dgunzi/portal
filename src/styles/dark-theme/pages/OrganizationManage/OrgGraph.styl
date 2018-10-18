@@ -1,0 +1,155 @@
+.box
+  text-align left
+  .exportBt
+    margin-left 5px
+  .noActive
+    opacity 0.5
+  .toggleIcon
+    text-align right
+    font-size 0
+    .s-button:nth-child(1)
+      border-top-right-radius 0
+      border-bottom-right-radius 0
+    .s-button:nth-child(2)
+      border-top-left-radius 0
+      border-bottom-left-radius 0
+    .s-button:nth-child(3)
+      margin-left: 10px
+  .topoGraph
+    height 750px
+  .handler-btns
+    margin-bottom 12px
+.org-graph-container
+  .graph-container
+    overflow hidden
+    cursor default
+    height 100%
+    width 100%
+    background url('./img/orggraph/org_bg.png')
+    background-repeat no-repeat
+    background-size 100% 100%
+  .org-cell
+    height 104px
+    width 120px
+  .org-cell-icon
+    height 85px
+    width 85px
+    background-repeat no-repeat
+    background-size 100%
+    margin 0 auto
+  .org-level1-cell
+    background-image url('./img/orggraph/org-level1-normal.png')
+  .org-level1-cell:hover,.org-cell-current .org-level1-cell
+    background-image url('./img/orggraph/org-level1-hover.png')
+  .org-level2-cell
+    background-image url('./img/orggraph/org-level2-normal.png')
+  .org-level2-cell:hover,.org-cell-current .org-level2-cell
+    background-image url('./img/orggraph/org-level2-hover.png')
+  .org-level3-cell
+    background-image url('./img/orggraph/org-level3-normal.png')
+  .org-level3-cell:hover,.org-cell-current .org-level3-cell
+    background-image url('./img/orggraph/org-level3-hover.png')
+  .org-cell-title
+    height 19px
+    width 120px
+    color title_1
+    white-space nowrap
+    overflow hidden
+    text-overflow ellipsis
+  .org_info
+    height 155px
+    width 100%
+    background-image linear-gradient(to bottom,original_l3_black,original_l2_black)
+    margin-bottom 2px
+    .org_icon
+      text-align center
+      margin-top 32px
+    i
+      font-size 55px
+      line-height 55px
+      color link_text
+    .org_name
+      color original_color
+      text-align left
+      height auto
+      max-height 38px
+      font-size 16px
+      line-height 18px
+      margin-top 24px
+      margin-bottom 5px
+      overflow hidden
+    .org_info_item
+      height auto
+      min-height 16px
+      max-height 48px
+      line-height 16px
+      color title_3
+      text-align left
+      font-size 14px
+      margin-bottom 6px
+      overflow hidden
+  .user-table
+    width 100%
+  .underLine
+    text-decoration underline
+    cursor pointer
+  .left-panel
+    .user-list
+      border 1px solid gray_l3_black
+      border-bottom none
+      .s-col
+        padding 5px
+        line-height 28px
+        font-weight bold
+        font-size 14px
+        background-color original_l3_black
+        color title_1
+    .user-list-item
+      color main_text
+      font-size 14px
+      background rgba(3, 13, 24, 0.502)
+      &:nth-of-type(odd)
+        background rgba(4, 23, 41, 0.502)
+      &:hover
+        box-shadow: 0 0 50px 0 rgba(22, 117, 203, 0.5) inset;
+    .scrollheight
+      height calc(100vh - 550px);
+      .s-col
+        line-height 28px
+        padding 3px 8px
+        white-space nowrap
+        text-overflow ellipsis
+        overflow hidden
+      .s-scrollbar-view
+        border 1px solid gray_l3_black
+        border-top none
+  .orgDetail
+    width 180px
+    text-align left
+    height 100px
+  .org_name
+    font-size 15px
+    color original_l1_white
+    font-weight 600
+    white-space nowrap
+    overflow hidden
+    text-overflow ellipsis
+    height: 18px;
+  .org_info_item
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color main_text
+    span
+      display inline-block
+      width 85px
+      line-height 25px
+      color darkWordColor
+  .welcome
+    font-size 18px
+    font-weight 600
+    line-height 45px
+    position absolute
+    z-index 100
+    color title_1
+    left 5px

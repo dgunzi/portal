@@ -1,0 +1,112 @@
+// Assets_logsManage\logsManage    首页 >资产管理 >日志审计配置
+#receive
+  .s-row
+    margin-bottom 0
+  .logscontainer
+    padding-bottom: 20px
+    .logform
+      background block_bg
+      padding-top 20px
+      padding-bottom 20px
+    .header
+      display flex
+      align-items center
+      height 60px
+      background block_bg
+      border-bottom 1px solid border-color
+      padding-left: 10px
+      color title_3
+      .title
+        font-size 16px
+        line-height: 1.7
+        color: title_3
+        font-weight: bold
+    .card-title
+      font-size 16px
+      line-height 3px
+// EventRules\components\dragfield  首页 >事件中心 >规则配置 > 日志审计规则>新增拖拽
+  .drag-fieldevent
+    width: calc(100% - 17px)
+    .drag-item
+      display: flex
+      justify-content: space-between
+      height: 40px
+      line-height: 40px
+      background: rgba(blue_color,0.2)
+      padding: 0 10px
+      margin-top: 5px
+      color: title_3
+      cursor: move
+      &.drag-item-canHover:hover
+        border: dashed 1px border_color
+        height: 38px
+        line-height: 38px
+    .dragField-field
+      margin-top: 5px
+      .dragField-fieldBody
+        box-sizing: border-box
+        height: 130px
+        padding: 20px
+        border: 1px solid border_color
+        overflow: hidden
+        &.dragField-fieldBody-hover
+          border: 1px dashed border_color
+        .s-form .s-form-item
+          margin-top: 5px
+          margin-bottom: 5px
+    .dragField-fieldBody-scroll
+      max-height: 110px
+
+  .drag-item-iamge
+    display: flex
+    justify-content: space-between
+    height: 40px
+    line-height: 40px
+    border: dashed 1px  border_color
+    background: rgba(blue_color,0.2)
+    padding: 0 10px
+    color: title_3
+    cursor: move
+  .my-title-box-title {
+    position: absolute;
+    left: 164px;
+    top: 4px;
+    transform: translate(0, -50%);
+    height: 25px;
+    padding: 0 10px;
+    text-align: center;
+    line-height: 25px;
+    background-color: block_bg
+    font-size: 16px;
+    font-weight: 600;
+    color: title_3
+  }
+// \EventRules\components\eventsStrategyForm  首页 >事件中心 >规则配置>新增
+.events-strategy-form
+  .event-format
+    box-sizing: border-box
+    width: 100%
+    min-height: 30px
+    border: 1px solid border_color
+    padding: 10px
+    margin: 10px 0
+  .s-card
+    .s-card-body
+      margin-top: 10px
+  .myHeight
+    max-height: 400px
+  .fontcolor
+    color: title_3
+  .s-card.box-card-nobg .s-card-header {
+    color: title_3
+    padding: 0;
+  }
+// Siem\EventRules\eventlogAudit  首页 >事件中心 >最新事件
+#logAudit
+  .searchFormChunk
+    margin-left: 200px
+  .ip
+    color: link_text
+    cursor default
+    &:hover
+      text-decoration underline

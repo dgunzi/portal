@@ -1,0 +1,44 @@
+.knowledge-card
+  width: 100%
+  box-sizing: border-box
+  margin-bottom: 25px
+  font-size: 14px
+
+.knowledge-card-head
+  height: 60px
+  background: url(./pages/eventCenter/img/bg.jpg) no-repeat
+  background-size: cover
+  position: relative
+  border: 1px solid border_color
+
+.knowledge-card-name
+  height: 60px
+  div
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    height: 60px
+    color: #fff
+    font-size: 16px
+    line-height: 24px
+    font-weight: 600
+
+.knowledge-card-body
+  text-align: center
+  border: 1px solid border_color
+  border-top: none
+  padding: 20px 0
+  background-color: block_bg
+  .s-button
+    margin-top: 20px
+  .s-row
+    color: title_1
+    .s-col
+      position: relative
+      &:first-child:after
+        position: absolute
+        right: 0
+        top: 0
+        content: '|'
+        color border_color

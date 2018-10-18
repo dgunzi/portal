@@ -31,7 +31,7 @@
     "lodash": "^4.17.5",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1",
-    "vue-sunflower": "^2.3.13",
+    "vue-sunflower": "^2.3.14",
     "vuex": "^2.2.1"
   },
   "devDependencies": {

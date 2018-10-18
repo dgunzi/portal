@@ -17,7 +17,6 @@ var threeRoomMixin = {
       leftPanelFlag: false,
       currentMode: 0,
       resDialog: false,
-      loading: false,
       itemsLoading: 0,   // 载入计数
       drawHintFlag: false,
       spinFlag: false,
@@ -51,18 +50,18 @@ var threeRoomMixin = {
         roomTextureDir: this.roomTexturePath,
         widget: false
       };
+      window.oasis3d_loading = false;
       window.oasis3d = new Oasis3d(opts);
       window.oasis3d.setCabinetOpenCallback(this.addEquments);
       window.oasis3d.setEquipmentClickCallback(this.equipmentClick);
       window.oasis3d.model.scene.itemLoadingCallbacks.add(() => {
         this.itemsLoading += 1;
-        this.loading = true;
+        window.oasis3d_loading = true;
       });
       window.oasis3d.model.scene.itemLoadedCallbacks.add((item) => {
-        console.log(item);
         this.itemsLoading -= 1;
         if (this.itemsLoading === 0) {
-          this.loading = false;
+          window.oasis3d_loading = false;
         }
       });
       window.oasis3d.model.scene.itemRemovedCallbacks.add((item) => {
@@ -308,6 +307,13 @@ var threeRoomMixin = {
       }
       this.spinFlag = !this.spinFlag;
     },
+    cabinetUsage() {
+      //切换控制器
+      window.oasis3d.three.getController().showCabinetUsage('AD04C105-D39F-4DC4-B500-275361D08168');
+    },
+    cabinetSpace() {
+      window.oasis3d.three.getController().showCabinetSpace();
+    },
     enter: function (el, done) {
       let leftValue = -260;
       let interval = setInterval(function () {
@@ -329,6 +335,27 @@ var threeRoomMixin = {
           done();
         }
       }, 2);
+    },
+    changeFileMenu(index){
+      if(index === '0'){
+        this.newDesign();
+      }
+      if(index === '1'){
+        this.saveDesign();
+      }
+      if(index === '2'){
+        document.getElementById('loadFileInput').click();
+      }
+    },
+    loadDesign() {
+      let files = document.getElementById('loadFileInput').files;
+      console.log(files);
+      let reader  = new FileReader();
+      reader.onload = function(event) {
+        let data = event.target.result;
+        window.oasis3d.model.loadSerialized(data);
+      };
+      reader.readAsText(files[0]);
     },
     saveDesign() {
       let data = window.oasis3d.model.exportSerialized();

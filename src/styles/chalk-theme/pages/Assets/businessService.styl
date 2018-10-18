@@ -1,0 +1,437 @@
+//新业务服务
+//雷达页
+.business-layout
+  #left-panel
+    position:relative;
+    float:left;
+    width:400px;
+    margin-right:-400px;
+  #right-panel
+    float:right;
+    width:100%;
+    .kpi-box-card
+      margin-left:410px;
+  #graphContainer
+    overflow: hidden;
+    cursor: default;
+    height: 100%;
+    width: 100%;
+    background-color: #f0f3f5
+    margin-bottom 10px
+    .org-cell-title
+      color #000;
+#business-define
+  #left-panel
+    background-color: #fff
+  .tree-header
+    width 100%
+    height 40px
+    line-height 40px
+    background-color: #f0f3f5
+    h3
+      display inline
+      padding-left 10px
+    i
+      cursor pointer
+      padding-right 10px
+  #graphContainer
+    overflow: hidden;
+    cursor: default;
+    height: 100%;
+    width: 100%;
+    .org-cell-title
+      color #000;
+  .custom-tree-node
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    padding-right: 8px;
+  .s-tree-node-content:hover
+    background-color: #e0e0e0
+  .is-current>.s-tree-node-content
+    background-color: #e0e0e0
+
+#business-index
+  #wrapper
+    width: 350px;
+    height: 350px;
+    position: relative;
+    margin: 0 auto
+  #circle
+    width: 350px;
+    height: 350px;
+    border-radius: 175px;
+    background:url(../../../static/images/business/radarBg.png) no-repeat center center;
+  #radar
+    width: 350px;
+    height: 350px;
+    border-radius: 175px;
+    background:url(../../../static/images/business/radar.png) no-repeat center center;
+    z-index: 100;
+  .dot
+    position: absolute;
+    top:220px;
+    left: 275px;
+    width: 10px;
+    height: 10px;
+    border-radius:50%;
+    opacity: 1;
+    background: green;
+    z-index: 1000;
+    span
+      width: 60px;
+      height: 10px;
+      padding-top: 10px;
+      margin-left: -10px;
+      display: inline-block
+// business.vue
+.business-card
+  width: 100%
+  .scroll-height-600px
+    max-height: 600px
+  .sf-menu
+    padding-left: 12px
+    li
+      float: left
+      margin-right: 10px
+  .s-card
+    .s-card-header
+      span
+        color: title_3
+        font-size: 14px
+    .card-body
+      padding-top: 20px
+      .btns
+        margin: 10px 0
+
+// 新样式 kpi.vue
+div.monitor-kpi
+  display: flex
+  height: calc(100vh - 207px)
+  > div
+    padding: 10px
+    background: block_bg
+    min-height: 480px
+  .monitor-kpi-left
+    width: 320px
+    min-width: 320px
+    margin-right: 10px
+  .monitor-kpi-title
+    width: calc(100% + 20px)
+    height: 50px
+    margin: -10px -10px 0 -10px
+    padding: 0
+    line-height: 50px
+    text-align: center
+    font-size: 16px
+    font-weight: 600
+    background: tableHeaderBg
+    color: tableHeaderTitle
+  .kpi-left-scroll
+    max-height: calc(100vh - 610px)
+  .monitor-kpi-content
+    width: calc(100% - 370px)
+  .monitor-kpi-content-scroll
+    max-height: calc(100vh - 230px)
+
+.kpi-chart-noData
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 300px
+  color: darkWordColor
+  font-size: 18px
+  text-align: center
+  line-height: 300px
+  z-index: 1000
+
+.kpi-box-card
+  .s-card-header
+    margin-bottom: 10px
+    span
+      color: title_3
+      font-size: 14px
+  &.card-2
+    margin-top: 20px
+
+// 新业务服务影响样式
+.businessEffect {
+  position: relative;
+  min-height: 550px;
+}
+
+.businessEffect .selectField {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.businessEffect .leftRule {
+  text-align: center;
+  border-radius: 10px;
+  background: block_bg;
+  color: title_3;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.businessEffect .leftRule > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  height: calc((100% + 50px) / 6);
+  width: 200px;
+  padding-bottom: 10px;
+}
+
+.businessEffect .leftRule > div:nth-child(1) {
+  height: calc(100% / 6 - 50px);
+}
+
+// 影响图
+.businessEffectSvgWrapper
+  position: relative
+  flex: 1
+  overflow: hidden
+  .businessEffectSvg
+    position: absolute
+    left: 0
+    top: 0
+    cursor: move
+    font-size: 14px
+    line.swimLine
+      stroke: border_color
+    image.asset
+      cursor: pointer
+    text.assetDes
+      cursor: text
+      fill: lightWordColor
+    line.rel
+      stroke-dasharray: 5, 5
+    text.relDes
+      text-anchor: middle
+      cursor: text
+    line.rel
+      animation: dash 5s linear infinite
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+// BusinessService.vue
+
+.business-service
+  margin 20px
+  .s-tabs
+    .s-tabs-content
+      .s-tabs-tabpane
+        box-sizing: border-box
+        padding: 10px 0
+
+.floatTooltip
+  border: 1px solid #e9f1f2
+  background-color: rgba(174, 189, 195, 0.9)
+  height: auto
+  padding: 8px
+  font-size: 12px
+  .frow
+    height: 30px
+    line-height: 30px
+  .list
+    .row
+      display: flex
+      justify-content: flex-start
+      padding-top: 2px
+      > div
+        box-sizing: border-box
+        width: 50%
+        height: 30px
+        line-height: 30px
+        text-align: left
+        width: 200px
+        padding-left: 10px
+        background: rgba(255, 255, 255, 0.2)
+        &.rightrow
+          text-align: center
+          width: 140px
+          padding-left: 0
+          background: rgba(255, 255, 255, 0.3)
+
+// AssetsMonitor_BusinessService\components\monitorDeviceTemplate.vue
+
+.monitor-device-template
+  .dead-description-style
+    height: 36px
+    line-height: 36px
+    text-align: center
+    border: solid 1px rgb(60, 8, 10)
+    background: rgb(17, 6, 13)
+    color: red
+    font-size: 14px
+    font-weight: 600
+
+// AssetsMonitor_BusinessService\components\setKeyIndex.vue
+
+.my-tb.set-key-index
+  font-size: 14px
+  margin-top 10px
+  border-right: 1px solid #dce0e5
+  border-bottom: 1px solid #dce0e5
+  .s-row
+    margin-bottom 0
+    padding-bottom 0
+    .s-col
+      white-space: normal !important
+      word-break: break-all !important
+      box-sizing: border-box
+      height: auto !important
+      min-height: 30px
+      line-height: 32px
+      padding: 0 8px
+      overflow: hidden
+      text-overflow: ellipsis
+      text-align: left
+      border-left: 1px solid #dce0e5
+      border-top: 1px solid #dce0e5
+      &.header
+        text-align: right
+        background-color: #e4eaf2
+        color: #0d467a
+      &:nth-child(2n)
+        border-top: 1px solid #dce0e5
+        border-bottom: 1px solid #dce0e5
+
+// AssetsMonitor_BusinessService\monitor.vue
+
+.monitor-card
+  .monitorScrollMiniheight
+    max-height: 230px
+  .monitor-card-line
+    margin-bottom: 20px
+  .box-card
+    &.card-auto
+      .s-card-body
+        font-size: 12px
+        padding: 10px
+        min-height: 230px
+        height: auto
+    .s-card-header
+      padding: 10px 10px 10px 0
+      i
+        color: #35b0e3
+        margin-right: 10px
+      span
+        color: #35b0e3
+        font-size: 14px
+        font-weight: 600
+      & > div
+        padding-left: 10px
+    .s-card-body
+      position: relative
+      font-size: 12px
+      padding: 10px
+      height: 230px
+      .s-box
+        margin-bottom: 20px
+      .btns
+        position: absolute
+        left: 20px
+        top: 10px
+        z-index: 100
+        .s-button.btn-focus
+          background: #0070b2
+        .today
+          width: 74px
+  .my-tb
+    margin-top 10px
+    border-right: 1px solid #dce0e5
+    border-bottom: 1px solid #dce0e5
+    .s-row
+      margin-bottom 0
+      padding-bottom 0
+      .s-col
+        box-sizing: border-box
+        padding: 0 8px
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+        height: 34px
+        line-height: 34px
+        text-align: left
+        border-left: 1px solid #dce0e5
+        border-top: 1px solid #dce0e5
+        &.header
+          text-align: right
+          background-color: #e4eaf2
+          color: #0d467a
+
+  .map_overview
+    position: absolute
+    right: 0
+    bottom: 0
+
+.status-circle-box
+  display: inline-block
+  width: 10px
+  height: 10px
+  border-radius: 5px
+  background: rgba(0, 0, 9, 0)
+  &.status-circle-1-2
+    background: #eb5f50
+  &.status-circle-1-0
+    background: #eb5f50
+  &.status-circle-1-1
+    background: #25ae3a
+  &.status-circle-2-0
+    background: #eb5f50
+  &.status-circle-2-1
+    background: #de9129
+  &.status-circle-2-2
+    background: #25ae3a
+
+// AssetsMonitor_BusinessService\sideBar.vue
+
+.business-side-bar
+  position: fixed
+  right: 0
+  top: 50%
+  transform: translateY(-50%)
+  .side-bar-btn
+    box-sizing: border-box
+    position: absolute
+    left: -20px
+    top: 50%
+    height: 40px
+    line-height: 40px
+    width: 20px
+    background: #ffffff
+    border: solid 1px #6da0cb
+    transform: translateY(-50%)
+    border-radius: 4px 0 0 4px
+    cursor: pointer
+  #definGraph
+    width: 190px
+    padding: 10px
+    background: #ffffff
+    border-top: solid 1px #6da0cb
+    border-bottom: solid 1px #6da0cb
+    border-left: solid 1px #6da0cb
+    border-radius: 2px 0 0 2px
+    & > #rightSidebar
+      line-height: 36px
+      img.mxToolbarMode
+        margin: 2px 4px 4px 4px
+        border-width: 0
+      & > a
+        position: relative
+        top: -18px
+        font-size: 12px
+      hr
+        margin: 5px 0

@@ -1,0 +1,191 @@
+// auditAdd
+.audit-add-wrapper
+  height: 500px
+  .phead
+    font-size: 14px
+    font-weight: bold
+    color: title_3
+    i
+      margin-right: 6px;
+
+// AuditResultDetail
+
+.audit-result-detail
+  height: 500px
+  overflow: auto
+  .detail-item
+    position: relative
+    margin-top: 10px
+    padding: 5px 0
+    border: solid 1px border_color
+    .detail-title
+      position: absolute
+      height: 36px
+      left: 10px
+      top: 2px
+      line-height: 36px
+      color: title_3
+
+// AuthView 授权策略管理-查看
+
+.auth-view .title {
+  color: title_3
+  height: 36px;
+  line-height: 36px;
+}
+
+.auth-view .iconfont {
+  vertical-align: middle;
+}
+
+.auth-view
+  .bg-purple-light
+    word-wrap break-word
+
+// RuleList 授权策略管理-访问规则管理
+
+.auth-rule-list .has-auth .icon-delete {
+  display: none;
+}
+
+.auth-rule-list .has-auth .s-checkbox {
+  display: none;
+}
+
+.auth-rule-list .title {
+  color: title_3
+  height: 36px;
+  line-height: 36px;
+}
+
+// Account_AccountStatus\Status.vue 账号状态统计
+
+.account-status-main-content
+  margin 20px
+  & .left-nav
+    padding-right 15px
+  & .right-table
+    /*background-color block_bg*/
+  .fileList
+    padding 10px
+    & .handler-btns
+      margin-bottom: 12px
+    & .s-pagination
+      padding: 0
+  #formToSearch
+    .s-input
+      width 120px;
+
+// Account_Isolated\Isolated.vue 孤立账号统计
+
+.account-isolated-main-content
+  margin 20px
+  & .left-nav
+    padding-right 15px
+  & .right-table
+    /*background-color block_bg*/
+  .fileList
+    padding 10px
+    & .handler-btns
+      margin-bottom: 12px
+    & .s-pagination
+      padding: 0
+  #formToSearch
+    .s-input
+      width 120px;
+
+// Account_securitySet\SecuritySet.vue
+
+#securitySetDialog
+  .s-select
+    margin-right: 0
+  .tabbox
+    border-bottom: 1px solid border_color
+    &:last-child
+      border-bottom: none
+    .s-row
+      line-height: 38px
+      margin-bottom: 20px
+      &:last-child
+        margin-top: 15px
+        margin-bottom 10px
+    .title
+      color: title_3
+      i
+        vertical-align middle
+      span
+        font-weight 600
+        margin-left: 3px
+  .tab3
+    .s-checkbox
+      margin-left: 0
+      margin-right: 15px
+  .scrollMaxH
+    max-height: 500px
+  .rightBtn
+    float right
+
+  .QRCodeCtn
+    text-align center
+  img
+    width 50%
+
+// Account_securitySet\SimpleMenu.vue
+
+.simpleMenu
+  cursor pointer
+  border-right 1px solid #c4c7cc
+  .s-row
+    text-align right
+    line-height 36px
+    margin-bottom 20px
+    span
+      display inline-block
+      padding-right: 5px
+      line-height 1
+      color title_3
+    &.active
+      span
+        color: link_text
+        border-right: 3px solid link_text
+    &:hover
+      span
+        color: hover_text
+        border-right: 3px solid hover_text
+    &:last-child
+      margin-bottom: 0
+
+// Account_sysPrivilege\SysPrivilege.vue
+
+.sysPrivilege
+  margin 20px
+  .title
+    font-size 16px
+    color title_3
+  .s-form-item
+    margin-bottom: 0
+  .tool-bar
+    margin-bottom: 10px
+  .levelVisibleTab
+    padding 10px 20px
+    .title
+      height 40px
+      line-height 40px
+.autoScanImg
+  display:inline-block
+  width: 221px
+  height: 96px
+  background: url(./img/frame/autoScan.png)
+.scaningImg
+  display: inline-block
+  width: 36px
+  height: 36px
+  margin-bottom: -12px
+  margin-right: 15px
+  background: url(./img/frame/dataloading.gif)
+.scanResultImg
+  display: inline-block
+  width: 58px
+  height: 43px
+  margin-bottom: -10px
+  background: url(./img/frame/loadingsuccess.png)

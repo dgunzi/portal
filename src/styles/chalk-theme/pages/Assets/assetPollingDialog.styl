@@ -1,0 +1,82 @@
+//  AssetPollingDialog   首页 >资产管理 >资产管理列表 > 资产巡查*
+.pollingDialog
+  .pollingSummary
+    margin-top -10px
+    align-items: center
+    display: flex
+    .scaning
+      width: 120px
+      height: 120px
+      background url('pages/Assetslist/images/homepage/all_bg.png')
+      background-size 120px 120px
+      margin 0 auto
+      position relative
+      .outerRing
+        width: 120px
+        height: 120px
+        background url('pages/Assetslist/images/homepage/outer_ring.png')
+        background-size 120px 120px
+        &:after
+          content: ''
+          display block
+          border 3px solid #9CEEFF
+          border-radius 100%
+          position: absolute
+          left: 50%
+          top: 50%
+          margin-left: -3px
+          margin-top: -3px
+          z-index: 1
+      .scanIndi
+        box-sizing border-box;
+        border: 0px solid transparent
+        border-radius: 100% 0 0 0
+        position: absolute
+        width: 38px
+        height: 38px
+        left: 50%
+        top: 50%
+        margin-left: -37px
+        margin-top -38px
+        background linear-gradient(rgba(156,238,255,0.5), transparent)
+        border-right-width: 2px
+        border-right-color: #9CEEFF
+        transform-origin: 98% 100%
+    .pollingState
+      font-size 18px
+      font-weight 600
+      line-height 36px
+    .pollingDetail
+      font-size 12px
+      line-height 25px
+  .running
+    animation: scaning 3s linear infinite
+  .scanResult
+    border: 1px solid border_color
+    .title
+      line-height 36px
+      height: 36px
+      background-color: rgba(15, 37, 63, 0.6)
+      color: title_3
+      border-bottom 1px solid border_color
+      font-weight: 600
+      font-size: 14px
+    .scanContentHeight
+      max-height: 200px
+      padding-top 5px
+      .s-row
+        line-height 30px
+  .noData
+    text-align center
+    line-height: 50px
+    color: darkWordColor
+    letter-spacing: 2px
+
+  @keyframes scaning {
+    0% {
+      transform: rotate(0deg)
+    }
+    100% {
+      transform: rotate(360deg)
+    }
+  }

@@ -1,0 +1,216 @@
+.recentEventItem
+  font-size: 12px
+  margin-top 5px
+  .specialBtn
+    position: absolute;
+    right: 1px;
+    top: 16px;
+  .s-row
+    margin-bottom: 0
+  .title, .time-title
+    display: inline-block
+    line-height: 18px
+    padding: 0 5px
+    background: rgba(blue_color, 0.3)
+    color rgba(title_2,0.6)
+  .time-title
+    float right
+  .detail
+    width: 100%
+    &.default
+      background rgba(blue_l3_black,0.01)
+      color lightWordColor
+      border: 1px solid rgba(border_color, 0.3)
+      .s-col
+        overflow hidden
+        height: 55px
+        line-height 26px
+        .client
+          height: 20px
+          line-height 20px
+          color link_text
+          padding-left: 2px
+          padding-right: 2px
+          background gray_l3_text
+          border-radius 2px
+        .s-button
+          padding 3px 5px
+          float: 18px
+    &.current
+      line-height 28px
+      background: block_bg
+      border: 1px solid border_color
+      position: relative
+      .s-button
+        padding 3px 5px
+        float: right
+        margin-top 15px
+      .s-row
+        color: gray_l3_text
+        padding-left: 5px
+      img
+        margin-top 12px
+        margin-left 3px
+  .currentValue
+    color: gray_l1_text
+
+#event-timeline
+  & .ss-timeline-item-head
+    width: 8px;
+    height: 8px;
+  & .recentEventItem
+    margin-left: 3px
+
+.opterationScrollHeight
+  height calc(100vh - 435px)
+  & .s-card
+    margin-top 1.5px
+
+.operational-equip-wrapper
+  .s-carousel
+    overflow hidden
+  .is-active
+    border none
+    box-shadow none
+  .operational-equip
+    margin-top 15px
+    .operational-equip-item
+      box-sizing border-box
+      height 101px
+      margin 6px 0
+      border-radius 2px
+    .equip-item
+      height 100%
+      background-color rgba(blue_l2_white,0.18)
+      border 1px solid border_color
+      .s-col
+        height 100%
+      .s-col:nth-child(1)
+        padding 0 0 0 14px
+      .s-col:nth-child(2)
+        border-left 1px solid border_color
+        background-color rgba(blue_color,0.3)
+        border-radius 0 2px 2px 0
+      .greenWord, .redWord, .yellowWord
+        font-size 14px
+      .greenWord
+        color green_color
+      .redWord
+        color red_color
+      .yellowWord
+        color yellow_color
+      .contentWord
+        color lightWordColor
+        height 18px
+        line-height 18px
+      .specialChunk
+        font-size 12px
+        width 45%
+        background-color rgba(green_l1_white,0.3)
+        padding 1px 0
+        padding-left 5px
+        border-radius 2px
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      .equip-item-tit
+        span
+          display block
+          line-height 20px
+          height 20px
+          &:first-child
+            float left
+        .firstWord
+          width auto
+          font-size 14px
+          white-space nowrap
+          text-overflow ellipsis
+          overflow hidden
+
+.new-apply-btn
+  padding 6px 2px
+  .s-button
+    width 100%
+
+.client-download
+  padding 5px 2px
+  margin-top 5px
+  .s-col
+    ul li
+      padding-left 6px
+      padding-top 1px
+      color title_2
+      height 30px
+      line-height 30px
+      background-color rgba(original_l1_black,0.4)
+      border 1px solid border_color
+      border-radius 2px
+      font-size 14px
+      cursor pointer
+      text-align center
+      &:hover
+        background original_color
+        border-color original_l2_white
+      & div
+        float left
+  .icontool
+    width 16px
+    height 16px
+    margin: 7px 3px 0 0
+
+.special-order
+  height 30px
+  line-height 30px
+  box-sizing border-box
+  border 1px solid rgba(border_color,0.2)
+  padding 0 5px
+  margin 5px 2px
+  font-size 14px
+  color darkWordColor
+  background-color rgba(gray_l3_black,0.2)
+  & i
+    position: relative;
+    top: 1px;
+  .oper-title
+    color gray_l2_text
+  .orangeWord
+    color orangeWordColor
+  .greenWord
+    color greenWordColor
+
+.operateLogItem
+  background rgba(gray_l3_black,0.2)
+  border 1px solid border_color
+  padding: 5px 8px
+  margin 12px 0
+  .s-row
+    margin-bottom: 0
+    line-height: 28px
+    height: 28px
+    font-size: 0
+    & > span
+      font-size: 14px
+      display inline-block
+      &:last-child
+        float: right
+    &:first-child
+      color title_1
+      & > span:not(:last-child)
+        padding-right: 5px
+      .client
+        color title_2
+        font-size 12px
+        padding 2px 5px
+        background rgba(green_color,0.4)
+        border-radius 2px
+    &:last-child
+      color darkWordColor
+      span
+        &:first-child
+          border-right: 1px solid border_color
+          padding-right: 8px
+          line-height: 1
+        &:nth-child(2)
+          padding-left: 8px
+        &.status
+          color greenWordColor

@@ -1,0 +1,115 @@
+/*businessDetail*/
+.overFlowTip {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis
+}
+/*notAudit*/
+.operationData .score-td {
+  color: original_color;
+  cursor: pointer
+}
+.notAudit .tool-bar {
+  position: relative;
+}
+.notAudit .filters {
+  position: absolute;
+}
+.notAudit .s-form-item {
+  margin-bottom: 5px;
+}
+/*operationData*/
+.log-alarm-more {
+  margin-top: 20px;
+}
+/*logSqlDetail*/
+.logSqlDetail .sqlBorder {
+  width: 940px;
+  min-height: 111px;
+  padding: 5px;
+  border: 1px solid border_color;
+  background: transparent;
+  word-wrap: break-word;
+}
+.logSqlDetail .title {
+  height: 20px;
+  line-height: 20px;
+  color: original_color;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.logSqlDetail .title i {
+  margin-right: 5px;
+}
+.logSqlDetail .logWrapHeight {
+  max-height: 400px;
+}
+/*sqlModelAudit*/
+.sqlModelAudit .tool-bar {
+  position: relative;
+}
+
+.sqlModelAudit .filters {
+  position: absolute;
+}
+
+.sqlModelAudit .s-form-item {
+  margin-bottom: 5px;
+}
+.sqlModelAudit .activeClass {
+  border: 1px solid hover_button_bd;
+  background: active_button_bg;
+}
+/*右键样式*/
+.sqlModelAudit .ctx-menu {
+  padding: 0;
+  box-shadow: 0 0 0
+}
+
+.sqlModelAudit .ctx-menu li {
+  padding: 4px;
+  border-bottom: 1px solid ctx_menu_bd;
+  color: #ffffff;
+  background: ctx_menu_bg
+}
+.sqlModelAudit .ctx-menu li:last-child {
+  border-bottom: none;
+}
+.sqlModelAudit .ctx-menu {
+  border: 1px solid ctx_menu_bd;
+  border-radius: 3px
+}
+.sqlModelAudit .ctx-menu li:hover {
+  cursor: pointer;
+  background: ctx_menu_hover_bg;
+}
+/*operationTalkDetail*/
+.operationTalkDetail  .logWrapHeight {
+  max-height: 450px;
+}
+
+/**
+ * policyAudit
+ * pages/logOperationData/PolicyAudit
+ */
+#policyAudit
+  .linkClick
+    color link_text
+    cursor pointer
+    &:hover
+      color hover_text
+  .s-form-item-content
+    .icon-message
+      position relative
+      top 2px
+      cursor pointer
+      font-size 18px
+      font-weight bold
+      color link_text
+  .s-loading-mask
+    z-index 2001
+  .overFlowTip
+    overflow hidden
+    white-space nowrap
+    text-overflow ellipsis
