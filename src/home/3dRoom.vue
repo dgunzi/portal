@@ -103,6 +103,17 @@
     <div id="draw-walls-hint" v-show="drawHintFlag && currentMode == 1">
       按下 "Esc" 键将停止绘制
     </div>
+    <s-dialog
+      v-model="videoDialog"
+      title="摄像头1" width="520px">
+      <div class="player">
+        <video id=example-video width=480 height=270 class="video-js vjs-default-skin" controls>
+          <source
+            :src="videoSrc"
+            type="application/x-mpegURL">
+        </video>
+      </div>
+    </s-dialog>
   </s-index>
 </template>
 <script type="text/babel">

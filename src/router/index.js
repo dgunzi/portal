@@ -2,19 +2,21 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Error from '@/home/404.vue'
-import Home from '@/home/Home'
+// import Home from '@/home/Home'
 import PortalRouter from './PortalRouter'
 Vue.use(Router)
 
 // 平台首页
 let HomePage = () => import('@/home/3dRoom')
+// 直播首页
+let videoPage = () => import('@/home/videoPage')
 
 // 懒加载路由
 export const asyncRouter = [
   {
     path: '/',
     beforeEnter (to, from, next) {
-      next('/Portal')
+      next('/Test')
     }
   },
   {
@@ -26,7 +28,7 @@ export const asyncRouter = [
   },
   {
     path: '/Portal',
-    component: Home,
+    component: videoPage,
     children: PortalRouter,
     meta: {
       keyWord: 'Portal',

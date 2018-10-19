@@ -6,6 +6,8 @@ import {Oasis3d, Mode, Utils} from './app'
 import item from '@/oasis3d/item'
 import attrForm from '@/oasis3d/attrForm'
 import sceneItems from '@/oasis3d/sceneItems'
+import videojs from 'video.js'
+import 'video.js/dist/video-js.css'
 var threeRoomMixin = {
   data() {
     return {
@@ -34,7 +36,9 @@ var threeRoomMixin = {
       wallTexture: [{url: 'marbletiles.jpg', stretch: false, scale: 300}, {url: 'wallmap_yellow.png', stretch: false, scale: 300}, {url: 'light_brick.jpg', stretch: false, scale: 100}, {url: 'wallmap.png', stretch: true, scale: 0}],
       floorTexture: [{url: 'light_fine_wood.jpg', stretch: false, scale: 300}, {url: 'floor.jpg', stretch: false, scale: 100}, {url: 'hardwood.png', stretch: false, scale: 400}],
       currentTarget: null,  // 当前目标
-      sceneItems: []
+      sceneItems: [],
+      videoDialog: false,
+      videoSrc: 'http://3811.liveplay.myqcloud.com/live/m3u8/3811_channel1229.m3u8?AUTH=uJ35fEKPBnilpM4wHenr9hDvIYSpGWLpP7L0ylD7/tO4Q2Gj/dUXjTdCg6uz9x29lgQveYHXx+EH7cLTYS6nig=='
     }
   },
   components: {
@@ -54,6 +58,17 @@ var threeRoomMixin = {
       window.oasis3d = new Oasis3d(opts);
       window.oasis3d.setCabinetOpenCallback(this.addEquments);
       window.oasis3d.setEquipmentClickCallback(this.equipmentClick);
+      window.oasis3d.addDbclickEvt({
+        obj_name: 'gleye_',
+        obj_event : (obj, controller, event) => {
+          this.videoDialog = true;
+          // this.videoSrc = 'https://logos-channel.scaleengine.net/logos-channel/live/biblescreen-ad-free/playlist.m3u8';
+          this.$nextTick(function () {
+            var player = videojs('example-video');
+            player.play();
+          });
+        }
+      });
       window.oasis3d.model.scene.itemLoadingCallbacks.add(() => {
         this.itemsLoading += 1;
         window.oasis3d_loading = true;
